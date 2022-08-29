@@ -23,4 +23,4 @@ Texto
 Tengo 23 años, soy de Argentina. Hincha de Boca y mi serie favorita en el universo es One Piece, estudio programación para tener un mejor futuro, estoy de novio hace 4 años (vamos para 5 jeje) Me gusta el fernet y la música! Mi viedeojuegos favoritos son God of War, Fifa y The last of Us. Mi primera consola a la que vicié fue la Ps1. 
 
 ## Luis
-Texto
+Mi nombre es Luis Miguel Ossa Echavarría, tengo 32 años y soy de la ciudad de Medellín, Colombia. Mis pasiones son el fútbol, estudiar filosofía (fundamentalmente la obra de Nietzsche y Foucault), la música clásica, el Blues y el metal. Soy abogado de profesión y me gusta/interesa bastante el tema de la programación. Saludos.
