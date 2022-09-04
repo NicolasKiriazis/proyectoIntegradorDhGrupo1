@@ -24,3 +24,6 @@ Tengo 23 años, soy de Argentina. Hincha de Boca y mi serie favorita en el unive
 
 ## Luis
 Mi nombre es Luis Miguel Ossa Echavarría, tengo 32 años y soy de la ciudad de Medellín, Colombia. Mis pasiones son el fútbol, estudiar filosofía (fundamentalmente la obra de Nietzsche y Foucault), la música clásica, el Blues y el metal. Soy abogado de profesión y me gusta/interesa bastante el tema de la programación. Saludos.
+
+## Cristian
+Me llamo Cristian Ezequiel Villafañe, tengo 36 años. Soy padre de una nena de 3 años y medio que vive conmigo ya que estoy separado de la Madre. Hincha fanático de Boca Juniors. Vivo en Argentina, provincia de Buenos Aires, en la Localidad de Lanús Oeste. Libros favorito: El Condede Montecristo, ¿Quien se ha llevado mi queso?. Me gusta mucho el deporte, sobre todo acuáticos, pero mi preferido es jugar al futbol. Me gustaría poder aprender a programar bien de manera de poder tener un ingreso adicional al que tengo actualmente. 
