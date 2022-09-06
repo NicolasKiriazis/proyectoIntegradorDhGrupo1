@@ -3,18 +3,25 @@
 - Dirigido para jovenes y adultos gamers
 
 # Sitios referidos
-- Steam: https://store.steampowered.com/
-- PlayXfun https://www.playxfun.com/
-- Adidas https://www.adidas.co/
-- Epic games https://www.epicgames.com/site/es-ES/home/
-- Dix gamers https://dixgamer.com/
+A continuacion se presentan diferentes sitios los cuales sirvieron como inspiracion para el diseño de la pagina.
+
+- **Dprimero**: https://dprimero.com/
+- **Steam**: https://store.steampowered.com/
+- **PlayXfun**: https://www.playxfun.com/
+- **Adidas**: https://www.adidas.co/
+- **Epic games**: https://www.epicgames.com/site/es-ES/home/
+- **Dix gamers**: https://dixgamer.com/
+- **GS Gameshop**: https://gameshopvideojuegos.com/
+- **Play For Fun**: https://www.playxfun.com/
+- **Mercado libre**: https://www.mercadolibre.com.ar/
+- **G2A.com**: https://www.g2a.com/es/
+
+Si bien se tomaron como inspiracion paginas que no tienen relacion con la tematica de la pagina como lo es **Mercado libre** o **Adidas** sirvieron como ideas de diseño para la barra de navegacion o bien para el carritos de compras. 
 
 # Descripcion de equipo
 ## Lucero Cortes
-Texto
+Mi nombre es Lucero, soy de Mexico y tengo 24 años. Soy Lic. Redes y servicios de computo. Actualmente estoy trabajando en el area de la ciberseguridad, empece a estudiar desarrollo web porque es algo que me gusta mmucho y que me gustaria desarollar mas. 
 
-## Cristian
-Texto
 
 ## Ignacio
 Mi nombre es Ignacio Rovagna, tengo 34 años y soy de la ciudad de Buenos Aires, Argentina. Soy Técnico Electronico y me fascina todo lo que está relacionado a la informática, desarrollo y tecnología. Vivo con mi pareja y mi hijo de 2 años. Me gustan los deportes extremos y al aire libre. Actualmente estoy estudiando varios cursos de programación para dedicarme de lleno a esta apasionante profesión.
