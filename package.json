@@ -1,0 +1,27 @@
+{
+  "name": "proyectoIntegrador",
+  "version": "1.0.0",
+  "description": "- Venta de videojuegos digitales para diversas plataformas.\r - Dirigido para jovenes y adultos gamers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasKiriazis/proyectoIntegradorDhGrupo1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasKiriazis/proyectoIntegradorDhGrupo1/issues"
+  },
+  "homepage": "https://github.com/NicolasKiriazis/proyectoIntegradorDhGrupo1#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

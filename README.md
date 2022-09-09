@@ -18,6 +18,9 @@ A continuacion se presentan diferentes sitios los cuales sirvieron como inspirac
 
 Si bien se tomaron como inspiracion paginas que no tienen relacion con la tematica de la pagina como lo es **Mercado libre** o **Adidas** sirvieron como ideas de diseño para la barra de navegacion o bien para el carritos de compras. 
 
+# Link a nuestros tableros en Trello
+https://trello.com/invite/b/UL4WtM0K/4ec58b92240964de812558dd899d7bc1/sprint-1
+
 # Descripcion de equipo
 ## Lucero Cortes
 Mi nombre es Lucero, soy de Mexico y tengo 24 años. Soy Lic. Redes y servicios de computo. Actualmente estoy trabajando en el area de la ciberseguridad, empece a estudiar desarrollo web porque es algo que me gusta mmucho y que me gustaria desarollar mas. 
