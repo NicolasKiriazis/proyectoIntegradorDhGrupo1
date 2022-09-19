@@ -84,6 +84,43 @@ header{
 
 /* --- Estilos register.html ---*/
 
+.login-register{
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.login-titulo{
+    margin-top: 40px;
+    text-align: center;
+    color: hsl(157, 78%, 36%);
+}
+
+.login-input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: hsl(157, 73%, 47%) 2px solid ;
+    height: 40px;
+    color: hsl(157, 73%, 47%);
+    padding-left: 10px;
+}
+
+.login-input:hover{
+    background-color: hsl(157, 73%, 47%);
+    color: #fff;
+}
+
+.login-button{
+    display: block;
+    background-color: hsl(157, 78%, 36%);
+    color: #fff;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
 
 
 

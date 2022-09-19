@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b41aef2bcc.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <i class="fa-solid fa-bars nav-item"></i>
+
+            <img src="image/logo.jpg" alt="logo-gamer-house" id="logo">
+
+            <nav>
+
+                <ul class="nav-item">
+                    <li>Quienes Somos</li>
+                    <li>Contactanos</li>
+                    <li>Soporte</li>
+                </ul>
+
+            </nav>
+
+            <div>
+                <ul class="nav-item">
+
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="search-container">
+
+            <input type="text" id="search-bar" placeholder="  Buscar..">
+            <i class="fas fa-search" id="lupa"></i>
+
+        </div>
+
+    </header>
+
+    <main>
+        <h1 class="login-titulo">BIENVENIDOS</h1>
+        <form action="#" method="POST" class="login-register">
+            <div>
+                <label for="nombre" class="login-etiqueta">NOMBRE: </label>
+                <input type="text" id="nombre" name="nombre" class="login-input">
+            </div>
+            <div>
+                <label for="apellido" class="login-etiqueta">APELLIDO</label>
+                <input type="text" id="apellido" name="apellido" class="login-input">
+            </div>
+            <div>
+                <label for="nacionalidad" class="login-etiqueta">NACIONALIDAD:</label>
+                <input type="text" id="nacionalidad" name="nacionalidad" class="login-input">
+            </div>
+            <div>
+                <label for="fechaNacimiento" class="login-etiqueta">FECHA DE NACIMIENTO</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="login-input">
+            </div>
+            <div>
+                <label for="mail" class="login-etiqueta">E-MAIL</label>
+                <input type="email" id="mail" name="mail" class="login-input">
+            </div>
+            <div>   
+                <label for="password" class="login-etiqueta">PASSWORD:</label>
+                <input type="password" id="password" name="password" class="login-input"> 
+            </div>
+            <div>
+                <label for="passwordRepite" class="login-etiqueta">REPITA PASSWORD:</label>
+                <input type="password" id="passwordRepite" name="PasswordRepite" class="login-input">
+            </div>
+            <div>
+                <button type="submit" class="login-button">REGISTRARSE</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

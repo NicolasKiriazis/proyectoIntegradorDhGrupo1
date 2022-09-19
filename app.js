@@ -19,3 +19,8 @@ app.get("/", function(req,res){
 
     res.sendFile(ruta)
 })
+
+app.get('/register',function(req,res){
+    const registerPath = path.resolve (__dirname,'./views/register.html');
+    res.sendFile(registerPath)
+});
