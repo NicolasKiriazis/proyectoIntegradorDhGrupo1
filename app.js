@@ -14,8 +14,8 @@ app.listen(3000, (req,res)=> {console.log("El servidor se levantó con éxito en
 
 // Hacer que abra la view del Index
 
-app.get("/", function(req,res){
-    res.sendFile(path.resolve(__dirname, './views/home.html')
+app.get ("/", function(req, res){
+    res.sendFile(path.resolve(__dirname, './views/home.html'))
 })
 
 app.get('/register',function(req,res){
