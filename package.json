@@ -1,5 +1,5 @@
 {
-  "name": "proyectoIntegrador",
+  "name": "proyectointegrador",
   "version": "1.0.0",
   "description": "- Venta de videojuegos digitales para diversas plataformas.\r - Dirigido para jovenes y adultos gamers",
   "main": "app.js",
@@ -23,6 +23,6 @@
     "save": "^2.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.20"
   }
 }
