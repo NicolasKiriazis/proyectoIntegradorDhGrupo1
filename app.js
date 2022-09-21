@@ -15,7 +15,7 @@ app.listen(3000, (req,res)=> {console.log("El servidor se levantó con éxito en
 // Hacer que abra la view del Index
 
 app.get("/", function(req,res){
-    let ruta = path.resolve(__dirname, './views/index.html')
+    let ruta = path.resolve(__dirname, './views/home.html')
     res.sendFile(ruta)
 })
 
