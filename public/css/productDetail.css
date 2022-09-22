@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* ESTILOS PARA EL DETAIL CAJAS*/
+
+#product-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* text-align: center;
+    align-items: center; */
+    align-items: center;
+
+}
+
+#product-container img {
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 0px 10px black;
+    margin: 15px;
+}
+
+#product-card {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+
+#options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 10px;
+
+    background-color: hsl(157, 73%, 47%);
+    margin-bottom: 15px;
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    border: 5px solid hsl(157, 73%, 47%);
+    box-shadow: 0px 0px 10px black;
+
+    align-items: center;
+    position: relative;
+    top: 14px;
+}
+
+/* ESTILOS DETAIL PRODUCTO */
+
+.name {
+    font-size: 3rem;
+    margin: 10px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.price {
+    font-size: 30px;
+    margin: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+#sale-cartel {
+
+    background-color: #74af22;
+    border-radius: 5px;
+    border: 3px solid white;
+
+    height: 55px;
+    display: flex;
+    align-items: center;
+
+}
+
+.sale {
+
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 2px;
+
+}
+
+.button {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: #74af22;
+    height: 55px;
+    width: 200px;
+}
+
+.description {
+    font-size: 25px;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* .button:hover{
+    animation: 1s compra forwards;
+} */
+
+/* @keyframes compra{
+100%{
+    transform: scale(-2);
+}
+} */
+
+header {
+    background-color: hsl(157, 73%, 47%);
+    width: 100%;
+}
+
+footer {
+    background-color: hsl(157, 73%, 47%);
+    width: 100%;
+    height: 150px;
+}
