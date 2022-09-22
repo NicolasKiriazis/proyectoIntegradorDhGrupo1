@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+img {
+    width: 100%;
+}
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+main section.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /*border-bottom: 2px solid rgb(191, 190, 190);    */
+}
+
+main section.navbar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin: 10px;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+li {
+    padding: 10px;
+}
+
+li.carrito {
+    border-bottom: 2px solid rgb(92, 233, 92);
+}
+
+main section.navbar div {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    text-align: right;
+    margin: 10px;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 2%;
+}
+
+main section.navbar div i {
+    padding-right: 1%;
+    font-size: 20px;
+    padding: 1%;
+    width: 30px;
+    height: 30px;
+    color: rgb(18, 18, 41);
+
+    margin-left: 0px;
+}
+
+main section.navbar h4 {
+    text-align: left;
+}
+
+main section.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+main section.article article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #1ad67595;
+    border-bottom: 2px solid #e0dede;
+    padding: 2% 0px;
+    align-items: center;
+}
+
+main section.article article div.product-img {
+    width: 20%;
+    text-align: center;
+    padding: 1%;
+    border: 2px solid darkgreen;
+    margin-left: 15px;
+}
+
+main section.article article div.product-container {
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+}
+
+div.desc-container {
+    display: flex;
+    justify-content: space-between ;
+    margin-left: 20px;
+    margin: 10px;
+}
+
+div.desc-container i {
+    text-align: center;
+    padding-left: 2%;
+    color: green;
+    font-size: 18px;
+}
+
+div.desc-container p {
+    text-align: right;
+}
+
+div.nav-art {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+p.guardar {
+    font-size: 100%;
+    padding-left: 10%;
+
+}
+
+main section.resumen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.resumen article.importes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    padding-right: 5%;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #9aeb9d90;
+    padding: 2%
+}
+
+article.importes div.detalle {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+}
+
+article.importes div.detalle h5 {
+    margin: 4px;
+    font-size: 1em;
+}
+
+article.importes div.columna-importes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+article.importes div.columna-importes h5 {
+    margin: 4px;
+    font-size: 1em;
+}
+
+h5.descuento {
+    color: green;
+}
+
+h3 {
+    text-align: left;
+}
+
+article.pagar {
+    display: flex;
+    margin-top: 4%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4%;
+    border: 2px solid lightgray;
+    padding: 2%;
+}
+
+div.total {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
+
+div.total h4.total {
+    padding-right: 3%;
+}
+
+div.total h4{
+    font-size: 18px;
+}
+
+div.pagar {
+    text-align: center;
+    padding-left: 30px;
+}
+
+div.pagar p {
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.button {
+    border: none;
+    color: rgba(173, 247, 162, 0.972);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: rgb(141, 233, 169);
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}

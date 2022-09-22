@@ -7,14 +7,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productCart.css">
     <script src="https://kit.fontawesome.com/b41aef2bcc.js" crossorigin="anonymous"></script>
-    
-    <title>Carrito de compras</title>
-    
+    <title>Gamer House - Carro de compras</title>
 </head>
 
 <body>
+    <header>
 
+        <div class="container">
+            <i class="fa-solid fa-bars nav-item"></i>
+            <img src="image/logo.jpg" alt="logo-gamer-house" id="logo">
+            <nav>
+                <ul class="nav-item">
+                    <li>Quienes Somos</li>
+                    <li>Contactanos</li>
+                    <li>Soporte</li>
+                </ul>
+            </nav>
+            <div>
+                <ul class="nav-item">
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="  Buscar videojuegos">
+            <i class="fas fa-search" id="lupa"></i>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="navbar">
+            <ul class="categorias">
+                <li class="carrito">Carrito (3)</li>
+                <li>Guardados (0)</li>
+            </ul>
+            <div id="cart">
+                <p>Limpiar carrito</p>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+
+        </section>
+        <section id="cart" class="article">
+            <article>
+                <div class="product-img">
+                    <img src="/image/fifa23.jpg" alt="Fifa 2023">
+                </div>
+                <div id="cart" class="product-container">
+                    <div class="desc-container">
+                        <h3>EA SPORTS™ FIFA 23 Pre-order Edition</h3>
+                        <i class="fab fa-xbox"></i>
+                        <p>USD$ 32.50</p>
+                    </div>
+                    <div class="nav-art">
+                        <h4>Disponible: 1 OCT 2022</h4>
+                        <p class="guardar">Guardar para despues</p>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="product-img">
+                    <img src="/image/codmw2.jpg" alt="Moder Warfare 2">
+                </div>
+                <div id="cart" class="product-container">
+                    <div class="desc-container">
+                        <h3>Call of Duty®: Modern Warfare® II</h3>
+                        <i class="fas fa-desktop"></i>
+                        <p>USD$ 29.30</p>
+                    </div>
+                    <div class="nav-art">
+                        <h4>Vault Edition</h4>
+                        <p class="guardar">Guardar para despues</p>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </article>            
+            <article>
+                <div class="product-img">
+                    <img src="/image/godofwar.jpg" alt="Fifa 2023">
+                </div>
+                <div id="cart" class="product-container">
+                    <div class="desc-container">
+                        <h3>God of War</h3>
+                        <i class="fab fa-playstation"></i>
+                        <p>USD$ 22.40</p>
+                    </div>
+                    <div class="nav-art">
+                        <h4>¡PROMOCIÓN ESPECIAL! La oferta finaliza en 07:47:23</h4>
+                        <p class="guardar">Guardar para despues</p>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="resumen">
+            <article class="importes">
+                <div class="detalle">
+                    <h5>Descuento:</h5>
+                    <h5>Subtotal:</h5>
+                    <h5>Envio:</h5>           
+                </div>
+                <div class="columna-importes">
+                    <h5 class="descuento">15%</h5>
+                    <h5>USD$ 87.34</h5>
+                    <h5>DIGITAL</h5>
+                </div>
+            </article>
+            <article class="pagar">
+                <div class="pagar">
+                    <button class="button button1">Pagar</button>
+                    <p>Seguir comprando</p>
+                </div>
+                <div class="total">
+                    <h4 class="total">Total:</h4>
+                    <h4>USD$ 87.34</h4>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>
