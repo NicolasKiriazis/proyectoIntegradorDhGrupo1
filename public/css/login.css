@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme:wght@300&display=swap');
+
+main.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+main section#login {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    box-shadow: 0px 1px 20px rgb(100, 100, 100);
+    padding: 10px;
+    align-items: center;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+main section#login div {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+main section#login div img {
+    width: 100%;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+main section#login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#login form input.login-input {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: hsl(157, 73%, 47%) 2px solid;
+    height: 40px;
+    color: hsl(157, 73%, 47%);
+    padding: 10px;
+}
+
+.login-input:hover {
+    background-color: hsl(157, 73%, 47%);
+    color: white;
+}
+
+main section#login form button.login-button {
+    font-size: 12px;
+    letter-spacing: 3px;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    color: #23c483;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border-radius: 20px;
+    border: 2px solid #23c483;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1)1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+/* * * * * M E D I A   T A B L E T* * * * */
+@media (min-width: 361px) {
+    main section#login {
+        width: 50%;
+    }
+
+    main section#login div {
+        width: 30%;
+    }
+}
+
+/* * * * * M E D I A   D E S K T O P* * * * */
+@media (min-width: 769px) {
+    main section#login div {
+        width: 20%;
+    }
+}
