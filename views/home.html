@@ -6,99 +6,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <script src="https://kit.fontawesome.com/b41aef2bcc.js" crossorigin="anonymous"></script>
 
     <title>home</title>
 </head>
 
+<header>
+
+    <div class="container">
+        <i class="fa-solid fa-bars nav-item"></i>
+
+        <img src="image/logo.jpg" alt="logo-gamer-house" id="logo">
+
+        <nav>
+
+            <ul class="nav-item">
+                <li>Quienes Somos</li>
+                <li>Contactanos</li>
+                <li>Soporte</li>
+            </ul>
+
+        </nav>
+
+        <div>
+            <ul class="nav-item">
+
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="search-container">
+
+        <input type="text" id="search-bar" placeholder="  Buscar..">
+        <i class="fas fa-search" id="lupa"></i>
+
+    </div>
+
+</header>
+
 <body>
 
     <!-- BANNER  -->
-    <section class="banner">
-        <img src="image/bannerHome.jpg" alt="banner-ideo Juegos">
+    <section id="banner-container">
+        <img src="image/bannerHome.jpg" alt="banner-video Juegos" class="banner">
     </section>
 
     <main>
-
+<br>
+<br>
         <!-- SECCIÓN DE CATEGORÍAS -->
         <section class="categorias">
             <h3>CATEGORIAS</h3>
+<br>
+            <div id="products-container">
 
-            <div class="products">
+                <div class="container-duo">
+                <img src="image/consolas.png" alt="item-consolas" class="product_img">
 
-                <article class="item">
-                    <img src="image/consolas.png" alt="item-consolas" class="product_img">
-                    <div class="main-article">
-                    </div>
-                </article>
+                <img src="image/juegos.png" alt="item-juegos" class="product_img">
+                </div>
+                <div class="container-duo">
+                <img src="image/controles.png" alt="item-controles" class="product_img">
 
-                <article class="item">
-                    <img src="image/juegos.png" alt="item-juegos" class="product_img">
-                    <div class="main-article">
-                    </div>
-                </article>
-
-                <article class="item">
-                    <img src="image/controles.png" alt="item-controles" class="product_img">
-                    <div class="main-article">
-                    </div>
-                </article>
-
-                <article class="item">
-                    <img src="image/accesorios.png" alt="item-accesorios" class="product_img">
-                    <div class="main-article">
-                    </div>
-                </article>
+                <img src="image/accesorios.png" alt="item-accesorios" class="product_img">
+                </div>
 
             </div>
 
         </section>
+<br>
+<br>
+
+<!-- CATEGORÍAS POR MARCAS -->
+<section class="marcas-videojuego">
+    <h3>ELIGE TU MARCA</h3>
+    <br>
+
+    <div class="products-container">
+    <img src="image/playStation.png" alt="item-playstation" class="marcas-games">
+
+    <img src="image/nintendo.png" alt="item-nintendo" class="marcas-games">
+
+    <img src="image/xbox.png" alt="item-xbox" class="marcas-games">
+
+    </div>
+<br>
+<br>
+</section> 
 
         <!-- SECCIÓN DE NUEVOS PRODUCTOS / LANZAMIENTOS -->
         <section class="productos-nuevos">
-            <h3>PRODUCTOS NUEVOS / LANZAMIENTOS</h3>
+            <h3>PRODUCTOS NUEVOS LANZAMIENTOS</h3>
+<br>
+            <div class="products-container">
 
-            <div class="products">
+                <div class="container-duo">
+                <img src="image/fifaps5.jpg" alt="item-cod" class="lanzamientos">
 
-                <article class="item">
-                    <img src="image/fifa22.png" alt="item-consolas" class="product_img">
-                    <div class="main-article">
-                    </div>
-                </article>
+                <img src="image/godofwarps5.jpg" alt="item-godofwar" class="lanzamientos">
+                </div>
 
-                <article class="item">
-                    <img src="image/battlefield.png" alt="item-juegos" class="product_img">
-                    <div class="main-article">
-                    </div>
-                </article>
+                <div class="container-duo">
+                <img src="image/gtaps5.jpg" alt="item-gta" class="lanzamientos">
 
-                <article class="item">
-                    <img src="image/callOfDuty.png" alt="item-controles" class="product_img">
-                    <div class="main-article">
-                    </div>
-                </article>
-
-                <article class="item">
-                    <img src="image/gta.png" alt="item-accesorios" class="product_img">
-                    <div class="main-article">
-                    </div>
-                </article>
+                <img src="image/spider-manps5.jpg" alt="item-spiderman" class="lanzamientos">
+                </div>
 
             </div>
 
-        </section>
+        </section> 
 
-    <!-- CARRITO DE COMPRAS -->
+        <!-- CARRITO DE COMPRAS -->
         <section></section>
-        <div class="facebook-menu" <i class="fas fa-truck"></i>
+        <div class="carrito-menu" <i class="fas fa-truck"></i>
         </div>
 
-    <!-- ICONOS DE FACEBOOK E INSTAGRAM -->
-        <div class="facebook-menu" <i class="fab fa-facebook"></i>
+        <!-- ICONOS DE FACEBOOK -->
+        <div class="facebook-menu" <i class="fa-brands fa-facebook"></i>
         </div>
 
+        <!-- ICONO DE INSTAGRAM -->
         <div class="instagram-menu" <i class="fab fa-instagram"></i>
         </div>
 
