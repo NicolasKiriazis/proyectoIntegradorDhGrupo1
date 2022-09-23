@@ -470,11 +470,11 @@ button:active:before {
     transition: background 0s;
 }
 
+/*--- Media querys Main ---*/
+
 @media (min-width: 768px) {
 
-    main {
-        margin-top: 30px;
-    }
+    /*--- Header ---*/
 
     div.container {
         justify-content: center;
@@ -490,16 +490,22 @@ button:active:before {
         align-items: center;
     }
 
-    ul.categorias li {
-        font-size: 18px;
-    }
-
     #menu {
         display: none;
     }
 
     div.logo {
         width: 30%;
+    }
+
+    /*--- Main ---*/
+
+    main {
+        margin-top: 30px;
+    }
+
+    ul.categorias li {
+        font-size: 18px;
     }
 
     div.desc-container i {
