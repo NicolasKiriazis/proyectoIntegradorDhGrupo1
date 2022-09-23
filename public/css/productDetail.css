@@ -1,139 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-
-
-
-/* ESTILOS PARA EL DETAIL CAJAS*/
-
-#product-container {
+main {
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    /* text-align: center;
-    align-items: center; */
-    align-items: center;
+    text-align: center;
 
 }
 
-#product-container img {
-    width: 250px;
-    height: 300px;
-    box-shadow: 0px 0px 10px black;
-    margin: 15px;
-}
-
-#product-card {
-    display: flex;
-    justify-content: center;
-    margin: 15px;
-}
-
-
-#options-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
+#category-container{
     margin: 10px;
-
-    background-color: hsl(157, 73%, 47%);
-    margin-bottom: 15px;
-    width: 100%;
-    height: 70px;
+    background-color: #cade01;
+    border: 1px solid #cade01;
     border-radius: 5px;
-    border: 5px solid hsl(157, 73%, 47%);
-    box-shadow: 0px 0px 10px black;
-
-    align-items: center;
-    position: relative;
-    top: 14px;
 }
 
-/* ESTILOS DETAIL PRODUCTO */
+/* ESTILO PRODUCTO */
 
-.name {
-    font-size: 3rem;
+#product-container {
+    text-align: center;
+    border: 1px solid #120727;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #120727;
+    margin: 15px;
+}
+
+
+/* FLEX-BOX PRODUCTO */
+
+#img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #120727;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+#img-detail {
     margin: 10px;
-    font-weight: bold;
-    font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+
+
+    width: 300px;
+}
+
+
+/* ESTILO PARA LAS IMAGENES */
+
+.product-img {
+    width: 300px;
+    height: 350px;
+
+}
+
+.img-detail {
+    width: 30%;
+    height: 80px;
+}
+
+/* ESTILOS DE FUENTES */
+
+#title {
+
+    font-size: 2em;
+    color: #120727;
+
 
 }
 
 .price {
-    font-size: 30px;
-    margin: 15px;
-    color: white;
-    font-weight: bold;
-}
-
-#sale-cartel {
-
-    background-color: #74af22;
-    border-radius: 5px;
-    border: 3px solid white;
-
-    height: 55px;
-    display: flex;
-    align-items: center;
-
-}
-
-.sale {
-
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    margin: 2px;
-
-}
-
-.button {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    border: 3px solid white;
-    border-radius: 5px;
-    background-color: #74af22;
-    height: 55px;
-    width: 200px;
+    margin: 10px;
+    font-size: 2em;
+    color: #120727;
 }
 
 .description {
-    font-size: 25px;
-    margin: 15px;
-    font-weight: bold;
+    margin: 5px;
+    font-size: 20px;
+    color: #120727;
 }
 
-/* .button:hover{
-    animation: 1s compra forwards;
-} */
-
-/* @keyframes compra{
-100%{
-    transform: scale(-2);
+button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 30px;
+    line-height: 1.5em;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
 }
-} */
 
-header {
-    background-color: hsl(157, 73%, 47%);
-    width: 100%;
-}
-
-footer {
-    background-color: hsl(157, 73%, 47%);
-    width: 100%;
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
     height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: #cade01;
+}
+
+button:hover {
+    color: #cade01;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+
+/* MEDIA PARA CELULARES PEQUEÑOS */
+
+@media (min-width: 360px) {
+    
+}
+
+/* MEDIA PARA TABLETS */
+
+@media (max-width: 480px) {
+
+}
+
+/* MEDIA PARA ESCRITORIO */
+
+@media (min-width: 769px) {
+    
 }
