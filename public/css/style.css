@@ -231,17 +231,24 @@ header i{
     border: none;
 }
 
+footer{
+    background-color: #120727;
+}
+
 .footer{
     display: flex;
     justify-content: space-around;
     max-width: 1000px;
     margin: auto;
-    background-color: #120727;
     color: #fff;
     padding: 20px;
 }
 
 .footer-contendedor-dos{
+    display: none;
+}
+
+.footer-contenedor-tres{
     display: none;
 }
 
@@ -253,9 +260,27 @@ header i{
     width: 100%;
 }
 
+.integrantes{
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+.redes{
+    margin: 10px 0px;
+}
+
 
 
 @media (min-width: 768px){
+
+    .footer-contenedor-tres{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media (min-width: 1280px){
 
     .footer-contendedor-dos{
         display: flex;
@@ -263,6 +288,7 @@ header i{
         justify-content: space-between;
     }
 
+    
     .footer-columna{
         margin-left: 20px;
     }
