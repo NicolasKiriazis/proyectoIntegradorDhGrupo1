@@ -97,11 +97,12 @@ div.top-header{
 }
 
 #logo{
-    width: 100%
+    width: 100%;
 }
 
 div.logo{
     width: 40%;
+    height: 70%;
 }
 
 nav{
@@ -123,6 +124,7 @@ nav{
 
 header{
     background-color: #120727;
+    width: 100%;
 }
 
 header i{
@@ -135,7 +137,6 @@ header i{
     align-items: center;
     padding: 10px;
     background-color: #120727;
-    /* Agegado por Ignacio / a revisar con equipo */
     margin-left: 5%;
     margin-right: 5%;
     
@@ -145,7 +146,6 @@ header i{
     display: flex;
     justify-content: center;
     padding: 8px;
-    /* Modificado por Ignacio / a revisar con equipo (padding left y right 30px */
     padding-left: 35px;
     padding-right: 35px;
     background-color:  #3c145e;
@@ -162,7 +162,6 @@ header i{
     
 }
 
-/* Agegado por Ignacio / a revisar con equipo (agregado flex grow para q la barra se adapte al ancho de la pantalla / border radius) */
 #search-bar{
     flex-grow: 1;
     border: 2px solid #120727;

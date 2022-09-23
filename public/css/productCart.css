@@ -1,13 +1,127 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+/* --- Estilos generales ---*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 img {
     width: 100%;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Estilos Header ---*/
+
+header {
+    background-color: #120727;
+    width: 100%;
+}
+
+header i {
+    color: #fff;
+}
+
+div.top-header {
+    width: 100%;
+    text-align: center;
+    background-color: #cade01;
+}
+
+
+#logo {
+    width: 100%;
+    margin-left: 20px;
+}
+
+div.logo {
+    display: flex;
+    width: 50%;
+
+}
+
+nav {
+    display: none;
+}
+
+.nav-item {
+   
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    align-items: right;
+    transition: all 650ms;
+}
+
+ul.nav-item li{
+    padding:30px;
+    padding-right: 48px;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    transition: all 650ms;    
+}
+
+ul.nav-item li:hover{
+    background-color:  #3c145e;
+}
+
+ul.nav-item li:hover i{
+    color: #120727;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: #120727;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #3c145e;
+    align-items: right;
+}
+
+
+#lupa {
+    margin-left: 7px;
+    padding: 2px;
+    background-color: #3c145e;
+    border-radius: 5px;
+    color: #cade01;
+}
+
+#search-bar {
+    flex-grow: 0;
+    border: 2px solid #120727;
+    border-radius: 5px;
+    height: 26px;
+    width: 70%;
+    padding: 4px;
+    font-weight: 100;
+    max-width: 1000px;
+}
+
+/* ------- Estilos podructCart.html -------- */
 
 main {
     margin-left: 5%;
@@ -16,11 +130,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
+    width: 90%;
+    max-width: 1200px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 main section.navbar {
@@ -37,15 +153,18 @@ main section.navbar ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 50%;
+    width: 40%;
     margin: 10px;
     align-items: center;
     list-style-type: none;
     font-size: 20px;
+    margin-left: 30px;
 }
 
 li {
     padding: 10px;
+    font-size: 18px;
+    width: 140px;
 }
 
 li.carrito {
@@ -55,7 +174,7 @@ li.carrito {
 main section.navbar div {
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 30%;
     text-align: right;
     margin: 10px;
     align-items: center;
@@ -70,7 +189,6 @@ main section.navbar div i {
     width: 30px;
     height: 30px;
     color: rgb(18, 18, 41);
-
     margin-left: 0px;
 }
 
@@ -91,17 +209,27 @@ main section.article article {
     flex-direction: row;
     justify-content: flex-start;
     background-color: #3c145e28;
-    border-bottom: 2px solid #e0dede;
-    padding: 2% 0px;
+    border-bottom: 3px solid #fffcfc;
+    border-top: 3px solid #fffefe;
     align-items: center;
+    transition: all 700ms;
+}
+
+main section.article article:hover {
+    background-color: #3a0ca3;
+    color: #e0dede;
+}
+
+main section.article article:hover div.desc-container div i{
+    color: #e0dede;
 }
 
 main section.article article div.product-img {
     width: 20%;
     text-align: center;
     padding: 1%;
-    border: 2px solid #120727;
     margin-left: 15px;
+    max-width: 190px;
 }
 
 main section.article article div.product-container {
@@ -110,13 +238,16 @@ main section.article article div.product-container {
     flex-direction: column;
     text-align: center;
     padding: 2%;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 div.desc-container {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     margin-left: 20px;
     margin: 10px;
+    margin-bottom: 0px;
 }
 
 div.desc-container i {
@@ -124,23 +255,50 @@ div.desc-container i {
     padding-left: 2%;
     color: #120727;
     font-size: 18px;
+    display: none;
 }
 
-div.desc-container p {
+div.desc-container div{
+    width: 30%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: right;
+}
+
+div.desc-container div p {
     text-align: right;
+    flex-wrap: nowrap;
+    width: 100%;
+    
 }
 
 div.nav-art {
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
     margin: 10px;
+    flex-wrap: nowrap;
+    text-align: left;
 }
 
-p.guardar {
-    font-size: 100%;
-    padding-left: 10%;
-
+div.nav-art div{
+    width: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: right;
+    text-align: right;
 }
+
+div.nav-art div p{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    flex-wrap: nowrap;
+    margin-right: 5px;
+}
+
 
 main section.resumen {
     display: flex;
@@ -155,41 +313,46 @@ main section.resumen article.importes {
     flex-direction: row;
     width: 100%;
     justify-content: right;
-    padding-right: 5%;
     align-items: center;
-    margin-top: 20px;
-    background-color: #3c145e86;
-    padding: 2%
+    margin-top: 10px;
+    padding-right: 0px;
+    padding-left: 30px;
 }
 
 article.importes div.detalle {
     display: flex;
     flex-direction: column;
-    margin-right: 15%;
+    width: 40%;
+    padding: 2%;
+    background-color: #b4b2b686;
 }
 
 article.importes div.detalle h5 {
     margin: 4px;
-    font-size: 1em;
+    font-size: 14px;
+    font-weight: 800;
 }
 
 article.importes div.columna-importes {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    padding: 2%;
+    background-color: #b4b2b686;
 }
 
 article.importes div.columna-importes h5 {
     margin: 4px;
-    font-size: 1em;
+    font-size: 14px;
 }
 
 h5.descuento {
-    color: green;
+    color: #3a0ca3;
 }
 
 h3 {
     text-align: left;
+    font-size: 16px;
 }
 
 article.pagar {
@@ -201,109 +364,113 @@ article.pagar {
     margin-bottom: 4%;
     border: 2px solid lightgray;
     padding: 2%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: #e0dede;
+    color: #cade01;
 }
 
 div.total {
     display: flex;
-    width: 50%;
-    justify-content: right;
+    width: 100%;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+    background-color: #120727;
+    
 }
 
 div.total h4.total {
     padding-right: 3%;
 }
 
-div.total h4{
-    font-size: 18px;
+div.total h4 {
+    font-size: 16px;
 }
 
 div.pagar {
     text-align: center;
-    padding-left: 30px;
+    padding-top: 10px;
 }
 
 div.pagar p {
     margin: 5px;
     margin-top: 10px;
+
 }
 
-.button {
-    border: none;
-    color: rgba(173, 247, 162, 0.972);
-    padding: 12px 32px;
+article.pagar p{
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    
 }
-
-.button1 {
-    background-color: rgb(141, 233, 169);
-    color: black;
-    border: 2px solid #4CAF50;
-}
-
-.button1:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
 
 /* boton nuevo */
-.cssbuttons-io {
-    position: relative;
+
+button {
+    --color: #560bad;
     font-family: inherit;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0.05em;
-    border-radius: 0.8em;
-    border: none;
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-    color: ghostwhite;
-    overflow: hidden;
-   }
-   
-   .cssbuttons-io svg {
-    width: 1.2em;
-    height: 1.2em;
-    margin-right: 0.5em;
-   }
-   
-   .cssbuttons-io span {
+    display: inline-block;
+    width: 8em;
+    height: 30px;
+    line-height: 1.5em;
+    margin: 5px;
     position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-    display: inline-flex;
-    align-items: center;
-    padding: 0.8em 1.2em 0.8em 1.05em;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
    }
    
-   .cssbuttons-io::before,
-   .cssbuttons-io::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-   }
-   
-   .cssbuttons-io::before {
+   button:before {
     content: "";
-    background: #000;
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
    }
    
-   .cssbuttons-io:hover::before {
-    transform: translate3d(100%, 0, 0);
+   button:hover {
+    color: #cade01;
    }
    
-   .cssbuttons-io:active {
-    transform: scale(0.95);
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
    }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+   @media (min-width: 768px){
+    nav{
+        display: block;
+        color: #fff;
+        align-items: center;
+    }
+
+    #menu{
+        display: none;
+    }
+    div.logo{
+        width: 30%;
+    }
+
+    div.desc-container i {
+        display: flex;
+    }
+}
