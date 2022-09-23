@@ -6,6 +6,6 @@ Dejo una sugerencia para el armado del archivo retro.md según los requerimiento
 
 3. Continuar haciendo: Continuar con la comunicación fluida que logró el equipo por las diferentes plataformas que utilizamos (Whatsapp, Trello, Slack, Github).
 
-4. Hacer menos: No logré encontrar ningun concepto que debamos de hacer menos. (Ignacio)
+4. Hacer menos: trabajar menos sobre la rama main y tratar de trabajar más sobre ramas secundarias y una vez que estamos seguros de los cambios hacer un merge con la rama main.
 
 5. Dejar de hacer: hacer correcciones a último momento, cerca del momento de la entrega del Sprint. 
