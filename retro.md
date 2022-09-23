@@ -8,4 +8,4 @@ Dejo una sugerencia para el armado del archivo retro.md según los requerimiento
 
 4. Hacer menos: No logré encontrar ningun concepto que debamos de hacer menos. (Ignacio)
 
-5. Dejar de hacer: No logré encontrar ningun concepto que debamos dejar de hacer. (Ignacio)
+5. Dejar de hacer: hacer correcciones a último momento, cerca del momento de la entrega del Sprint. 
