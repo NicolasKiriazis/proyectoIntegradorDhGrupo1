@@ -77,6 +77,8 @@ header{
 
 
 
+
+
 /* --- Estilos index.html ---*/
 
 
@@ -131,3 +133,45 @@ header{
     border-radius: 10px;
     border: none;
 }
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #120727;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-contendedor-dos{
+    display: none;
+}
+
+.footer-contenedor-uno{
+    width: 200px;
+}
+
+.footer-imagen-logo{
+    width: 100%;
+}
+
+
+
+@media (min-width: 768px){
+
+    .footer-contendedor-dos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-columna{
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
