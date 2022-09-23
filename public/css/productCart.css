@@ -470,7 +470,7 @@ button:active:before {
     transition: background 0s;
 }
 
-/*--- Media querys Main ---*/
+/*--- Media querys ---*/
 
 @media (min-width: 768px) {
 
