@@ -1,7 +1,10 @@
+
+
 .login-register{
     padding: 20px;
     max-width: 900px;
     margin: auto;
+    width: 100%;
 }
 
 .login-titulo{

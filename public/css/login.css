@@ -4,6 +4,7 @@ main.main-login {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    margin-bottom: 25px;
 }
 
 main section#login {
