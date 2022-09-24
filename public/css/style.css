@@ -223,6 +223,30 @@ footer{
         flex-direction: column;
     }
     
+    /*--- Header ---*/
+
+    div.container {
+        justify-content: center;
+    }
+
+    ul.nav-item {
+        margin-left: 30px;
+    }
+
+    nav {
+        display: block;
+        color: #fff;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    div.logo {
+        width: 30%;
+    }
+
 }
 
 @media (min-width: 1280px){
