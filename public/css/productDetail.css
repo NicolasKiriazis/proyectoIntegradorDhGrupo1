@@ -4,6 +4,133 @@ main {
 
 }
 
+/* ESTILO DEL NAVBAR */
+
+header {
+
+    width: 100%;
+    background-color: #120727;
+
+}
+
+header i {
+
+    color: #fff;
+
+}
+
+div.top-header {
+
+    width: 100%;
+    text-align: center;
+    background-color: #cade01;
+
+}
+
+#logo {
+
+    width: 100%;
+
+}
+
+div.logo {
+
+    display: flex;
+    width: 50%;
+
+}
+
+nav {
+
+    display: none;
+
+}
+
+.nav-item {
+
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    align-items: right;
+    transition: all 650ms;
+
+}
+
+ul.nav-item li {
+
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 650ms;
+    font-size: 14px;
+
+}
+
+ul.nav-item li:hover {
+
+    background-color: #3c145e;
+
+}
+
+ul.nav-item li:hover i {
+
+    color: #cade01;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: #120727;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.search-container {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #3c145e;
+    align-items: right;
+
+}
+
+#lupa {
+
+    margin-left: 7px;
+    padding: 2px;
+    background-color: #3c145e;
+    border-radius: 5px;
+    color: #cade01;
+
+}
+
+#search-bar {
+
+    width: 70%;
+    max-width: 1000px;
+    flex-grow: 0;
+    border: 2px solid #120727;
+    border-radius: 5px;
+    height: 26px;
+    padding: 4px;
+    font-weight: 100;
+
+}
+
+/* ESTILOS DEL MAIN */
+
 #container {
 
     margin-left: 5%;
@@ -16,8 +143,10 @@ main {
 }
 
 #category-container {
-
-    margin: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #cade01;
     border: 1px solid #cade01;
     border-radius: 5px;
@@ -32,7 +161,7 @@ main {
     border: 1px solid #120727;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #120727;
-    margin: 15px;
+    margin: 30px;
 
 }
 
@@ -84,6 +213,7 @@ main {
 
     font-size: 2em;
     color: #120727;
+    background-color: #cade01;
 
 }
 
@@ -110,8 +240,8 @@ button {
     --color: #560bad;
     font-family: inherit;
     display: inline-block;
-    width: 8em;
-    height: 30px;
+    width: 10em;
+    height: 40px;
     line-height: 1.5em;
     margin: 5px;
     position: relative;
@@ -123,6 +253,7 @@ button {
     border-radius: 6px;
     font-weight: 500;
     color: var(--color);
+    
 
 }
 
@@ -167,6 +298,14 @@ button:active:before {
 
 }
 
+#button-container{
+    width: 100%;
+    background-color: #cade01;
+    border: 1px solid #cade01;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 /* MEDIA PARA TABLETS */
 
 @media (min-width: 480px) {
@@ -203,7 +342,106 @@ button:active:before {
 
 @media (min-width: 769px) {
 
+    /* ESTILO DEL NAVBAR */
+
+    div.container {
+
+        justify-content: center;
+
+    }
+
+    ul.nav-item {
+
+        margin-left: 30px;
+
+    }
+
+    nav {
+
+        display: block;
+        color: #fff;
+        align-items: center;
+
+    }
+
+    #menu {
+
+        display: none;
+
+    }
+
+    div.logo {
+
+        width: 30%;
+
+    }
+
+    /*ESTILOS PARA EL FOOTER*/
+
+    h3{
+        color: #14A36D;
+    }
+
+    footer {
+
+        background-color: #120727;
+
+    }
+
+    .footer {
+
+        display: flex;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: auto;
+        color: #fff;
+        padding: 20px;
+
+    }
+
+    .footer-contendedor-dos {
+
+        display: none;
+
+    }
+
+    .footer-contenedor-tres {
+
+        display: none;
+
+    }
+
+    .footer-contenedor-uno {
+        
+        width: 200px;
+
+    }
+
+    .footer-imagen-logo {
+
+        width: 100%;
+
+    }
+
+    .integrantes {
+
+        font-size: 12px;
+        margin: 10px 0px;
+
+    }
+
+    .redes {
+
+        margin: 10px 0px;
+
+    }
+
     /* FLEXBOX PARA IMAGENES DEL DETAIL */
+
+    #product-container{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
     #img-detail {
 
@@ -229,5 +467,5 @@ button:active:before {
 
     }
 
-    
+
 }
