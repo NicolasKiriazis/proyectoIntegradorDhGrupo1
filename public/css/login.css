@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme:wght@300&display=swap');
 
+html {
+    background-color: #3c145e28;
+}
+
 main.main-login {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    width: 90%;
 }
 
 main section#login {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 90%;
-    box-shadow: 0px 1px 20px rgb(100, 100, 100);
+    box-shadow: 0px 1px 20px #3a0ca3;
     padding: 10px;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 30px;
     border-radius: 20px;
+    background-color: #fff;
 }
 
 main section#login div {
-    width: 20%;
+    width: 40%;
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -43,16 +48,17 @@ main section#login form input.login-input {
     font-size: 20px;
     width: 100%;
     margin-bottom: 20px;
+    background-color: #3c145e28;
     border: none;
-    border-bottom: hsl(157, 73%, 47%) 2px solid;
+    /*border-bottom: #120727 2px solid;*/
     height: 40px;
-    color: hsl(157, 73%, 47%);
     padding: 10px;
+    border-radius: 10px;
 }
 
-.login-input:hover {
-    background-color: hsl(157, 73%, 47%);
-    color: white;
+main section#login form input.login-input:hover {
+    background-color: #3a0ca3;
+    color: #cade01;
 }
 
 main section#login form button.login-button {
@@ -61,19 +67,23 @@ main section#login form button.login-button {
     height: 40px;
     width: 100px;
     padding: 10px;
-    color: #23c483;
+    color: #3a0ca3;
     transition: all 0.3s;
     line-height: 1.4em;
     border-radius: 20px;
-    border: 2px solid #23c483;
-    background: linear-gradient(to right, rgba(27, 253, 156, 0.1)1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
-    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    border: 2px solid #cade01;
+    background: linear-gradient(to right, rgba(219, 237, 28, 0.1)1%, transparent 40%,transparent 60% , rgba(152, 165, 6, 0.1) 100%);
+    box-shadow: inset 0 0 10px rgba(202, 222, 1, 0.4), 0 0 9px 3px rgba(221, 239, 27, 0.1);
+}
+
+main section#login form button.login-button:hover {
+    color: #cade01;
 }
 
 /* * * * * M E D I A   T A B L E T* * * * */
 @media (min-width: 361px) {
     main section#login {
-        width: 50%;
+        width: 80%;
     }
 
     main section#login div {
@@ -83,6 +93,10 @@ main section#login form button.login-button {
 
 /* * * * * M E D I A   D E S K T O P* * * * */
 @media (min-width: 769px) {
+    main section#login {
+        width: 40%;
+    }
+
     main section#login div {
         width: 20%;
     }
