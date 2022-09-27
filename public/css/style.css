@@ -1,4 +1,3 @@
-
 /* -------- Definicion de estilos ----------- 
 
 Paleta de colores: 
@@ -84,63 +83,85 @@ CSS
     padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    
-    img {
+}
+
+img {
     width: 100%;
-    }
-    
-    body {
+}
+
+body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    }
-    
-    footer {
+}
+
+footer {
     width: 100%;
-    }
-    
-    header {
+}
+
+header {
     width: 100%;
     background-color: #120727;
-    }
-    
-    header i {
+}
+
+header i {
     color: #fff;
-    }
-    
-    div.top-header {
+}
+
+div.top-header {
     width: 100%;
     text-align: center;
     background-color: #cade01;
-    }
-    
-    
-    #logo {
+}
+
+.top-header p {
+    font-size: 13px;
+}
+
+
+#logo {
     width: 100%;
-    }
-    
-    div.logo {
+    min-width: 170px;
+}
+
+div.logo {
     display: flex;
     width: 50%;
-    
-    }
-    
-    nav {
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    height: auto;
+    all: unset;
+}
+
+section.cart{
+    margin-bottom: 20px;
+}
+
+nav {
     display: none;
-    }
-    
-    .nav-item {
-    
+}
+
+.nav-item {
     display: flex;
     justify-content: right;
     list-style: none;
     align-items: right;
     transition: all 650ms;
-    }
-    
-    ul.nav-item li {
+}
+
+li.cart {
+    display: none;
+}
+
+li.login {
+    margin-left: 6px;
+}
+
+ul.nav-item li {
     width: 100%;
     padding: 30px;
     text-align: center;
@@ -148,17 +169,17 @@ CSS
     justify-content: center;
     transition: all 650ms;
     font-size: 14px;
-    }
-    
-    ul.nav-item li:hover {
+}
+
+ul.nav-item li:hover {
     background-color: #3c145e;
-    }
-    
-    ul.nav-item li:hover i {
+}
+
+ul.nav-item li:hover i {
     color: #cade01;
-    }
-    
-    .container {
+}
+
+.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -167,11 +188,10 @@ CSS
     background-color: #120727;
     margin-left: 5%;
     margin-right: 5%;
-    
-    }
-    
-    
-    .search-container {
+}
+
+
+.search-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -180,18 +200,18 @@ CSS
     padding-right: 35px;
     background-color: #3c145e;
     align-items: right;
-    }
-    
-    
-    #lupa {
+}
+
+
+#lupa {
     margin-left: 7px;
     padding: 2px;
     background-color: #3c145e;
     border-radius: 5px;
     color: #cade01;
-    }
-    
-    #search-bar {
+}
+
+#search-bar {
     width: 70%;
     max-width: 1000px;
     flex-grow: 0;
@@ -200,16 +220,16 @@ CSS
     height: 26px;
     padding: 4px;
     font-weight: 100;
-    }
-    
+}
+
 
 /*ESTILOS PARA EL FOOTER*/
 
-footer{
+footer {
     background-color: #120727;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-around;
     max-width: 1000px;
@@ -218,40 +238,48 @@ footer{
     padding: 20px;
 }
 
-.footer-contendedor-dos{
+.footer-contendedor-dos {
     display: none;
 }
 
-.footer-contenedor-tres{
+.footer-contenedor-tres {
     display: none;
 }
 
-.footer-contenedor-uno{
+.footer-contenedor-uno {
     width: 200px;
 }
 
-.footer-imagen-logo{
+.footer-imagen-logo {
     width: 100%;
 }
 
-.integrantes{
+.integrantes {
     font-size: 12px;
     margin: 10px 0px;
 }
 
-.redes{
+.redes {
     margin: 10px 0px;
 }
 
 
+/* --- MediaQueris --- */
 
-@media (min-width: 768px){
+@media (min-width: 560px) {
 
-    .footer-contenedor-tres{
+    li.cart {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .footer-contenedor-tres {
         display: flex;
         flex-direction: column;
     }
-    
+
     /*--- Header ---*/
 
     div.container {
@@ -276,23 +304,26 @@ footer{
         width: 30%;
     }
 
+    #logo {
+        max-width: 420px;
+    }
+
+    .top-header p {
+        font-size: 15px;
+    }
+
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1280px) {
 
-    .footer-contendedor-dos{
+    .footer-contendedor-dos {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    
-    .footer-columna{
+
+    .footer-columna {
         margin-left: 20px;
     }
 }
-
-
-
-
-

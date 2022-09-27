@@ -324,6 +324,7 @@ main section.resumen {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 main section.resumen article.importes {
@@ -332,9 +333,9 @@ main section.resumen article.importes {
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    margin-top: 10px;
     padding-right: 0px;
     padding-left: 30px;
+    
 }
 
 article.importes div.detalle {
@@ -371,7 +372,7 @@ h3 {
 
 article.pagar {
     display: flex;
-    margin-top: 4%;
+    margin-top: 3%;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -384,6 +385,13 @@ article.pagar {
     color: #cade01;
 }
 
+div.botones-cart{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
 div.total {
     width: 100%;
     display: flex;
@@ -391,15 +399,17 @@ div.total {
     margin: 5px;
     padding: 5px;
     background-color: #120727;
+    align-items: center;
 
 }
 
-div.total h4.total {
-    padding-right: 3%;
-}
 
 div.total h4 {
     font-size: 16px;
+    width: 50%;
+    text-align: right;
+    padding-right: 2%;
+    margin-right: 2%;
 }
 
 div.pagar {
@@ -413,9 +423,9 @@ div.pagar p {
 
 }
 
-article.pagar p {
+div.botones-cart p {
     text-align: center;
-    font-size: 16px;
+    margin: 1px;
 
 }
 
@@ -471,6 +481,8 @@ button:active:before {
 }
 
 /*--- Media querys ---*/
+
+@media (min-width: 433px) {
 
 @media (min-width: 768px) {
 
