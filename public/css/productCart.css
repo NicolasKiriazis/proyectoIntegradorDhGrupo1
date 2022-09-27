@@ -482,8 +482,6 @@ button:active:before {
 
 /*--- Media querys ---*/
 
-@media (min-width: 433px) {
-
 @media (min-width: 768px) {
 
     /*--- Header ---*/
