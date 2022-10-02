@@ -4,38 +4,25 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
+
+// Requerir las rutas
+
+const mainRouter = require('./src/router/mainRouter')
+
 //Archivos estaticos
 
 app.use(express.static('public'))
+
+// Avisar a express que usas ejs 
+
+app.set('view engine', 'ejs')
 
 // Levantar servidor
 
 app.listen(3000, (req, res) => { console.log("El servidor se levantó con éxito en el puerto 3000") })
 
-// Hacer que abra la view del Index
 
-app.get("/", function (req, res) {
-    res.sendFile(path.resolve(__dirname, './views/home.html'))
-})
+// MAIN ROUTER //
 
-app.get('/register', function (req, res) {
-    const registerPath = path.resolve(__dirname, './views/register.html');
-    res.sendFile(registerPath)
-});
-
-app.get('/login', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/login.html'));
-});
-
-app.get ('/productCart', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/productCart.html'));
-});
-
-app.get ('/productDetail', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/productDetail.html'));
-});
-
-app.get ('/index', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/index.html'));
-});
+app.use('/', mainRouter)
 
