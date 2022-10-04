@@ -255,6 +255,10 @@ main section.article article div.product-container {
     padding-bottom: 0px;
 }
 
+#cart h3 { 
+    color: #120727;
+}
+
 div.desc-container {
     display: flex;
     justify-content: space-between;
@@ -335,11 +339,11 @@ main section.resumen article.importes {
     align-items: center;
     padding-right: 0px;
     padding-left: 30px;
-    
+
 }
 
 article.importes div.detalle {
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     padding: 2%;
@@ -357,6 +361,7 @@ article.importes div.columna-importes {
     flex-direction: column;
     text-align: left;
     padding: 2%;
+    padding-right: 4%;
     background-color: #b4b2b686;
 }
 
@@ -385,7 +390,7 @@ article.pagar {
     color: #cade01;
 }
 
-div.botones-cart{
+div.botones-cart {
     display: flex;
     justify-content: space-around;
     width: 50%;
@@ -432,7 +437,7 @@ div.botones-cart p {
 /* boton nuevo */
 
 button {
-    --color: #560bad;
+    --color: #120727;
     font-family: inherit;
     display: inline-block;
     width: 8em;
@@ -476,7 +481,7 @@ button:hover:before {
 }
 
 button:active:before {
-    background: #3a0ca3;
+    background: #120727;
     transition: background 0s;
 }
 
@@ -486,50 +491,50 @@ button:active:before {
 
     /*--- Header ---*/
 
-        div.container {
-            justify-content: center;
-        }
-
-        ul.nav-item {
-            margin-left: 30px;
-        }
-
-        nav {
-            display: block;
-            color: #fff;
-            align-items: center;
-        }
-
-        #menu {
-            display: none;
-        }
-
-        div.logo {
-            width: 30%;
-        }
-
-        /*--- Main ---*/
-
-        main {
-            margin-top: 30px;
-        }
-
-        ul.categorias li {
-            font-size: 18px;
-        }
-
-        div.desc-container i {
-            display: flex;
-        }
-
-        div.desc-container h3,
-        div.nav-art h4 {
-            font-size: 18px;
-        }
-
-        article.importes h5 {
-            margin: 4px;
-            font-size: 14px;
-            font-weight: 700;
-        }
+    div.container {
+        justify-content: center;
     }
+
+    ul.nav-item {
+        margin-left: 30px;
+    }
+
+    nav {
+        display: block;
+        color: #fff;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    div.logo {
+        width: 30%;
+    }
+
+    /*--- Main ---*/
+
+    main {
+        margin-top: 30px;
+    }
+
+    ul.categorias li {
+        font-size: 18px;
+    }
+
+    div.desc-container i {
+        display: flex;
+    }
+
+    div.desc-container h3,
+    div.nav-art h4 {
+        font-size: 18px;
+    }
+
+    article.importes h5 {
+        margin: 4px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

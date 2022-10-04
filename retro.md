@@ -1,10 +1,10 @@
-Dejo una sugerencia para el armado del archivo retro.md según los requerimientos de la consigna (dinámica de estrella de mar)
+Principales conclusiones de la retro del segundo sprint.
 
-1. Comenzar a hacer:  Comenzar a trabajar de forma individual para luego unificar el trabajo en el proyecto general a través del repositorio Github.
+1. Comenzar a hacer:  Comenzar a trabajar asignando diferentes tareas a cada integrante.
 
-2. Hacer más:  Organizar reuniones específicamente para definir todo lo que es relacionado a diseño.
+2. Hacer más:  Unificar conceptos generales de diseño para mantener los mismos patrones estéticos en todas las vistas.
 
-3. Continuar haciendo: Continuar con la comunicación fluida que logró el equipo por las diferentes plataformas que utilizamos (Whatsapp, Trello, Slack, Github).
+3. Continuar haciendo: Ayudarnos entre nosotros cuando alguno lo necesita.
 
 4. Hacer menos: trabajar menos sobre la rama main y tratar de trabajar más sobre ramas secundarias y una vez que estamos seguros de los cambios hacer un merge con la rama main.
 
