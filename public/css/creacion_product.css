@@ -1,0 +1,173 @@
+main.main-creacion {
+    margin: 1rem;
+    width: 90%;
+}
+
+main section#creacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 1px 20px #3a0ca3;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 98%;
+}
+
+main section#creacion form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#creacion form input.login-creacion {
+    font-size: 12px;
+    /*width: 90%;*/
+    margin: .5rem;
+    background-color: #3c145e28;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main section#creacion form input.numero {
+    width: 2rem;
+}
+
+main section#creacion form input.login-creacion:hover {
+    background-color: #3c145e;
+    color: #cade01;
+}
+
+main section#creacion form article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+} 
+
+main section#creacion form input#nombre {
+    width: 90%;
+}
+
+main section#creacion form input#stock {
+    width: 40%;
+}
+
+main section#creacion form input#precio {
+    width: 40%;
+}
+
+main section#creacion form input#consola {
+    margin: .5rem;
+}
+
+main section#creacion form textarea {
+    margin: .4rem;
+    border: 5px double #3c145e;
+    height: 6em;
+    width: 80%;
+}
+
+main section#creacion form fieldset {
+    width: 80%;
+    margin: .4rem;
+    border: 5px double #3c145e;
+}
+
+main section#creacion form fieldset#imagen {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+main section#creacion form fieldset legend {
+    padding: .4rem;
+}
+
+main section#creacion form button.creacion-button {
+    font-size: 12px;
+    letter-spacing: 3px;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    color: #3a0ca3;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border-radius: 20px;
+    border: 2px solid #3a0ca3;
+    box-shadow: inset 0 0 10px rgba(60, 20, 94, 0.4), 0 0 9px 3px rgba(60, 20 94, 0.1);
+    background-color: white;
+    margin: 1rem;
+}
+
+main section#creacion form button.creacion-button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #3c145e;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+main section#creacion form button.creacion-button:hover::before {
+    width: 105%;
+}
+
+main section#creacion form button.creacion-button:hover {
+    color: #cade01;
+    box-shadow: inset 0 0 10px #3c145e, 0 0 9px 3px #8f5eba;
+    border-color: #3c145e28;
+}
+
+/* * * * * M E D I A   T A B L E T* * * * */
+@media (min-width: 361px) {
+    main section#creacion form fieldset {
+        width: 50%;
+    }
+
+    main section#creacion form input#nombre {
+        width: 50%;
+    }
+    
+    main section#creacion form input#stock {
+        width: 20%;
+    }
+    
+    main section#creacion form input#precio {
+        width: 20%;
+    }
+}
+
+/* * * * * M E D I A   D E S K T O P* * * * */
+@media (min-width: 769px) {
+    main section#creacion form fieldset {
+        width: 25%;
+    }
+
+    main section#creacion form input#nombre {
+        width: 60%;
+    }
+    
+    main section#creacion form input#stock {
+        width: 10%;
+    }
+    
+    main section#creacion form input#precio {
+        width: 10%;
+    }
+}

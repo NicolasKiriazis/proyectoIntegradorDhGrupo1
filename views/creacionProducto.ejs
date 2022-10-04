@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head.ejs') %>
+
+    <body>
+
+        <%- include('partials/header.ejs') %>
+
+            <main class="main-creacion">
+                <section id="creacion">
+
+                    <form action="/" method="post">
+
+                        <article>
+                            <input class="login-creacion" id="nombre" type="text" name="name_product" placeholder="Nombre del producto" required>
+
+                            <input class="login-creacion numero" id="stock" type="number" name="stock" placeholder="Stock"  min="0" step="1" required>
+    
+                            <input class="login-creacion numero" id="precio" type="number" name="price" placeholder="Precio"  min="0" step=".01" required>
+                        </article>
+
+                        <textarea name="description" id="descripcion" required>
+                            Descripción del producto ...
+                        </textarea>
+
+                        <fieldset id="imagen">
+                            <legend class="etiqueta_titulo"> Selecciona la imagen del producto </legend>
+                            <input type="file" name="avatar" accept="image/*">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="etiqueta_titulo"> Categoria del juego </legend>
+                            <div>
+                                <input type="checkbox" name="categoria_juego">
+                                <label for="categoria_juego" class="categoria">Accion</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="categoria_juego">
+                                <label for="categoria_juego" class="categoria">Aventura</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="categoria_juego">
+                                <label for="categoria_juego" class="categoria">Deportes</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="categoria_juego">
+                                <label for="categoria_juego" class="categoria">Estrategia</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="categoria_juego">
+                                <label for="categoria_juego" class="categoria">Simulacion</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="etiqueta_titulo">Consola</legend>
+                            <input list="consolas" placeholder="Consola" id="consola">
+                            <datalist id="consolas">
+                                <option value="Xbox">
+                                <option value="Play Station">
+                                <option value="Nintendo">
+                                <option value="Computadora">
+                            </datalist>
+                        </fieldset>
+
+                        <button class="creacion-button" type="submit">CREAR</button>
+                    </form>
+
+                </section>
+            </main>
+
+            <%- include('partials/footer.ejs') %>
+
+    </body>
+
+</html>

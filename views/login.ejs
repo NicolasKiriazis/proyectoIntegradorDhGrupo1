@@ -7,17 +7,20 @@
 
     <%- include('partials/header.ejs') %>
 
-    <main class="main-login">
-        <section id="login">
+    <main class="main1-login">
+        <section id="login1">
             <div>
                 <img src="image/gamer.png" alt="logo" id="logo-login">
             </div>
 
             <form action="/login" method="post">
-                <input class="login-input" type="text" name="name" placeholder="Nombre del usuario" required>
-                <input class="login-input" type="password" name="pass" placeholder="Contraseña" required>
-                <button class="login-button" type="submit">INGRESAR</button>
+                <input class="login1-input" type="text" name="name" placeholder="Nombre del usuario" required>
+                <input class="login1-input" type="password" name="pass" placeholder="Contraseña" required>
+                <button class="login1-button" type="submit">INGRESAR</button>
             </form>
+
+            <p id="login-register">No tienes una cuenta? registrate <a href="/register">Aqui</a></p>
+
         </section>
     </main>
 

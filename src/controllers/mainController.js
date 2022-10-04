@@ -14,6 +14,9 @@ const mainController = {
     }, 
     productCart: function(req,res){
         res.render('productCart')
+    },
+    creacion: function (req, res) {
+        res.render('creacionProducto')
     }
 }
 

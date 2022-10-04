@@ -4,15 +4,15 @@ html {
     background-color: #3c145e28;
 }
 
-main.main-login {
+main.main1-login {
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 30px;
     width: 90%;
 }
 
-main section#login {
+main section#login1 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -24,27 +24,27 @@ main section#login {
     background-color: #fff;
 }
 
-main section#login div {
+main section#login1 div {
     width: 40%;
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
-main section#login div img {
+main section#login1 div img {
     width: 100%;
     border-radius: 50%;
     opacity: .5;
 }
 
-main section#login form {
+main section#login1 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main section#login form input.login-input {
+main section#login1 form input.login1-input {
     font-size: 20px;
     width: 100%;
     margin-bottom: 20px;
@@ -56,12 +56,12 @@ main section#login form input.login-input {
     border-radius: 10px;
 }
 
-main section#login form input.login-input:hover {
+main section#login1 form input.login1-input:hover {
     background-color: #3c145e;
     color: #cade01;
 }
 
-main section#login form button.login-button {
+main section#login1 form button.login1-button {
     font-size: 12px;
     letter-spacing: 3px;
     height: 40px;
@@ -79,7 +79,7 @@ main section#login form button.login-button {
     background-color: white;
 }
 
-main section#login form button.login-button::before {
+main section#login1 form button.login1-button::before {
     content: '';
     width: 0;
     height: 300%;
@@ -93,34 +93,40 @@ main section#login form button.login-button::before {
     z-index: -1;
 }
 
-main section#login form button.login-button:hover::before {
+main section#login1 form button.login1-button:hover::before {
     width: 105%;
 }
 
-main section#login form button.login-button:hover {
+main section#login1 form button.login1-button:hover {
     color: #cade01;
     box-shadow: inset 0 0 10px #3c145e, 0 0 9px 3px #8f5eba;
     border-color: #3c145e28;
 }
 
+main section#login1 p#login-register {
+    font-size: 12px;
+    margin: 5px;
+    color: gray;
+}
+
 /* * * * * M E D I A   T A B L E T* * * * */
 @media (min-width: 361px) {
-    main section#login {
+    main section#login1 {
         width: 80%;
     }
 
-    main section#login div {
+    main section#login1 div {
         width: 30%;
     }
 }
 
 /* * * * * M E D I A   D E S K T O P* * * * */
 @media (min-width: 769px) {
-    main section#login {
+    main section#login1 {
         width: 40%;
     }
 
-    main section#login div {
+    main section#login1 div {
         width: 20%;
     }
 }
