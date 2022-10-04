@@ -7,7 +7,7 @@ const path = require('path')
 
 // Requerir las rutas
 
-const mainRouter = require('./src/router/mainRouter')
+const mainRouter = require('./router/mainRouter')
 
 //Archivos estaticos
 
@@ -16,6 +16,8 @@ app.use(express.static('public'))
 // Avisar a express que usas ejs 
 
 app.set('view engine', 'ejs')
+
+app.set('views', path.join(__dirname, 'views'))
 
 // Levantar servidor
 
