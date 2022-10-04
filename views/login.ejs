@@ -1,52 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-    <script src="https://kit.fontawesome.com/b41aef2bcc.js" crossorigin="anonymous"></script>
-    <title>DigitalGamer</title>
-</head>
+<%- include('partials/head.ejs') %>
 
 <body>
 
-    <header>
-
-        <div class="top-header">
-            <p class=""><a href="/register">CREA TU CUENTA AHORA Y OBTÉN 15% OFF EN LA PRIMERA COMPRA!</a></p>
-        </div>
-        <section>
-            <div class="container">
-                <ul class="nav-item">
-                    <li id="menu"><i class="fa-solid fa-bars nav-item"></i></li>
-                </ul>
-                <div class="logo">
-                    <img src="image/gamer-house-logo.png" alt="Gamer House" id="logo">
-                </div>
-                <nav>
-                    <ul class="nav-item">
-                        <li>QUIENES SOMOS</li>
-                        <li>MEDIOS DE PAGO</li>
-                        <li>SOPORTE</li>
-                    </ul>
-                </nav>
-                <div>
-                    <ul class="nav-item">
-                        <li class="login"><a href="/login"><i class="fas fa-user-astronaut"></i></a></li>
-                        <li class="cart"><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="search-container">
-                <input type="text" id="search-bar" placeholder="  Buscar juegos, consolas, acc..">
-                <i class="fas fa-search" id="lupa"></i>
-            </div>
-
-    </header>
+    <%- include('partials/header.ejs') %>
 
     <main class="main-login">
         <section id="login">
@@ -62,45 +21,7 @@
         </section>
     </main>
 
-
-    <footer>
-        <div class=footer>
-            <div class="footer-contenedor-uno">
-                <img src="image/gamer-house-logo.png" alt="logo en el footer" class="footer-imagen-logo">
-            </div>
-            <div class="footer-contendedor-dos">
-                <div class="footer-columna">
-                    <h3>TIENDA</h3>
-                    <p class="integrantes">Play Station</p>
-                    <p class="integrantes">X-Box</p>
-                    <p class="integrantes">Pc</p>
-                </div>
-                <div class="footer-columna">
-                    <h3>SERVICIO AL CLIENTE</h3>
-                    <p class="integrantes"> Tel.: 444-4444</p>
-                    <p class="integrantes"> Av. Cabildo 4444, CABA</p>
-                    <P class="integrantes"> xxxxxx@xxxxxxxxxx.xxxx</P>
-                </div>
-                <div class="footer-columna">
-                    <h3>NOSOTROS</h3>
-                        <p class="integrantes">ROVAGNA, Ignacio</p>
-                        <p class="integrantes">KIRIAZIS, Nicolas</p>
-                        <p class="integrantes">CORTES, Luceo</p>
-                        <p class="integrantes">OSSA ECHAVARRIA, Luis Miguel</p>
-                        <p class="integrantes">VILLAFAÑE, Cristian</p>
-                    
-                </div>
-            </div>
-            <div class="footer-contenedor-tres">
-                <h3>REDES</h3>
-                <div class="footer-contenedor-redes">
-                    <i class="fa-brands fa-instagram redes"></i>
-                    <i class="fa-brands fa-whatsapp redes"></i>
-                    <i class="fa-brands fa-facebook redes"></i>
-                </div>
-            </div>
-        </div>
-        </footer>    
+    <%- include('partials/footer.ejs') %>
 
 </body>
 

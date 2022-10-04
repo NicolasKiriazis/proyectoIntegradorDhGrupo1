@@ -1,147 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Link CSS -->
-
-    <link rel="stylesheet" href="css/.css">
-    <link rel="stylesheet" href="css/ProductDetail.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Link íconos -->
-
-    <script src="https://kit.fontawesome.com/b41aef2bcc.js" crossorigin="anonymous"></script>
-
-    <title>ProductDetail</title>
-</head>
+<%- include('partials/head.ejs') %>
 
 <body>
 
-    <body>
+    <%- include('partials/header.ejs') %>
 
-        <header>
-            <div class="top-header">
-                <p class=""><a href="/register">CREA TU CUENTA AHORA Y OBTÉN 15% OFF EN LA PRIMERA COMPRA!</a></p>
+    <main>
+        <div id="category-container">
+            <a href="/">Juegos,</a>
+            <a href="/">Playstation</a>
+        </div>
+
+        <div id="product-container">
+
+            <p id="title">EA SPORTS™ FIFA 23 Pre-order Edition</p>
+            <div id="img-container">
+
+                <img src="image/product-detail-img/fifa-23-ps5-detail-img.png" alt="fifa-23-ps5-detail-img"
+                    class="product-img">
+
+                <div id="img-detail">
+
+                    <img src="image/product-detail-img/fifa-23-ps5-detail-img-2.png"
+                        alt="fifa-23-ps5-detail-img-gameplay" class="img-detail">
+                    <img src="image/product-detail-img/fifa-23-ps5-detail-img-3.png"
+                        alt="fifa-23-ps5-detail-img-gameplay" class="img-detail">
+                    <img src="image/product-detail-img/fifa-23-ps5-detail-img-4.png"
+                        alt="fifa-23-ps5-detail-img-gameplay" class="img-detail">
+
+                </div>
             </div>
-            <section>
-                <div class="container">
-                    <ul class="nav-item">
-                        <li id="menu"><i class="fa-solid fa-bars nav-item"></i></li>
-                    </ul>
-                    <div class="logo">
-                        <img src="image/gamer-house-logo.png" alt="Gamer House" id="logo">
-                    </div>
-                    <nav>
-                        <ul class="nav-item">
-                            <li>QUIENES SOMOS</li>
-                            <li>MEDIOS DE PAGO</li>
-                            <li>SOPORTE</li>
-                        </ul>
-                    </nav>
-                    <div>
-                        <ul class="nav-item">
-                            <li class="login"><a href="/login"><i class="fas fa-user-astronaut"></i></a></li>
-                            <li class="cart"><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        </ul>
-                    </div>
+
+            <div id="product-card">
+                <p class="price">USD$ 32.50</p>
+
+                <p class="description">
+                    EA SPORTS™ FIFA 23 da vida a The World’s Game con la tecnología HyperMotion 2 en PlayStation®5,
+                    que ofrece una experiencia de juego aún más realista, además de la FIFA World Cup™ masculina y
+                    femenina, la inclusión del fútbol femenino de clubes, función de juego cruzado y mucho más.
+
+
+                </p>
+
+                <div id="button-container">
+                    <button>Comprar</button>
+                    <button>Agregar al carrito</button>
                 </div>
-                <div class="search-container">
-                    <input type="text" id="search-bar" placeholder="  Buscar juegos, consolas, acc..">
-                    <i class="fas fa-search" id="lupa"></i>
-                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <%- include('partials/footer.ejs') %>
     
-        </header>
-
-        <main>
-            <div id="category-container">
-                <a href="/">Juegos,</a>
-                <a href="/">Playstation</a>
-            </div>
-
-            <div id="product-container">
-
-                <p id="title">EA SPORTS™ FIFA 23 Pre-order Edition</p>
-                <div id="img-container">
-
-                    <img src="image/product-detail-img/fifa-23-ps5-detail-img.png" alt="fifa-23-ps5-detail-img"
-                        class="product-img">
-
-                    <div id="img-detail">
-
-                        <img src="image/product-detail-img/fifa-23-ps5-detail-img-2.png"
-                            alt="fifa-23-ps5-detail-img-gameplay" class="img-detail">
-                        <img src="image/product-detail-img/fifa-23-ps5-detail-img-3.png"
-                            alt="fifa-23-ps5-detail-img-gameplay" class="img-detail">
-                        <img src="image/product-detail-img/fifa-23-ps5-detail-img-4.png"
-                            alt="fifa-23-ps5-detail-img-gameplay" class="img-detail">
-
-                    </div>
-                </div>
-
-                <div id="product-card">
-                    <p class="price">USD$ 32.50</p>
-
-                    <p class="description">
-                        EA SPORTS™ FIFA 23 da vida a The World’s Game con la tecnología HyperMotion 2 en PlayStation®5,
-                        que ofrece una experiencia de juego aún más realista, además de la FIFA World Cup™ masculina y
-                        femenina, la inclusión del fútbol femenino de clubes, función de juego cruzado y mucho más.
-
-
-                    </p>
-
-                    <div id="button-container">
-                        <button>Comprar</button>
-                        <button>Agregar al carrito</button>
-                    </div>
-
-                </div>
-
-            </div>
-        </main>
-
-        <footer>
-            <div class=footer>
-                <div class="footer-contenedor-uno">
-                    <img src="image/gamer-house-logo.png" alt="logo en el footer" class="footer-imagen-logo">
-                </div>
-                <div class="footer-contendedor-dos">
-                    <div class="footer-columna">
-                        <h3>TIENDA</h3>
-                        <p class="integrantes">Play Station</p>
-                        <p class="integrantes">X-Box</p>
-                        <p class="integrantes">Pc</p>
-                    </div>
-                    <div class="footer-columna">
-                        <h3>SERVICIO AL CLIENTE</h3>
-                        <p class="integrantes"> Tel.: 444-4444</p>
-                        <p class="integrantes"> Av. Cabildo 4444, CABA</p>
-                        <P class="integrantes"> xxxxxx@xxxxxxxxxx.xxxx</P>
-                    </div>
-                    <div class="footer-columna">
-                        <h3>NOSOTROS</h3>
-                        <p class="integrantes">ROVAGNA, Ignacio</p>
-                        <p class="integrantes">KIRIAZIS, Nicolas</p>
-                        <p class="integrantes">CORTES, Luceo</p>
-                        <p class="integrantes">OSSA ECHAVARRIA, Luis Miguel</p>
-                        <p class="integrantes">VILLAFAÑE, Cristian</p>
-
-                    </div>
-                </div>
-                <div class="footer-contenedor-tres">
-                    <h3>REDES</h3>
-                    <div class="footer-contenedor-redes">
-                        <i class="fa-brands fa-instagram redes"></i>
-                        <i class="fa-brands fa-whatsapp redes"></i>
-                        <i class="fa-brands fa-facebook redes"></i>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
+</body>
 
 </body>
 
