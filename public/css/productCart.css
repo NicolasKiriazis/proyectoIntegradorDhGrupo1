@@ -217,7 +217,7 @@ main section.article {
     flex-wrap: wrap;
 }
 
-main section.article article {
+article.productView {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -237,7 +237,7 @@ main section.article article:hover div.desc-container div i {
     color: #e0dede;
 }
 
-main section.article article div.product-img {
+main section.article article div.productImg {
     width: 20%;
     max-width: 190px;
     text-align: center;
