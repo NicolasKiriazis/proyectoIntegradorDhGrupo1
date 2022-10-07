@@ -376,65 +376,7 @@ button:active:before {
 
     }
 
-    /*ESTILOS PARA EL FOOTER*/
 
-    h3{
-        color: #14A36D;
-    }
-
-    footer {
-
-        background-color: #120727;
-
-    }
-
-    .footer {
-
-        display: flex;
-        justify-content: space-around;
-        max-width: 1000px;
-        margin: auto;
-        color: #fff;
-        padding: 20px;
-
-    }
-
-    .footer-contendedor-dos {
-
-        display: none;
-
-    }
-
-    .footer-contenedor-tres {
-
-        display: none;
-
-    }
-
-    .footer-contenedor-uno {
-        
-        width: 200px;
-
-    }
-
-    .footer-imagen-logo {
-
-        width: 100%;
-
-    }
-
-    .integrantes {
-
-        font-size: 12px;
-        margin: 10px 0px;
-
-    }
-
-    .redes {
-
-        margin: 10px 0px;
-
-    }
 
     /* FLEXBOX PARA IMAGENES DEL DETAIL */
 
