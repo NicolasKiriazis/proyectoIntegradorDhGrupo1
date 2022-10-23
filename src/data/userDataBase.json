@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "first-name": "Lindon",
+        "last-name": "Macer",
+        "direction": "717 Fisk Parkway",
+        "image": "http://dummyimage.com/217x152.bmp/dddddd/000000",
+        "email": "lmacer0@yellowpages.com",
+        "password": "TrNurKgvv5",
+        "gender": "Male"
+    },
+    {
+        "id": 2,
+        "first-name": "Isidore",
+        "last-name": "Cockerell",
+        "direction": "60 Service Drive",
+        "image": "http://dummyimage.com/132x145.jpg/dddddd/000000",
+        "email": "icockerell1@census.gov",
+        "password": "kgIUUHT",
+        "gender": "Bigender"
+    },
+    {
+        "id": 3,
+        "first-name": "Koressa",
+        "last-name": "Demer",
+        "direction": "3 Stang Drive",
+        "image": "http://dummyimage.com/235x202.png/5fa2dd/ffffff",
+        "email": "kdemer2@yelp.com",
+        "password": "85JioKqULvn",
+        "gender": "Female"
+    },
+    {
+        "id": 4,
+        "first-name": "Ogden",
+        "last-name": "Thorington",
+        "direction": "047 Dahle Junction",
+        "image": "http://dummyimage.com/141x220.bmp/dddddd/000000",
+        "email": "othorington3@usgs.gov",
+        "password": "FDI4qLL",
+        "gender": "Male"
+    },
+    {
+        "id": 5,
+        "first-name": "Hanna",
+        "last-name": "Januszkiewicz",
+        "direction": "0 Coolidge Drive",
+        "image": "http://dummyimage.com/192x155.png/5fa2dd/ffffff",
+        "email": "hjanuszkiewicz4@tinyurl.com",
+        "password": "FalD4N",
+        "gender": "Female"
+    }
+]

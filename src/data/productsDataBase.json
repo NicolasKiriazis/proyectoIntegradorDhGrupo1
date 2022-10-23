@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "The Sims™ 4",
+        "description": "felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue",
+        "price": 28.95,
+        "discount": 11,
+        "platform": "X-BOX",
+        "image": "PRODUCTS-te-blanco-albaricoque-maracuya.jpg",
+        "type": "nuevo"
+    },
+    {
+        "id": 2,
+        "name": "F1® 22",
+        "description": "lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam",
+        "price": 56.96,
+        "discount": 10,
+        "platform": "PC",
+        "image": "PRODUCTS-product_f_i_filtro_detalle_tacita.jpg",
+        "type": "ofertas"
+    },
+    {
+        "id": 3,
+        "name": "F1® 22",
+        "description": "sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa",
+        "price": 47.72,
+        "discount": 0,
+        "platform": "X-NOX",
+        "image": "PRODUCTS-golden-monkey.jpg",
+        "type": "nuevo"
+    },
+    {
+        "id": 4,
+        "name": "F1® 22",
+        "description": "ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel",
+        "price": 52.81,
+        "discount": 20,
+        "platform": "PlayStation",
+        "image": "PRODUCTS-golden-monkey.jpg",
+        "type": "nuevo"
+    },
+    {
+        "id": 5,
+        "name": "F1® 22",
+        "description": "quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum",
+        "price": 21.4,
+        "discount": 30,
+        "platform": "PlayStation",
+        "image": "PRODUCTS-te-blanco-albaricoque-maracuya.jpg",
+        "type": "nuevo"
+    }
+]
