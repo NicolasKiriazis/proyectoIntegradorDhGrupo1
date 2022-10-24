@@ -5,39 +5,43 @@
 
 
 
-    <body>
+<body>
 
-        <%- include('../partials/header') %>
+    <%- include('../partials/header') %>
 
-            <main>
+    <main>
 
+        <div id="container">
 
+        <% products.map(product => { 
+            let finalPrice = product.price - (product.price * product.discount) / 100;
+            %>
 
-                <section>
-                    <h1> LISTADO DE PRODUCTOS </h1>
+        <a href="products/detail/<%= product.id %>">
+        <div class="card-container">
+            <img src="image/products/<%= product.image %>" alt="<%= product.name %>" class="image">
 
-                </section>
+            <div id="sale-data">
+                <p><%= product.discount + " " + "%" + " " + "OFF"%> </p>
+            </div>
 
-                <% for(let i=0; i < products.length; i++) { %>
+            <section id="card-data">
+                <p><%= product.name %> </p>
+                <p id="price"> <%= "USD$"+ " " + product.price%> </p>
+                <p id="final-price"><%= "USD$" + " " + finalPrice %> </p>
 
-                    <section id="cart" class="article">
-                        <article>
-                            <div id="cart" class="product-container">
-                                <div class="desc-container">
-                                    <h3>
-                                        <%= products[i] %>
-                                    </h3>
-                                </div>
-                            </div>
-                        </article>
-                    </section>
+            </section>
+        </div>
+        </a>
 
-                    <% } %>
+        <% }) %>
 
-            </main>
+        <div id="container">
 
-            <%- include('../partials/footer.ejs') %>
+    </main>
 
-    </body>
+    <%- include('../partials/footer.ejs') %>
+
+</body>
 
 </html>

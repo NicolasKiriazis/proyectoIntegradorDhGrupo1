@@ -5,9 +5,11 @@ const app = express()
 const path = require('path')
 
 
+
 // Requerir las rutas
 
 const mainRouter = require('./router/mainRouter')
+const productsRouter = require('./router/productsRouter')
 
 //Archivos estaticos
 
@@ -27,4 +29,5 @@ app.listen(3000, (req, res) => { console.log("El servidor se levantó con éxito
 // MAIN ROUTER //
 
 app.use('/', mainRouter)
+app.use('/products', productsRouter);
 

@@ -11,9 +11,6 @@ router.get('/', mainController.home)
 
 router.get('/login', mainController.login)
 
-// RUTA PRODUCT DETAIL //
-router.get('/productDetail', mainController.detalle)
-
 //RUTA PRODUCT CART //
 
 router.get('/productCart', mainController.productCart)
@@ -28,6 +25,6 @@ router.get('/createProduct',mainController.creacion);
 
 // RUTA LISTADO DE PRODUCTOS
 
-router.get('/listado',mainController.listado);
+
 
 module.exports = router

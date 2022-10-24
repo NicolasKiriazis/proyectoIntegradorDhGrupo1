@@ -1,52 +1,88 @@
 [
     {
         "id": 1,
-        "name": "The Sims™ 4",
-        "description": "felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue",
-        "price": 28.95,
-        "discount": 11,
-        "platform": "X-BOX",
-        "image": "PRODUCTS-te-blanco-albaricoque-maracuya.jpg",
+        "name": "Fifa 23",
+        "description": "En esta edición esperan los torneos más importantes de fútbol, como la Copa Mundial de la FIFA masculina y femenina, la UEFA Champions League y la Premier League. Además de renovados modos de juego, cuenta con más de 19.000 jugadores, 700 equipos, 100 estadios y 30 ligas, con la autenticidad inigualable de FIFA.",
+        "price": 60,
+        "discount": 5,
+        "platform": "PlayStation 5",
+        "image": "img-fifa23-ps5.jpg",
         "type": "nuevo"
     },
     {
         "id": 2,
-        "name": "F1® 22",
-        "description": "lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam",
-        "price": 56.96,
-        "discount": 10,
-        "platform": "PC",
-        "image": "PRODUCTS-product_f_i_filtro_detalle_tacita.jpg",
-        "type": "ofertas"
+        "name": "Uncharted",
+        "description": "Esta edición exclusiva incluye Uncharted 4: A Thief’s End y Uncharted: The Lost Legacy, en versión remasterizada para PS5. Los jugadores tomarán el rol de Nathan Drake o Chloe Frazer en sus propias aventuras individuales, donde se verán obligados a enfrentar sus pasados y forjar sus propios legados.",
+        "price": 50,
+        "discount": 20,
+        "platform": "PlayStation 5",
+        "image": "img-uncharted-legacy-ps5.jpg",
+        "type": "oferta"
     },
     {
         "id": 3,
-        "name": "F1® 22",
-        "description": "sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa",
-        "price": 47.72,
-        "discount": 0,
-        "platform": "X-NOX",
-        "image": "PRODUCTS-golden-monkey.jpg",
+        "name": "Call of Duty",
+        "description": "Call of Duty: Modern Warfare II sumerge a los jugadores en un conflicto global sin precedentes que presenta el regreso de los icónicos Operadores de Task Force 141. Ofrece un juego de última generación, con un manejo de armas completamente nuevo, avanzado sistema de inteligencia artificial e innovaciones gráficas que elevan la franquicia a nuevas alturas.",
+        "price": 65,
+        "discount": 10,
+        "platform": "PlayStation 5",
+        "image": "img-call-of--dutty-mw-ps5.jpg",
         "type": "nuevo"
     },
+
     {
         "id": 4,
-        "name": "F1® 22",
-        "description": "ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel",
-        "price": 52.81,
-        "discount": 20,
-        "platform": "PlayStation",
-        "image": "PRODUCTS-golden-monkey.jpg",
-        "type": "nuevo"
+        "name": "NBA 2K23",
+        "description": "NBA 2K23 permitirá a los jugadores desarrollar todo su potencial en el mundo del básquet. Podrán combinar a los All-Stars de hoy con leyendas atemporales en MyTEAM o llevar a la NBA en una nueva dirección con MyLEAGUE. Además, deberán dominar la cancha en cada temporada de la NBA o la WNBA.",
+        "price": 50,
+        "discount": 15,
+        "platform": "PlayStation 5",
+        "image": "img-nba2k23-ps5.jpg",
+        "type": "oferta"
     },
     {
         "id": 5,
-        "name": "F1® 22",
-        "description": "quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum",
-        "price": 21.4,
-        "discount": 30,
-        "platform": "PlayStation",
-        "image": "PRODUCTS-te-blanco-albaricoque-maracuya.jpg",
+        "name": "GTA",
+        "description": "Tres ciudades icónicas, tres historias épicas. Esta edición incluye a los clásicos de la trilogía original de Grand Theft Auto: GTA III, GTA Vice City y GTA San Andreas, actualizados para una nueva generación, ahora con mejoras en la iluminación, ambientes remasterizados, texturas de alta resolución y optimización de controles.",
+        "price": 55,
+        "discount": 20,
+        "platform": "Xbox One",
+        "image": "img-gta-the-trilogy-xbox-one.jpg",
         "type": "nuevo"
+    },
+
+    {
+        "id": 6,
+        "name": "The Sims™ 4",
+        "description": "Con el mismo objetivo de dar vida a una comunidad, la cuarta entrega de este clásico innova con altos grados de personalización disponibles. Los jugadores verán a sus personajes desenvolviéndose en espacios más complejos, con personalidades mucho más elaboradas y un enorme abanico de opciones para decidir sobre su futuro.",
+        "price": 40,
+        "discount": 15,
+        "platform": "Xbox One",
+        "image": "img-the-sims-4-xbox.jpg",
+        "type": "oferta"
+    },
+
+    {
+        "id": 7,
+        "name": "Cuphead",
+        "description": "Esta aventura está ambientada en un simpático mundo inspirado en los dibujos animados de los años 30. Con elementos de plataforma y estrategia, los jugadores se divertirán descubriendo mundos extraños, adquiriendo nuevas armas y aprendiendo poderosos movimientos.",
+        "price": 50,
+        "discount": 10,
+        "platform": "Xbox One",
+        "image": "img-cuphead-xbox-one.jpg",
+        "type": "nuevo"
+    },
+    {
+        "id": 8,
+        "name": "Halo 5",
+        "description": "Halo 5: Guardians ofrece experiencias multijugador épicas que incluyen distintos modos, completas herramientas de construcción de niveles y un nuevo capítulo en la saga del Jefe Maestro. Y ahora, con Xbox One X, los jugadores pueden disfrutar de mejoras gráficas, resolución de hasta 4K y mayor fidelidad visual que hacen que el juego luzca mejor que nunca; todo ello manteniendo una tasa constante de 60 imágenes por segundo para conseguir la jugabilidad más fluida posible.",
+        "price": 45,
+        "discount": 20,
+        "platform": "Xbox One",
+        "image": "img-halo-5-xbox-one.jpg",
+        "type": "oferta"
     }
+    
 ]
+
+
