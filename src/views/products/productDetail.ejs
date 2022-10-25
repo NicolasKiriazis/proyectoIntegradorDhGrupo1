@@ -15,33 +15,32 @@
 
         <div id="product-container">
 
-            <p id="title">EA SPORTS™ FIFA 23 Pre-order Edition</p>
+            <p id="title"><%= product.name %> </p>
             <div id="img-container">
 
-                <img src="image/product-detail-img/fifa-23-ps5-detail-img.png" alt="fifa-23-ps5-detail-img"
-                    class="product-img">
+                <img src="/image/product-detail-img/<%= product.image %> "
+                    alt="<%= "imagen de:" + " " + product.name %> " class="product-img">
 
                 <div id="img-detail">
 
-                    <img src="image/product-detail-img/fifa-23-ps5-detail-img-2.png"
-                        alt="fifa-23-ps5-detail-img-gameplay" class="img-detail">
-                    <img src="image/product-detail-img/fifa-23-ps5-detail-img-3.png"
-                        alt="fifa-23-ps5-detail-img-gameplay" class="img-detail">
-                    <img src="image/product-detail-img/fifa-23-ps5-detail-img-4.png"
-                        alt="fifa-23-ps5-detail-img-gameplay" class="img-detail">
+                    <img src="/image/product-detail-img/<%= product.image2 %>"
+                        alt="<%= "imagen de:" + " " + product.name %>" class="img-detail">
+                    <img src="/image/product-detail-img/<%= product.image3 %>"
+                        alt="<%= "imagen de:" + " " + product.name %>" class="img-detail">
+                    <img src="/image/product-detail-img/<%= product.image4 %>"
+                        alt="<%= "imagen de:" + " " + product.name %>" class="img-detail">
 
                 </div>
             </div>
 
             <div id="product-card">
-                <p class="price">USD$ 32.50</p>
+                <div id="off-container">
+                    <p class="price"><%= "$USD" + " " + product.price %> </p>
+                    <p><%= product.discount  + " " + "%" %> </p>
+                </div>
 
                 <p class="description">
-                    EA SPORTS™ FIFA 23 da vida a The World’s Game con la tecnología HyperMotion 2 en PlayStation®5,
-                    que ofrece una experiencia de juego aún más realista, además de la FIFA World Cup™ masculina y
-                    femenina, la inclusión del fútbol femenino de clubes, función de juego cruzado y mucho más.
-
-
+                    <%= product.description %>
                 </p>
 
                 <div id="button-container">
@@ -55,7 +54,7 @@
     </main>
 
     <%- include('../partials/footer.ejs') %>
-    
+
 </body>
 
 </body>

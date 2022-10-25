@@ -7,6 +7,9 @@
         "discount": 5,
         "platform": "PlayStation 5",
         "image": "img-fifa23-ps5.jpg",
+        "image2": "fifa-23-ps5-detail-img-2.png",
+        "image3": "fifa-23-ps5-detail-img-3.png",
+        "image4": "fifa-23-ps5-detail-img-4.png",
         "type": "nuevo"
     },
     {
@@ -17,6 +20,9 @@
         "discount": 20,
         "platform": "PlayStation 5",
         "image": "img-uncharted-legacy-ps5.jpg",
+        "image2": "img-uncharted-legacy-ps5-2.jpg",
+        "image3": "img-uncharted-legacy-ps5-3.jpg",
+        "image4": "img-uncharted-legacy-ps5-4.jpg",
         "type": "oferta"
     },
     {
@@ -27,6 +33,9 @@
         "discount": 10,
         "platform": "PlayStation 5",
         "image": "img-call-of--dutty-mw-ps5.jpg",
+        "image2": "img-call-of--dutty-mw-ps5-2.jpg",
+        "image3": "img-call-of--dutty-mw-ps5-3.jpg",
+        "image4": "img-call-of--dutty-mw-ps5-4.jpg",
         "type": "nuevo"
     },
 
@@ -38,6 +47,9 @@
         "discount": 15,
         "platform": "PlayStation 5",
         "image": "img-nba2k23-ps5.jpg",
+        "image2": "img-nba2k23-ps5-2.jpg",
+        "image3": "img-nba2k23-ps5-3.jpg",
+        "image4": "img-nba2k23-ps5-4.jpg",
         "type": "oferta"
     },
     {
@@ -48,6 +60,9 @@
         "discount": 20,
         "platform": "Xbox One",
         "image": "img-gta-the-trilogy-xbox-one.jpg",
+        "image2": "img-gta-the-trilogy-xbox-one-2.jpg",
+        "image3": "img-gta-the-trilogy-xbox-one-3.jpg",
+        "image4": "img-gta-the-trilogy-xbox-one-4.jpg",
         "type": "nuevo"
     },
 
@@ -59,6 +74,9 @@
         "discount": 15,
         "platform": "Xbox One",
         "image": "img-the-sims-4-xbox.jpg",
+        "image2": "img-the-sims-4-xbox-2.jpg",
+        "image3": "img-the-sims-4-xbox-3.jpg",
+        "image4": "img-the-sims-4-xbox-4.jpg",
         "type": "oferta"
     },
 
@@ -70,6 +88,9 @@
         "discount": 10,
         "platform": "Xbox One",
         "image": "img-cuphead-xbox-one.jpg",
+        "image2": "img-cuphead-xbox-one-2.jpg",
+        "image3": "img-cuphead-xbox-one-3.jpg",
+        "image4": "img-cuphead-xbox-one-4.jpg",
         "type": "nuevo"
     },
     {
@@ -80,9 +101,10 @@
         "discount": 20,
         "platform": "Xbox One",
         "image": "img-halo-5-xbox-one.jpg",
+        "image2": "img-halo-5-xbox-one-2.jpg",
+        "image3": "img-halo-5-xbox-one-3.jpg",
+        "image4": "img-halo-5-xbox-one-4.jpg",
         "type": "oferta"
     }
     
 ]
-
-
