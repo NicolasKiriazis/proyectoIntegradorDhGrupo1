@@ -38,4 +38,7 @@ router.get('/edit/:id', productsController.edit);
 router.patch('/edit/:id', upload.any(),productsController.update); 
 
 
+// ruta para eliminar el producto
+router.delete('/delete/:id', productsController.destroy);
+
 module.exports = router;

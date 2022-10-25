@@ -1,20 +1,5 @@
 [
  {
-  "id": 1,
-  "name": "Fifa 23",
-  "description": "En esta edición esperan los torneos más importantes de fútbol, como la Copa Mundial de la FIFA masculina y femenina, la UEFA Champions League y la Premier League. Además de renovados modos de juego, cuenta con más de 19.000 jugadores, 700 equipos, 100 estadios y 30 ligas, con la autenticidad inigualable de FIFA.",
-  "price": 60,
-  "discount": 5,
-  "platform": "PlayStation 5",
-  "image": "img-fifa23-ps5.jpg",
-  "image2": "fifa-23-ps5-detail-img-2.png",
-  "image3": "fifa-23-ps5-detail-img-3.png",
-  "image4": "fifa-23-ps5-detail-img-4.png",
-  "type": "nuevo",
-  "stock": "2",
-  "category": "Deportes"
- },
- {
   "id": 2,
   "name": "Uncharted",
   "description": "Esta edición exclusiva incluye Uncharted 4: A Thief’s End y Uncharted: The Lost Legacy, en versión remasterizada para PS5. Los jugadores tomarán el rol de Nathan Drake o Chloe Frazer en sus propias aventuras individuales, donde se verán obligados a enfrentar sus pasados y forjar sus propios legados.",
