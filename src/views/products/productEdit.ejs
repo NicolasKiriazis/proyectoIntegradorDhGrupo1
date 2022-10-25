@@ -14,7 +14,7 @@
             <main class="main-creacion">
                 <section id="creacion">
 
-                    <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST">
+                    <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
 
                         <br>
 
@@ -38,6 +38,7 @@
                                     placeholder="Precio" min="0" step=".01" required value="<%= productToEdit.price %>">
                             </article>
                         </div>
+                        <div class="contBoton">
 
                         <br>
                         <label for="">Descripcion</label>
@@ -75,6 +76,8 @@
                             </datalist>
                         </fieldset>
 
+                        
+
                         <fieldset>
                             <legend class="etiqueta_titulo">Estado</legend>
                             <input list="type" placeholder="Estado" id="estado" name="type"
@@ -85,7 +88,10 @@
                             </datalist>
                         </fieldset>
 
+                        <br>
+
                         <button class="creacion-button" type="submit">EDITAR</button>
+                    </div>
                     </form>
 
                 </section>
