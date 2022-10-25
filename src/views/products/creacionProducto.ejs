@@ -10,57 +10,66 @@
             <main class="main-creacion">
                 <section id="creacion">
 
-                    <form action="/" method="post">
+                    <form action="/products/create" method="post">
 
                         <article>
-                            <input class="login-creacion" id="nombre" type="text" name="name_product" placeholder="Nombre del producto" required>
+                            <input class="login-creacion" id="nombre" type="text" name="name" placeholder="Nombre del producto" required>
 
                             <input class="login-creacion numero" id="stock" type="number" name="stock" placeholder="Stock"  min="0" step="1" required>
+
+                            <input class="login-creacion numero" id="discount" type="number" name="discount" placeholder="Descuento"  min="0" step="1" required>
     
                             <input class="login-creacion numero" id="precio" type="number" name="price" placeholder="Precio"  min="0" step=".01" required>
                         </article>
 
-                        <textarea name="description" id="descripcion" required>
-                            Descripción del producto ...
-                        </textarea>
+                        <textarea name="description" id="descripcion" required></textarea>
 
                         <fieldset id="imagen">
                             <legend class="etiqueta_titulo"> Selecciona la imagen del producto </legend>
-                            <input type="file" name="avatar" accept="image/*">
+                            <input type="file" name="image" accept="image/*">
                         </fieldset>
 
                         <fieldset>
                             <legend class="etiqueta_titulo"> Categoria del juego </legend>
                             <div>
-                                <input type="checkbox" name="categoria_juego">
+                                <input type="radio" name="category">
                                 <label for="categoria_juego" class="categoria">Accion</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="categoria_juego">
+                                <input type="radio" name="category">
                                 <label for="categoria_juego" class="categoria">Aventura</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="categoria_juego">
+                                <input type="radio" name="category">
                                 <label for="categoria_juego" class="categoria">Deportes</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="categoria_juego">
+                                <input type="radio" name="category">
                                 <label for="categoria_juego" class="categoria">Estrategia</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="categoria_juego">
+                                <input type="radio" name="category">
                                 <label for="categoria_juego" class="categoria">Simulacion</label>
                             </div>
                         </fieldset>
 
                         <fieldset>
                             <legend class="etiqueta_titulo">Consola</legend>
-                            <input list="consolas" placeholder="Consola" id="consola">
-                            <datalist id="consolas">
+                            <input list="consolas" placeholder="Consola" id="consola" name="platform">
+                            <datalist id="consolas" required>
                                 <option value="Xbox">
                                 <option value="Play Station">
                                 <option value="Nintendo">
                                 <option value="Computadora">
+                            </datalist>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="etiqueta_titulo">Estado</legend>
+                            <input list="type" placeholder="Estado" id="estado" name="type">
+                            <datalist id="type" required>
+                                <option value="nuevo">
+                                <option value="oferta">
                             </datalist>
                         </fieldset>
 

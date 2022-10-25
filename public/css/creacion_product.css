@@ -36,7 +36,7 @@ main section#creacion form input.login-creacion {
 }
 
 main section#creacion form input.numero {
-    width: 2rem;
+    width: 6rem;
 }
 
 main section#creacion form input.login-creacion:hover {

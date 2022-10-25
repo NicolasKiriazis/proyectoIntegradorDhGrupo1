@@ -11,11 +11,7 @@ const mainController = {
     }, 
     productCart: function(req,res){
         res.render('products/productCart')
-    },
-    creacion: function (req, res) {
-        res.render('products/creacionProducto')
     }
-
 }
 
 module.exports = mainController;

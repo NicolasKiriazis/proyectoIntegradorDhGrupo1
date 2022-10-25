@@ -19,10 +19,6 @@ router.get('/productCart', mainController.productCart)
 
 router.get('/register', mainController.register)
 
-// RUTA DE LA PAG DE CREACION DEL PRODUCTO
-
-router.get('/createProduct',mainController.creacion);
-
 // RUTA LISTADO DE PRODUCTOS
 
 

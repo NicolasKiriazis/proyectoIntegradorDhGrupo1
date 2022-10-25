@@ -21,6 +21,19 @@ let controller = {
         res.render('products/productDetail', {
             product
         })
+    },
+    formulario: (req, res) => {
+        res.render('products/creacionProducto')
+    },
+    creacion: (req, res) => {
+        let nuevoProducto = {
+            id: products[products.length - 1].id + 1,
+            image: 'default.jpg',
+            ...req.body,
+        };
+        products.push(nuevoProducto);
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
+		res.redirect('/products');
     }
 }
 

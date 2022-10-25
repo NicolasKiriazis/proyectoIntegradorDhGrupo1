@@ -4,7 +4,9 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-
+// Configurar el entorno de la aplicación para que sea capaz de capturar la información
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 // Requerir las rutas
 
