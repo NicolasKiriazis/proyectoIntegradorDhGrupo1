@@ -13,6 +13,14 @@ app.use(express.json());
 const mainRouter = require('./router/mainRouter')
 const productsRouter = require('./router/productsRouter')
 
+// Requiere method override para PUT y DELET
+
+const methodOverride =  require('method-override'); 
+
+// Parar poder pisar el method="POST" en el formulario por PUT y DELETE
+
+app.use(methodOverride('_method'));
+
 //Archivos estaticos
 
 app.use(express.static('public'))

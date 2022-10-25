@@ -34,7 +34,33 @@ let controller = {
         products.push(nuevoProducto);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
 		res.redirect('/products');
-    }
+    },
+    edit: (req, res) => {
+		let id = req.params.id
+		let productToEdit = products.find(product => product.id == id)
+
+		res.render('products/productEdit', {productToEdit})
+	},
+    update: (req, res) => {
+		let id = req.params.id;
+		let productToEdit = products.find(product => product.id == id)
+
+		productToEdit = {
+			id: productToEdit.id,
+			...req.body,
+			image: productToEdit.image,
+		};
+		
+		let newProducts = products.map(product => {
+			if (product.id == productToEdit.id) {
+				return product = {...productToEdit};
+			}
+			return product;
+		})
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
+		res.redirect('/products');
+	}
 }
 
 module.exports = controller;

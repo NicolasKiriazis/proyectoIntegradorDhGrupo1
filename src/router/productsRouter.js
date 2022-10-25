@@ -15,4 +15,10 @@ router.get('/create', productsController.formulario);
 // ruta para crear el producto
 router.post('/create',productsController.creacion);
 
+// ruta para mostrar el formulario de edicion de productos
+router.get('/edit/:id', productsController.edit); 
+
+// ruta para editar el producto
+router.patch('/edit/:id', productsController.update); 
+
 module.exports = router;

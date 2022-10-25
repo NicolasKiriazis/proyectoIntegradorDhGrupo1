@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+
+    <body>
+
+        <%- include('../partials/header.ejs') %>
+            <br>
+            <h2 class="products-title">Estás editando: <i class="nombreProduct">
+                    <%= productToEdit.name %>
+                </i></h2>
+
+            <main class="main-creacion">
+                <section id="creacion">
+
+                    <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST">
+
+                        <br>
+
+                        <div class="editForm">
+                            <article>
+                                <label for="">Nombre</label>
+                                <input class="login-creacion" id="" type="text" name="name"
+                                    placeholder="Nombre del producto" required value="<%= productToEdit.name %>">
+
+                                <label for="">Stock</label>
+                                <input class="login-creacion numero" id="stock" type="number" name="stock"
+                                    placeholder="Stock" min="0" step="1" required value="<%= productToEdit.stock %>">
+
+                                <label for="">Descuento</label>
+                                <input class="login-creacion numero" id="discount" type="number" name="discount"
+                                    placeholder="Descuento" min="0" step="1" required
+                                    value="<%= productToEdit.discount %>">
+
+                                <label for="">Precio</label>
+                                <input class="login-creacion numero" id="precio" type="number" name="price"
+                                    placeholder="Precio" min="0" step=".01" required value="<%= productToEdit.price %>">
+                            </article>
+                        </div>
+
+                        <br>
+                        <label for="">Descripcion</label>
+                        <textarea class="textDesc" name="description" id="descripcion"
+                            required><%= productToEdit.description %></textarea>
+
+                        <fieldset id="imagen">
+                            <legend class="etiqueta_titulo"> Selecciona la imagen del producto </legend>
+                            <input type="file" name="image" accept="image/*">
+                            <img src="/image/product-detail-img/<%= productToEdit.image %> " width="100">
+                        </fieldset>
+
+                    
+                        <fieldset>
+                            <legend class="etiqueta_titulo">Categoria del Juego</legend>
+                            <input list="category" id="categoria" name="category" value="<%= productToEdit.category%>">
+                            <datalist id="category" required>
+                                <option value="Accion">
+                                <option value="Aventura">
+                                <option value="Deportes">
+                                <option value="Estrategia">
+                                <option value="Simulacion"></option>
+                            </datalist>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="etiqueta_titulo">Consola</legend>
+                            <input list="consolas" placeholder="Consola" id="consola" name="platform"
+                                value="<%= productToEdit.platform%>">
+                            <datalist id="consolas" required>
+                                <option value="Xbox">
+                                <option value="Play Station">
+                                <option value="Nintendo">
+                                <option value="Computadora">
+                            </datalist>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="etiqueta_titulo">Estado</legend>
+                            <input list="type" placeholder="Estado" id="estado" name="type"
+                                value="<%= productToEdit.type %>">
+                            <datalist id="type" required>
+                                <option value="nuevo">
+                                <option value="oferta">
+                            </datalist>
+                        </fieldset>
+
+                        <button class="creacion-button" type="submit">EDITAR</button>
+                    </form>
+
+                </section>
+            </main>
+
+            <%- include('../partials/footer.ejs') %>
+
+    </body>
+
+</html>

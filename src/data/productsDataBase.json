@@ -77,17 +77,14 @@
  {
   "id": 6,
   "name": "The Sims™ 4",
-  "description": "Con el mismo objetivo de dar vida a una comunidad, la cuarta entrega de este clásico innova con altos grados de personalización disponibles. Los jugadores verán a sus personajes desenvolviéndose en espacios más complejos, con personalidades mucho más elaboradas y un enorme abanico de opciones para decidir sobre su futuro.",
-  "price": 40,
-  "discount": 15,
-  "platform": "Xbox One",
-  "image": "img-the-sims-4-xbox.jpg",
-  "image2": "img-the-sims-4-xbox-2.jpg",
-  "image3": "img-the-sims-4-xbox-3.jpg",
-  "image4": "img-the-sims-4-xbox-4.jpg",
-  "type": "oferta",
   "stock": "2",
-  "category": "Simulacion"
+  "discount": "15",
+  "price": "70",
+  "description": "Con el mismo objetivo de dar vida a una comunidad, la cuarta entrega de este clásico innova con altos grados de personalización disponibles. Los jugadores verán a sus personajes desenvolviéndose en espacios más complejos, con personalidades mucho más elaboradas y un enorme abanico de opciones para decidir sobre su futuro. EDIT TEST",
+  "image": "img-the-sims-4-xbox.jpg",
+  "category": "Simulacion",
+  "platform": "Xbox One",
+  "type": "oferta"
  },
  {
   "id": 7,
@@ -121,14 +118,14 @@
  },
  {
   "id": 9,
-  "name": "Prueba1",
-  "description": "Esto es una prueba jojojo",
-  "price": "50",
-  "discount": "0",
-  "platform": "Computadora",
+  "name": "Prueba1 Y Edicion de producto",
+  "stock": "6",
+  "discount": "1",
+  "price": "51.04",
+  "description": "Esto es una prueba jojojo\r\n\r\nY tambien se probo la edicion de productos!",
   "image": "default.jpg",
-  "type": "nuevo",
-  "stock": "5",
-  "category": "on"
+  "category": "Accion",
+  "platform": "Play Station",
+  "type": "nuevo"
  }
 ]
