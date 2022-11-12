@@ -10,15 +10,15 @@ let storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, 'public/images/product-detail-img')
     },
-    filename: function(req,file,cb){
+    filename: function (req, file, cb) {
         cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
     }
-  }) 
- 
-  
-  let upload = multer({ storage: storage })
-  
-  
+})
+
+
+let upload = multer({ storage: storage })
+
+
 // ruta para el home
 router.get("/", productsController.index)
 
@@ -29,13 +29,13 @@ router.get('/detail/:id', productsController.detail)
 router.get('/create', productsController.formulario);
 
 // ruta para crear el producto
-router.post('/create',productsController.creacion);
+router.post('/create', productsController.creacion);
 
 // ruta para mostrar el formulario de edicion de productos
-router.get('/edit/:id', productsController.edit); 
+router.get('/edit/:id', productsController.edit);
 
 // ruta para editar el producto
-router.patch('/edit/:id', upload.any(),productsController.update); 
+router.patch('/edit/:id', upload.any(), productsController.update);
 
 
 // ruta para eliminar el producto

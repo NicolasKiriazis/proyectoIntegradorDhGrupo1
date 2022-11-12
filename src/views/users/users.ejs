@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+
+    <% users.map(user =>{ %> 
+
+        <div>
+            <p><%= "Usuario n°:" + " " + user.id %> </p>
+            <p><%= "Nombre: " + user.name %> </p>
+            <p><%= "Apellido " + user.lastname %> </p>
+            <img src="<%= user.image %> " alt="">
+            
+        </div>
+
+
+    <% }) %> 
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

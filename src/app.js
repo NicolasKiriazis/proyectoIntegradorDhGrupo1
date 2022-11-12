@@ -12,6 +12,7 @@ app.use(express.json());
 
 const mainRouter = require('./router/mainRouter')
 const productsRouter = require('./router/productsRouter')
+const usersRouter =  require('./router/usersRouter')
 
 // Requiere method override para PUT y DELET
 
@@ -40,4 +41,5 @@ app.listen(3000, (req, res) => { console.log("El servidor se levantó con éxito
 
 app.use('/', mainRouter)
 app.use('/products', productsRouter);
+app.use('/users', usersRouter)
 

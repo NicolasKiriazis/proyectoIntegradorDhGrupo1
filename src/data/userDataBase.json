@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "first-name": "Lindon",
-        "last-name": "Macer",
+        "name": "Lindon",
+        "lastname": "Macer",
         "direction": "717 Fisk Parkway",
         "image": "http://dummyimage.com/217x152.bmp/dddddd/000000",
         "email": "lmacer0@yellowpages.com",
@@ -11,8 +11,8 @@
     },
     {
         "id": 2,
-        "first-name": "Isidore",
-        "last-name": "Cockerell",
+        "name": "Isidore",
+        "lastname": "Cockerell",
         "direction": "60 Service Drive",
         "image": "http://dummyimage.com/132x145.jpg/dddddd/000000",
         "email": "icockerell1@census.gov",
@@ -21,8 +21,8 @@
     },
     {
         "id": 3,
-        "first-name": "Koressa",
-        "last-name": "Demer",
+        "name": "Koressa",
+        "lastname": "Demer",
         "direction": "3 Stang Drive",
         "image": "http://dummyimage.com/235x202.png/5fa2dd/ffffff",
         "email": "kdemer2@yelp.com",
@@ -31,8 +31,8 @@
     },
     {
         "id": 4,
-        "first-name": "Ogden",
-        "last-name": "Thorington",
+        "name": "Ogden",
+        "lastname": "Thorington",
         "direction": "047 Dahle Junction",
         "image": "http://dummyimage.com/141x220.bmp/dddddd/000000",
         "email": "othorington3@usgs.gov",
@@ -41,8 +41,8 @@
     },
     {
         "id": 5,
-        "first-name": "Hanna",
-        "last-name": "Januszkiewicz",
+        "name": "Hanna",
+        "lastname": "Januszkiewicz",
         "direction": "0 Coolidge Drive",
         "image": "http://dummyimage.com/192x155.png/5fa2dd/ffffff",
         "email": "hjanuszkiewicz4@tinyurl.com",
