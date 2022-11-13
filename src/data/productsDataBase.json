@@ -88,17 +88,26 @@
  },
  {
   "id": 8,
-  "name": "Halo 5",
-  "description": "Halo 5: Guardians ofrece experiencias multijugador épicas que incluyen distintos modos, completas herramientas de construcción de niveles y un nuevo capítulo en la saga del Jefe Maestro. Y ahora, con Xbox One X, los jugadores pueden disfrutar de mejoras gráficas, resolución de hasta 4K y mayor fidelidad visual que hacen que el juego luzca mejor que nunca; todo ello manteniendo una tasa constante de 60 imágenes por segundo para conseguir la jugabilidad más fluida posible.",
-  "price": 45,
-  "discount": 20,
-  "platform": "Xbox One",
-  "image": "img-halo-5-xbox-one.jpg",
-  "image2": "img-halo-5-xbox-one-2.jpg",
-  "image3": "img-halo-5-xbox-one-3.jpg",
-  "image4": "img-halo-5-xbox-one-4.jpg",
-  "type": "oferta",
+  "name": "Halo 5 EDITADO",
   "stock": "2",
-  "category": "Accion"
+  "discount": "20",
+  "price": "45",
+  "description": "Halo 5: Guardians ofrece experiencias multijugador épicas que incluyen distintos modos, completas herramientas de construcción de niveles y un nuevo capítulo en la saga del Jefe Maestro. Y ahora, con Xbox One X, los jugadores pueden disfrutar de mejoras gráficas, resolución de hasta 4K y mayor fidelidad visual que hacen que el juego luzca mejor que nunca; todo ello manteniendo una tasa constante de 60 imágenes por segundo para conseguir la jugabilidad más fluida posible.",
+  "category": "Accion",
+  "platform": "Xbox One",
+  "type": "oferta",
+  "image": "img-halo-5-xbox-one.jpg"
+ },
+ {
+  "id": 9,
+  "name": "Apex Legends EDITADO",
+  "stock": "15",
+  "discount": "5",
+  "price": "74",
+  "description": "Apex Legends es el galardonado juego gratuito de acción en primera persona de Respawn Entertainment. Domina un elenco creciente de leyendas con potentes habilidades. Juego estratégico basado en pelotones y jugabilidad innovadora en la nueva evolución del Battle Royal",
+  "category": "Accion",
+  "platform": "Computadora",
+  "type": "nuevo",
+  "image": "img-1668239804816.jpg"
  }
 ]

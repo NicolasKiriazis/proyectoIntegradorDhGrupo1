@@ -7,7 +7,7 @@
 
         <%- include('../partials/header.ejs') %>
             <br>
-            <h2 class="products-title">Estás editando: <i class="nombreProduct">
+            <h2 class="products-title">EDICION DE PRODUCTO:  <i class="nombreProduct">
                     <%= productToEdit.name %>
                 </i></h2>
 
@@ -21,7 +21,7 @@
                         <div class="editForm">
                             <article>
                                 <label for="">Nombre</label>
-                                <input class="login-creacion" id="" type="text" name="name"
+                                <input class="login-creacion" id="name" type="text" name="name"
                                     placeholder="Nombre del producto" required value="<%= productToEdit.name %>">
 
                                 <label for="">Stock</label>
@@ -43,11 +43,11 @@
                         <br>
                         <label for="">Descripcion</label>
                         <textarea class="textDesc" name="description" id="descripcion"
-                            required><%= productToEdit.description %></textarea>
+                            required ><%= productToEdit.description %></textarea>
 
-                        <fieldset id="imagen">
-                            <legend class="etiqueta_titulo"> Selecciona la imagen del producto </legend>
-                            <input type="file" name="image" accept="image/*">
+                        <fieldset id="image">
+                            <legend class="etiqueta_titulo" for="image"> Selecciona la imagen del producto </legend>
+                            <input type="file" for="image" name="image" id="image" accept="image/*">
                             <img src="/image/product-detail-img/<%= productToEdit.image %> " width="100">
                         </fieldset>
 

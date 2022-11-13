@@ -26,15 +26,19 @@ let controller = {
         res.render('products/creacionProducto')
     },
     creacion: (req, res) => {
+
+        let image 
+        ( req.files[0] != undefined ) ? image = req.files[0].filename : image = productToEdit.image      
+
         let nuevoProducto = {
             id: products[products.length - 1].id + 1,
-            image: 'default.jpg',
-            ...req.body,
+            image: image,
+            ...req.body
         };
         products.push(nuevoProducto);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
 		res.redirect('/products');
-    },
+	},
     edit: (req, res) => {
 		let id = req.params.id
 		let productToEdit = products.find(product => product.id == id)
@@ -44,11 +48,16 @@ let controller = {
     update: (req, res) => {
 		let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
+		
+		console.log(req.files);
 
+        let image 
+        ( req.files[0] != undefined ) ? image = req.files[0].filename : image = productToEdit.image
+		
 		productToEdit = {
 			id: productToEdit.id,
 			...req.body,
-			image: productToEdit.image,
+			image: image,
 		};
 		
 		let newProducts = products.map(product => {

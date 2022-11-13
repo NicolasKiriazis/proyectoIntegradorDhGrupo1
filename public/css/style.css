@@ -229,6 +229,11 @@ footer {
     background-color: #120727;
 }
 
+footer h3 {
+    color:#cade01 ;
+}
+
+
 .footer {
     display: flex;
     justify-content: space-around;
