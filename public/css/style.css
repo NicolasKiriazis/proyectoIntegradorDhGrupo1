@@ -269,6 +269,81 @@ footer h3 {
 }
 
 
+.fondo-users{
+    background-color: #3c145e21;
+    max-width: 1010px;
+    margin-bottom: 30px;
+}
+
+.fondo-user{
+    align-items: center;
+    text-align: center;
+    background-color: #3c145e21;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-frame {
+    max-width: 1008px;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    justify-content: space-around;
+}
+
+div.card {
+    margin: 20px;
+}
+
+.col-md-4{
+    padding: 10px;
+}
+
+.card-body{
+    width: 600px;
+    text-align: left;
+}
+
+.user-box {
+    margin: 9px;
+    
+}
+
+.botones-user{
+    display: flex;
+    margin: 10px;
+}
+
+.botones-user form{
+    margin-right: 10px;
+}
+
+.btn-primary{
+    background-color: #3c145e;
+    border-color: #120727;
+    bs-btn-active-bg: #3c145e;
+}
+ 
+:hover .btn-primary{
+    background-color: #3c145e;
+    border-color: #120727;
+}
+:active .btn-primary{
+    background-color: #3c145eee;
+    border-color: #120727;
+}
+
+:focus .btn-primary{
+    background-color: #3c145ef8;
+    border-color: #120727;
+}
+
+.fondo-users{
+    background-color: #f0e9e9fd;
+}
+
+
 /* --- MediaQueris --- */
 
 @media (min-width: 560px) {
@@ -315,6 +390,13 @@ footer h3 {
 
     .top-header p {
         font-size: 15px;
+    }
+
+   .user-frame {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
     }
 
 }

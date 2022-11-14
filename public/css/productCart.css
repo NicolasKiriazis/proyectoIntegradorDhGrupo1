@@ -81,17 +81,23 @@ ul.nav-item li:hover i {
     color: #cade01;
 }
 
+section {
+    align-items: center;
+    text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     padding: 10px;
     padding-bottom: 0px;
     background-color: #120727;
-    margin-left: 5%;
-    margin-right: 5%;
+   
 
 }
+
 
 
 .search-container {
