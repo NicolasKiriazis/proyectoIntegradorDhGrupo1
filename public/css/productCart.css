@@ -216,7 +216,7 @@ main section.navbar h4 {
 }
 
 main section.article {
-    width: 100%;
+    width: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,6 +224,7 @@ main section.article {
 }
 
 article.productView {
+    width: 450px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -263,6 +264,10 @@ main section.article article div.product-container {
 
 #cart h3 { 
     color: #120727;
+}
+
+section#cart{
+    width: 650px;
 }
 
 div.desc-container {
@@ -341,15 +346,15 @@ main section.resumen article.importes {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     padding-right: 0px;
-    padding-left: 30px;
+    padding-left: 10px;
 
 }
 
 article.importes div.detalle {
-    width: 30%;
+    width: 42%;
     display: flex;
     flex-direction: column;
     padding: 2%;
@@ -369,6 +374,7 @@ article.importes div.columna-importes {
     padding: 2%;
     padding-right: 4%;
     background-color: #b4b2b686;
+    width: 26%;
 }
 
 
@@ -542,5 +548,9 @@ button:active:before {
         margin: 4px;
         font-size: 14px;
         font-weight: 700;
+    }
+
+    article.productView {
+        width: 650px;
     }
 }

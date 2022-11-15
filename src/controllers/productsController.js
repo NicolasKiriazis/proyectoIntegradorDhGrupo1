@@ -5,14 +5,13 @@ const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 // let ofertas = products.filter(product => product.type == "oferta")
-// let nuevos = products.filter(product => product.type == "nuevo")
+let nuevos = products.filter(product => product.type == "nuevo")
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const nuevos = products.filter(function(product){
 	return product.type == 'nuevo'
 })
-
 let controller = {
     index: (req, res) =>{
         res.render('products/productList', {
@@ -35,13 +34,13 @@ let controller = {
     },
     creacion: (req, res) => {
 
-        let image
-        ( req.file != undefined ) ? image = req.file.filename : image = 'default.png';
+        let image 
+        ( req.files[0] != undefined ) ? image = req.files[0].filename : image = productToEdit.image      
 
         let nuevoProducto = {
             id: products[products.length - 1].id + 1,
-            ...req.body,
-            image
+            image: image,
+            ...req.body
         };
         products.push(nuevoProducto);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
