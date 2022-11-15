@@ -343,6 +343,13 @@ div.card {
     background-color: #f0e9e9fd;
 }
 
+.carousel {
+    margin-top: 20px;
+}
+img.carousel {
+    max-width: 970px;
+    max-height: 315px;
+}
 
 /* --- MediaQueris --- */
 

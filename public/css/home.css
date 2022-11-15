@@ -1,4 +1,3 @@
-
 /* FUENTE IMPORTADA */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -9,63 +8,63 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    
-    img {
+}
+
+img {
     width: 100%;
-    }
-    
-    body {
+}
+
+body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    }
-    
-    footer {
+}
+
+footer {
     width: 100%;
-    }
-    
-    header {
+}
+
+header {
     width: 100%;
     background-color: #120727;
-    }
-    
-    header i {
+}
+
+header i {
     color: #fff;
-    }
-    
-    div.top-header {
+}
+
+div.top-header {
     width: 100%;
     text-align: center;
     background-color: #cade01;
-    }
-    
-    
-    #logo {
+}
+
+
+#logo {
     width: 100%;
-    }
-    
-    div.logo {
+}
+
+div.logo {
     display: flex;
     width: 50%;
-    
-    }
-    
-    nav {
+
+}
+
+nav {
     display: none;
-    }
-    
-    .nav-item {
-    
+}
+
+.nav-item {
+
     display: flex;
     justify-content: right;
     list-style: none;
     align-items: right;
     transition: all 650ms;
-    }
-    
-    ul.nav-item li {
+}
+
+ul.nav-item li {
     width: 100%;
     padding: 30px;
     text-align: center;
@@ -73,30 +72,19 @@
     justify-content: center;
     transition: all 650ms;
     font-size: 14px;
-    }
-    
-    ul.nav-item li:hover {
+}
+
+ul.nav-item li:hover {
     background-color: #3c145e;
-    }
-    
-    ul.nav-item li:hover i {
+}
+
+ul.nav-item li:hover i {
     color: #cade01;
-    }
-    
-    .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    padding-bottom: 0px;
-    background-color: #120727;
-    margin-left: 5%;
-    margin-right: 5%;
-    
-    }
-    
-    
-    .search-container {
+}
+
+
+
+.search-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -105,18 +93,18 @@
     padding-right: 35px;
     background-color: #3c145e;
     align-items: right;
-    }
-    
-    
-    #lupa {
+}
+
+
+#lupa {
     margin-left: 7px;
     padding: 2px;
     background-color: #3c145e;
     border-radius: 5px;
     color: #cade01;
-    }
-    
-    #search-bar {
+}
+
+#search-bar {
     width: 70%;
     max-width: 1000px;
     flex-grow: 0;
@@ -125,8 +113,8 @@
     height: 26px;
     padding: 4px;
     font-weight: 100;
-    }
-    
+}
+
 
 /*  ESTILOS DEL BANNER */
 #banner-container {
@@ -145,7 +133,11 @@
     height: 205px;
 }
 
- /* ESTILOS DEL MAIN */
+.bannerC {
+    display: flex;
+}
+
+/* ESTILOS DEL MAIN */
 main {
     text-align: center;
     width: 100%;
@@ -156,40 +148,58 @@ main {
 
 }
 
-    #products-container{
-        display: flex;
-        flex-direction: column;
-        
-    }
+#products-container {
+    display: flex;
+    flex-direction: column;
 
-.container-duo{
+}
+
+.productos-nuevos {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.container-duo {
     display: flex;
     flex-direction: row;
 }
 
+figure img {
+    max-height: 254px ;
+}
 
+.product-box_data{
+    max-height: 134px;
+}
 
-.product_img{
+.product_img {
     width: 150px;
     height: 150px;
     margin: 10px;
     box-shadow: 0px 0px 10px black;
     border-radius: 10px
-};
+}
+
+;
 
 p {
     font-family: fantasy;
 }
 
-.marcas-games{
-    height: 170px;
-    width: 90%;
+.marcas-games {
+    width: 60%;
     margin: 15px;
     box-shadow: 0px 0px 10px black;
     border-radius: 10px
 }
 
-.lanzamientos{
+.lanzamientos {
     height: 190px;
     width: 155px;
     margin: 15px;
@@ -198,16 +208,20 @@ p {
 }
 
 main h3 {
-font-family: 'Roboto', sans-serif;
-color: hsl(157, 78%, 36%)
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #120727;
+    border: #3c145e;
+
 }
 
-.container-redes{
+
+.container-redes {
     display: flex;
     flex-direction: row;
 }
 
-.redsocial{
+.redsocial {
     height: 40px;
     width: 40px;
     margin: 15px;
@@ -215,46 +229,75 @@ color: hsl(157, 78%, 36%)
     border-radius: 15px;
 }
 
-.carritocompras{
+.carritocompras {
     height: 40px;
     width: 40px;
     margin: 15px;
-  
+
 }
 
-.container-ultimaspeliculas{
+.container-ultimaspeliculas {
     display: flex;
     flex-direction: row;
 }
 
-.container-peliculasxbox{
+.container-peliculasxbox {
     display: flex;
     flex-direction: row;
 }
 
 @media (min-width: 768px) {
 
+    .bannerC {
+        display: flex;
+    }
 
+    #products-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
 
     div.container {
-    justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: #3c145e4a;
+        
     }
-    
+
     ul.nav-item {
-    margin-left: 30px;
+        margin-left: 30px;
     }
-    
+
     nav {
-    display: block;
-    color: #fff;
-    align-items: center;
+        display: block;
+        color: #fff;
+        align-items: center;
     }
-    
+
     #menu {
-    display: none;
+        display: none;
     }
-    
+
     div.logo {
-    width: 30%;
+        width: 30%;
     }
+}
+
+@media (min-width: 1000px) {
+    div.container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: #3c145e4a;
+        
     }
+
+    .productos-nuevos {
+        display:contents;
+    }
+}

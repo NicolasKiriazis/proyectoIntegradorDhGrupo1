@@ -21,6 +21,7 @@ const storage = multer.diskStorage({
   
 // ruta para el home
 router.get("/", productsController.index)
+router.get("../", productsController.index)
 
 // ruta para el detalle de un producto //
 router.get('/detail/:id', productsController.detail)

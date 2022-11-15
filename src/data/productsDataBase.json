@@ -69,7 +69,7 @@
   "image": "img-the-sims-4-xbox.jpg",
   "category": "Simulacion",
   "platform": "Xbox One",
-  "type": "oferta"
+  "type": "nuevo"
  },
  {
   "id": 7,
@@ -107,7 +107,7 @@
   "description": "Apex Legends es el galardonado juego gratuito de acción en primera persona de Respawn Entertainment. Domina un elenco creciente de leyendas con potentes habilidades. Juego estratégico basado en pelotones y jugabilidad innovadora en la nueva evolución del Battle Royal",
   "category": "Accion",
   "platform": "Computadora",
-  "type": "nuevo",
+  "type": "oferta",
   "image": "img-1668239804816.jpg"
  }
 ]

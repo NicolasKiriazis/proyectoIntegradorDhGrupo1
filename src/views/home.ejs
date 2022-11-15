@@ -8,112 +8,120 @@
         <%- include('partials/header.ejs') %>
 
             <!-- BANNER  -->
-            <section id="banner-container">
-                <img src="image/bannerHome.jpg" alt="banner-video Juegos" class="banner">
-            </section>
-
-            <a href="/products">
-                <main>
-                    <br>
-                    <br>
-                    <!-- SECCIÓN DE CATEGORÍAS -->
-                    <section class="categorias">
-                        <h3>CATEGORIAS</h3>
-                        <br>
-                        <div id="products-container">
-
-                            <div class="container-duo">
-                                <img src="image/consolas.png" alt="item-consolas" class="product_img">
-
-                                <img src="image/juegos.png" alt="item-juegos" class="product_img">
-                            </div>
-                            <div class="container-duo">
-                                <img src="image/controles.png" alt="item-controles" class="product_img">
-
-                                <img src="image/accesorios.png" alt="item-accesorios" class="product_img">
-                            </div>
-
+            <section id="banner-container" class="bannerC">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/banner1.png" alt="FIFA 2023" class="carousel">
                         </div>
-
-                    </section>
-                    <br>
-                    <br>
-
-                    <!-- CATEGORÍAS POR MARCAS -->
-                    <section class="marcas-videojuego">
-                        <h3>ELIGE TU MARCA</h3>
-                        <br>
-
-                        <div class="products-container">
-                            <img src="image/playStation.png" alt="item-playstation" class="marcas-games">
-
-                            <img src="image/nintendo.png" alt="item-nintendo" class="marcas-games">
-
-                            <img src="image/xbox.png" alt="item-xbox" class="marcas-games">
-
+                        <div class="carousel-item">
+                            <img src="image/banner2.jpg" alt="Apex Legends" class="carousel">
                         </div>
-                        <br>
-                        <br>
-                    </section>
-
-                    <!-- SECCIÓN DE NUEVOS PRODUCTOS / LANZAMIENTOS -->
-                    <section class="productos-nuevos">
-                        <h3>PRODUCTOS NUEVOS LANZAMIENTOS</h3>
-                        <br>
-                        <div class="products-container">
-
-                            <div class="container-duo">
-                                <!-- poner una etiqueta a con Link a productDetail -->
-                                <img src="image/fifaps4.jpg" alt="item-cod" class="lanzamientos">
-
-                                <img src="image/godofwarps5.jpg" alt="item-godofwar" class="lanzamientos">
-                            </div>
-
-                            <div class="container-duo">
-                                <img src="image/gtaps5.jpg" alt="item-gta" class="lanzamientos">
-
-                                <img src="image/spider-manps5.jpg" alt="item-spiderman" class="lanzamientos">
-                            </div>
-
-                            <div class="container-ultimaspeliculas"></div>
-                            <img src="image/doomps5.jpg" alt="item-doomps5" class="lanzamientos">
-
-                            <img src="image/airconflictsps5.jpg" alt="item-airconflicts" class="lanzamientos">
-
-                        </div>
-
-                        <div class="container-peliculasxbox"></div>
-                        <img src="image/codxbox.jpg" alt="item-codxbox" class="lanzamientos">
-
-                        <img src="image/haloxbox.jpg" alt="item-haloxbox" class="lanzamientos">
-
-                        </div>
-
-                        </div>
-
-                    </section>
-
-                    <br>
-                    <div>
-                        <!-- CARRITO DE COMPRAS -->
-                        <i class="fa-solid fa-cart-shopping"></i>
-
-                        <br>
-
-                        <!-- ICONOS DE FACEBOOK E INSTAGRAM-->
-                        <div class="container-redes">
-
-                            <img src="image/facebooklogo.png" alt="item-fb" class="redsocial">
-
-                            <img src="image/instagramlogo.png" alt="item-instagram" class="redsocial">
-
+                        <div class="carousel-item">
+                            <img src="image/banner3.png" alt="Need for Speed™ Unbound" class="carousel">
                         </div>
                     </div>
+                </div>
 
-                </main>
-            </a>
+            </section>
+
+            <a href="/products"> </a>
+            <main>
+                <br>
+                <br>
+                <!-- SECCIÓN DE CATEGORÍAS -->
+                <section class="categorias">
+                    <h3>CATEGORIAS</h3>
+                    <br>
+                    <div id="products-container">
+
+                        <div class="container-duo">
+                            <img src="image/consolas.png" alt="item-consolas" class="product_img">
+                        </div>
+                        <div class="container-duo">
+                            <img src="image/juegos.png" alt="item-juegos" class="product_img">
+                        </div>
+                        <div class="container-duo">
+                            <img src="image/controles.png" alt="item-controles" class="product_img">
+                        </div>
+                        <div class="container-duo">
+                            <img src="image/accesorios.png" alt="item-accesorios" class="product_img">
+                        </div>
+
+                    </div>
+
+                </section>
+                <br>
+                <br>
+                 <!-- SECCIÓN DE NUEVOS PRODUCTOS / LANZAMIENTOS -->
+                 <section class="productos-nuevos">
+                    <h3>NUEVOS LANZAMIENTOS</h3>
+                    <br>
+                    <div class="products-container">
+
+                        <div class="container products-wrapper">
+                            <div class="row">
+                            
+                                </div>
+                                <!-- Show the "in-sale" products -->
+                                <% nuevos.forEach(function(product){ 
+                                    let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0) %>
+                                    <div class="col-12 col-sm-6 col-lg-3">
+                                        <section class="product-box">
+                                            <a href="/products/detail/<%= product.id %>">
+                                                <figure class="product-box_image">
+                                                    <img src="image/product-detail-img/<%= product.image %>" alt="imagen de producto">
+                                                </figure>
+                                                <article class="product-box_data">
+                                                    <h2><%= product.name %></h2>
+                                                    <span>DESCUENTO <%= product.discount %> %OFF</span>
+                                                    <p>PRECIO: USD <%= toThousand(finalPrice) %></p>
+                                                    
+                                                </article>
+                                            </a>
+                                        </section>
+                                    </div>
+                                <% }) %>
+                                </div>
+                            </div>
+                    
+                    </div>
+
+                </section>
+
+                <br>
+                <br>
+
+                <!-- CATEGORÍAS POR MARCAS -->
+                <section class="marcas-videojuego">
+                    <h3>ELIGE TU MARCA</h3>
+                    <br>
+
+                    <div class="products-container">
+                        <img src="image/playStation.png" alt="item-playstation" class="marcas-games">
+
+                        <img src="image/nintendo.png" alt="item-nintendo" class="marcas-games">
+
+                        <img src="image/xbox.png" alt="item-xbox" class="marcas-games">
+
+                    </div>
+                    <br>
+                    <br>
+                </section>
+
+                <br>
+
+            </main>
+
 
             <%- include('partials/footer.ejs') %>
+
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+                    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+                    crossorigin="anonymous"></script>
 
     </body>
 
