@@ -4,99 +4,131 @@
   "name": "Lindon",
   "lastname": "Macer",
   "direction": "717 Fisk Parkway",
-  "image": "http://dummyimage.com/217x152.bmp/dddddd/000000",
+  "date": "1998-09-2022",
   "email": "lmacer0@yellowpages.com",
   "password": "TrNurKgvv5",
-  "gender": "Male"
+  "gender": "Male",
+  "image": "gamer.png"
  },
  {
   "id": 2,
   "name": "Isidore",
   "lastname": "Cockerell",
   "direction": "60 Service Drive",
-  "image": "http://dummyimage.com/132x145.jpg/dddddd/000000",
+  "date": "1998-09-2022",
   "email": "icockerell1@census.gov",
   "password": "kgIUUHT",
-  "gender": "Bigender"
+  "gender": "Male",
+  "image": "http://dummyimage.com/132x145.jpg/dddddd/000000"
  },
  {
   "id": 3,
   "name": "Koressa",
   "lastname": "Demer",
   "direction": "3 Stang Drive",
-  "image": "http://dummyimage.com/235x202.png/5fa2dd/ffffff",
+  "date": "1998-09-2022",
   "email": "kdemer2@yelp.com",
   "password": "85JioKqULvn",
-  "gender": "Female"
+  "gender": "Female",
+  "image": "http://dummyimage.com/235x202.png/5fa2dd/ffffff"
  },
  {
   "id": 4,
   "name": "Ogden",
   "lastname": "Thorington",
   "direction": "047 Dahle Junction",
-  "image": "http://dummyimage.com/141x220.bmp/dddddd/000000",
+  "date": "1998-09-2022",
   "email": "othorington3@usgs.gov",
   "password": "FDI4qLL",
-  "gender": "Male"
+  "gender": "Male",
+  "image": "http://dummyimage.com/141x220.bmp/dddddd/000000"
  },
  {
   "id": 5,
   "name": "Hanna",
   "lastname": "Januszkiewicz",
   "direction": "0 Coolidge Drive",
-  "image": "http://dummyimage.com/192x155.png/5fa2dd/ffffff",
+  "date": "1998-09-2022",
   "email": "hjanuszkiewicz4@tinyurl.com",
   "password": "FalD4N",
-  "gender": "Female"
+  "gender": "Female",
+  "image": "http://dummyimage.com/192x155.png/5fa2dd/ffffff"
  },
  {
   "id": 6,
   "name": "Lindon",
   "lastname": "Macer",
   "direction": "717 Fisk Parkway",
-  "image": "http://dummyimage.com/217x152.bmp/dddddd/000000",
+  "date": "1998-09-2022",
   "email": "lmacer0@yellowpages.com",
   "password": "TrNurKgvv5",
-  "gender": "Male"
+  "gender": "Male",
+  "image": "http://dummyimage.com/217x152.bmp/dddddd/000000"
  },
  {
   "id": 7,
   "name": "Isidore",
   "lastname": "Cockerell",
   "direction": "60 Service Drive",
-  "image": "http://dummyimage.com/132x145.jpg/dddddd/000000",
+  "date": "1998-09-2022",
   "email": "icockerell1@census.gov",
   "password": "kgIUUHT",
-  "gender": "Bigender"
+  "gender": "Male",
+  "image": "http://dummyimage.com/132x145.jpg/dddddd/000000"
  },
  {
   "id": 8,
   "name": "Koressa",
   "lastname": "Demer",
   "direction": "3 Stang Drive",
-  "image": "http://dummyimage.com/235x202.png/5fa2dd/ffffff",
+  "date": "1998-09-2022",
   "email": "kdemer2@yelp.com",
   "password": "85JioKqULvn",
-  "gender": "Female"
+  "gender": "Female",
+  "image": "http://dummyimage.com/235x202.png/5fa2dd/ffffff"
  },
  {
   "id": 9,
   "name": "Ogden",
   "lastname": "Thorington",
   "direction": "047 Dahle Junction",
-  "image": "http://dummyimage.com/141x220.bmp/dddddd/000000",
+  "date": "1998-09-2022",
   "email": "othorington3@usgs.gov",
   "password": "FDI4qLL",
-  "gender": "Male"
+  "gender": "Male",
+  "image": "http://dummyimage.com/141x220.bmp/dddddd/000000"
  },
  {
   "id": 10,
   "name": "Ogden",
   "lastname": "Thorington",
   "direction": "047 Dahle Junction",
-  "image": "http://dummyimage.com/141x220.bmp/dddddd/000000",
+  "date": "1998-09-2022",
   "email": "othorington3@usgs.gov",
   "password": "FDI4qLL",
-  "gender": "Male"
+  "gender": "Male",
+  "image": "http://dummyimage.com/141x220.bmp/dddddd/000000"
+ },
+ {
+  "id": 11,
+  "name": "Lucero",
+  "lastname": "Cortes",
+  "direction": "Mexico",
+  "date": "1998-09-20",
+  "email": "adalucero@gmail.com",
+  "password": "$2a$10$jb9VJ6TYglBaCn9tZBJaoOTGrZgIZWNPYa1YSDo56VPHb5FWxaFV.",
+  "gender": "Female",
+  "image": "gamer.png"
+ },
+ {
+  "id": 12,
+  "name": "ada",
+  "lastname": "cortes",
+  "direction": "mexico",
+  "date": "1998-09-22",
+  "email": "ada@gmail.com",
+  "password": "$2a$10$EnCd7jV3IGTpWHFLqpalxOBKOdIJUgjOYkMN4Sge0bbAerrjnypIm",
+  "gender": "Female",
+  "image": "gamer.png"
  }
 ]

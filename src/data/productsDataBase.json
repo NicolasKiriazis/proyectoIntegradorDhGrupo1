@@ -109,5 +109,17 @@
   "platform": "Computadora",
   "type": "oferta",
   "image": "img-1668239804816.jpg"
+ },
+ {
+  "id": 10,
+  "name": "Prueba",
+  "stock": "10",
+  "discount": "10",
+  "price": "100",
+  "description": "prueba",
+  "category": "on",
+  "platform": "Computadora",
+  "type": "oferta",
+  "image": "image-1668488668616.png"
  }
 ]

@@ -22,12 +22,12 @@ const mainController = {
             toThousand
         });
     },
-    login: function(req,res){
+    /*login: function(req,res){
         res.render('users/login')
-    },
-    register: function(req,res){
+    },*/
+/*    register: function(req,res){
         res.render('users/register')
-    }, 
+    }, */
     productCart: function(req,res){
         res.render('products/productCart')
     }

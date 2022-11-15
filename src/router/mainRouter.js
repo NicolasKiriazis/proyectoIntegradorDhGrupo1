@@ -9,7 +9,7 @@ router.get('/', mainController.home)
 
 //RUTA LOGIN//
 
-router.get('/login', mainController.login)
+/*router.get('/login', mainController.login)*/
 
 //RUTA PRODUCT CART //
 
@@ -17,10 +17,10 @@ router.get('/productCart', mainController.productCart)
 
 //RUTA REGISTER //
 
-router.get('/register', mainController.register)
+/*router.get('/register', mainController.register)*/
 
 // RUTA LISTADO DE PRODUCTOS
 
 
 
-module.exports = router
+module.exports = router;
