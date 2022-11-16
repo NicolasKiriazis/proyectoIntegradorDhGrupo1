@@ -18,6 +18,11 @@ const usersRouter =  require('./router/usersRouter')
 
 const methodOverride =  require('method-override'); 
 
+// Implementando Session
+
+const session = require('express-session');
+
+
 // Parar poder pisar el method="POST" en el formulario por PUT y DELETE
 
 app.use(methodOverride('_method'));
@@ -31,6 +36,8 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
 app.set('views', path.join(__dirname, 'views'))
+
+//app.use(session( {secret: "secreto"}));
 
 // Levantar servidor
 

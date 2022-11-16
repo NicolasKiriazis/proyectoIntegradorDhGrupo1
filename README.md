@@ -19,7 +19,13 @@ A continuacion se presentan diferentes sitios los cuales sirvieron como inspirac
 Si bien se tomaron como inspiracion paginas que no tienen relacion con la tematica de la pagina como lo es **Mercado libre** o **Adidas** sirvieron como ideas de diseño para la barra de navegacion o bien para el carritos de compras. 
 
 # Link a nuestros tableros en Trello
+
+- Sprint 1
 https://trello.com/invite/b/UL4WtM0K/4ec58b92240964de812558dd899d7bc1/sprint-1
+
+- Sprint 5
+https://trello.com/invite/b/m11Ur9M7/ATTI89c3ef701b8bea93bb511955a84c8ce17995AD45/sprint-5
+
 
 # Descripcion de equipo
 ## Lucero Cortes

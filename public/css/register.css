@@ -10,28 +10,28 @@
 .login-titulo{
     margin-top: 40px;
     text-align: center;
-    color: hsl(157, 78%, 36%);
+    color: #3c145e;
 }
 
 .login-input{
     display: block;
     width: 100%;
     margin-bottom: 20px;
-    border: none;
-    border-bottom: hsl(157, 73%, 47%) 2px solid ;
+    
+    
     height: 40px;
-    color: hsl(157, 73%, 47%);
+    color: #3c145e;
     padding-left: 10px;
 }
 
 .login-input:hover{
-    background-color: hsl(157, 73%, 47%);
+    background-color: #3c145e2c;
     color: #fff;
 }
 
 .login-button{
     display: block;
-    background-color: hsl(157, 78%, 36%);
+    background-color:#3c145e;
     color: #fff;
     margin: 40px auto;
     padding: 10px;

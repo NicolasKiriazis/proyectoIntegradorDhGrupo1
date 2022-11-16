@@ -5,13 +5,13 @@ const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 // let ofertas = products.filter(product => product.type == "oferta")
-let nuevos = products.filter(product => product.type == "nuevo")
+let nuevos = products.filter(product => product.type == "nuevo") ;
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-const nuevos = products.filter(function(product){
-	return product.type == 'nuevo'
-})
+// const nuevos = products.filter(function(product){
+// 	return product.type == 'nuevo'
+// })
 let controller = {
     index: (req, res) =>{
         res.render('products/productList', {

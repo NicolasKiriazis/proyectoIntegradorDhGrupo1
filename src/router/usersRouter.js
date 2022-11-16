@@ -24,7 +24,7 @@ router.get("/profile/:id", usersController.profile);
 
 router.delete('/delete/:id', usersController.destroy);
 
-router.get('login', usersController.login);
+router.get('/login', usersController.login);
 
 // ruta para mostrar el fomulario de registro del usuario
 router.get("/register", usersController.register);

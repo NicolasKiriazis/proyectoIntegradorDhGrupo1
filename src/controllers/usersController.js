@@ -37,7 +37,7 @@ let controller = {
 
         users.push(nuevo);
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-		res.redirect('users/login');
+		res.redirect('/users/login');
     },
 
     login: (req,res) => {

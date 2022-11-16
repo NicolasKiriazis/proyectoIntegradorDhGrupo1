@@ -38,7 +38,6 @@ router.get('/edit/:id', productsController.edit);
 // ruta para editar el producto
 router.patch('/edit/:id', upload.any(),productsController.update); 
 
-
 // ruta para eliminar el producto
 router.delete('/delete/:id', productsController.destroy);
 

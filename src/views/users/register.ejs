@@ -8,7 +8,7 @@
     <%- include('../partials/header.ejs') %>
 
     <main>
-        <h1 class="login-titulo">BIENVENIDOS</h1>
+        <h1 class="login-titulo">REGISTRAR NUEVO USUARIO</h1>
         <form action="/users/register" method="POST" class="login-register">
             <div>
                 <label for="name" class="login-etiqueta">NOMBRE: </label>
@@ -38,12 +38,14 @@
                 <label for="passwordRepite" class="login-etiqueta">REPITA PASSWORD:</label>
                 <input type="password" id="passwordRepite" name="passwordRepite" class="login-input">
             </div>
+            <label for="image" class="login-etiqueta">GENERO</label>
             <div>
                 <input type="radio" name="gender" value="Male">
                 <label for="gender">Male</label>
                 <input type="radio" name="gender" value="Female">
                 <label for="gender">Female</label>
             </div>
+            <br>
                 
             <div>
                 <label for="image" class="login-etiqueta">Imagen de perfil:</label>
@@ -51,7 +53,7 @@
             </div>
 
             <div>
-                <button type="submit" class="login-button">REGISTRARSE</button>
+                <button type="submit"  class="action-button delete">REGISTRARSE</button>
             </div>
         </form>
     </main>
