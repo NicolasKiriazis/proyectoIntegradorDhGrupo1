@@ -3,8 +3,10 @@ const router = express.Router();
 const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
+const {check} = require ('express-validator')
 
 const usersController = require('../controllers/usersController');
+const logValidations = require('../middleware/logMiddleware')
 
 // config multer
 const storage = multer.diskStorage({
@@ -25,6 +27,7 @@ router.get("/profile/:id", usersController.profile);
 router.delete('/delete/:id', usersController.destroy);
 
 router.get('/login', usersController.login);
+router.post('/login', logValidations, usersController.autenticate)
 
 // ruta para mostrar el fomulario de registro del usuario
 router.get("/register", usersController.register);

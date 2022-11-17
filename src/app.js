@@ -50,3 +50,11 @@ app.use('/', mainRouter)
 app.use('/products', productsRouter);
 app.use('/users', usersRouter)
 
+// // configuracion de session
+
+// app.use (session ({
+//     secret: 'secret word!',
+//     resave: false,
+//     saveUninitialized: true,
+// }))
+

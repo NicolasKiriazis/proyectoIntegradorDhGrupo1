@@ -185,5 +185,37 @@
   "password": "$2a$10$Recw0.19JVhCFIBQepWTlO7p5K.uZOtbGZugCc4n/31PdY6Mk8Ryy",
   "gender": "Male",
   "image": "gamer.png"
+ },
+ {
+  "id": 18,
+  "name": "Luis Miguel",
+  "lastname": "ossa",
+  "direction": "colombiano",
+  "date": "2022-11-30",
+  "email": "dfsafdadasfd@hotmail.com",
+  "password": "$2a$10$JKCtb.KZqPw2nNcC15Ym.OIyYdgVFlHZUphegDxTQx2PFS2kkVula",
+  "gender": "Male",
+  "image": "gamer.png"
+ },
+ {
+  "id": 19,
+  "name": "Luis Miguel",
+  "lastname": "Ossa",
+  "direction": "colo",
+  "date": "",
+  "email": "",
+  "password": "$2a$10$V0kQUEVcxH3jbDB9zDAvreevJKCMkeuFxHzcQi5NHUPwCc66KqkI6",
+  "image": "gamer.png"
+ },
+ {
+  "id": 20,
+  "name": "Luis Miguel",
+  "lastname": "Ossa",
+  "direction": "colombiano",
+  "date": "2022-11-14",
+  "email": "luismiguel.ossa@hotmail.com",
+  "password": "$2a$10$TXfWu4s6rXgLIvGbU/NueelwIpMGU3ENfJ535FvsE..cop/dfB7nW",
+  "gender": "Male",
+  "image": "gamer.png"
  }
 ]

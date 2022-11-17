@@ -3,6 +3,8 @@
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
+const { validationResult } = require('express-validator');
+const { receiveMessageOnPort } = require('worker_threads');
 
 const usersFilePath = path.join(__dirname, '../data/userDataBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -58,7 +60,37 @@ let controller = {
 		let finalUsers = users.filter(user => user.id != id);
 		fs.writeFileSync(usersFilePath, JSON.stringify(finalUsers, null, ' '));
 		res.redirect('/users');
-	}
-}
+	}, 
+    autenticate: (req, res)=> {
+        const errors = validationResult (req)
+        console.log (errors)
+        if (!errors.isEmpty ()) {
+            return res.render ('users/login', {errors:errors.errors})
+        }
+        let user = users.find (user => user.email==req.body.email)
+        
+        if (user) {
 
+            let passOk = bcrypt.compareSync(req.body.password, user.password)
+
+            if (passOk) {
+                delete user.password
+                req.session.usuarioLog=user
+                console.log (req.session.usuarioLog)
+
+                return res.redirect ('/')
+            }
+            return res.render ('users/login',{
+                errors: {email:{msg:"usuario o contraseña invalida" }
+                }
+            })
+        }
+
+        return res.render ('users/login',{
+            errors: {email:{msg:"usuario o contraseña invalida" }
+        }
+            });
+
+    }
+}
 module.exports = controller;

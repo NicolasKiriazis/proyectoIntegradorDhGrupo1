@@ -12,10 +12,17 @@
             <div>
                 <img src="/image/gamer.png" alt="logo" id="logo-login">
             </div>
-
-            <form action="/login" method="post">
-                <input class="login1-input" type="text" name="name" placeholder="Nombre del usuario" required>
-                <input class="login1-input" type="password" name="pass" placeholder="Contraseña" required>
+            <div>
+                <% if (typeof errors != 'undefined') { %>
+                    <h2>Errores</h2>
+                    <% errors.forEach (error => { %>
+                      <li> <span><%= error.msg %></span></li>
+                    <% }) %>
+                  <% } %>
+            </div>
+            <form action="/users/login" method="POST">
+                <input class="login1-input" type="email" name="email" placeholder="Nombre del usuario">
+                <input class="login1-input" type="password" name="password" placeholder="Contraseña">
                 <button class="login1-button" type="submit">INGRESAR</button>
             </form>
 
