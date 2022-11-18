@@ -8,6 +8,7 @@ const { receiveMessageOnPort } = require('worker_threads');
 
 const usersFilePath = path.join(__dirname, '../data/userDataBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+const User = require('../models/User');
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -33,6 +34,37 @@ let controller = {
             ... req.body,
             image
         };
+
+        const resultValidation = validationResult(req);
+
+
+        if(resultValidation.errors.length > 0) {
+            return res.render('users/register', {
+            errors: resultValidation.mapped(),
+            oldData: req.body
+        })
+        }
+        
+        let userInDB = User.findByField('email', req.body.email);
+
+		if (userInDB) {
+			return res.render('users/register', {
+				errors: {
+					email: {
+						msg: 'Este email ya está registrado'
+					}
+				},
+				oldData: req.body
+			});
+		}
+
+		let userToCreate = {
+			...req.body,
+			password: bcrypt.hashSync(req.body.password, 10),
+			avatar: req.file.filename
+		}
+
+		let userCreated = User.create(userToCreate);
 
         nuevo.password = bcrypt.hashSync(req.body.password, 10);
         delete nuevo.passwordRepite
@@ -74,8 +106,8 @@ let controller = {
             let passOk = bcrypt.compareSync(req.body.password, user.password)
 
             if (passOk) {
-                delete user.password
-                req.session.usuarioLog=user
+                delete user.password ;
+                req.session.usuarioLog = user ;
                 console.log (req.session.usuarioLog)
 
                 return res.redirect ('/')

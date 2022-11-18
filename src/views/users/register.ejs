@@ -9,14 +9,22 @@
 
     <main>
         <h1 class="login-titulo">REGISTRAR NUEVO USUARIO</h1>
-        <form action="/users/register" method="POST" class="login-register">
+
+        
+        <form action="/users/register" method="POST" class="login-register" enctype="multipart/form-data">
             <div>
                 <label for="name" class="login-etiqueta">NOMBRE </label>
-                <input type="text" id="nombre" name="name" class="login-input">
+                <input type="text" id="nombre" name="name" class="login-input <%= locals.errors && errors.name ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.name : null  %>" >
+                <% if (locals.errors && errors.name) { %>
+                    <div class="text-danger">
+                        <%= errors.name.msg %> 
+                    </div>
+                    <br>
+                <% } %>
             </div>
             <div>
                 <label for="lastname" class="login-etiqueta">APELLIDO</label>
-                <input type="text" id="apellido" name="lastname" class="login-input">
+                <input type="text" id="apellido" name="lastname" class="login-input ">
             </div>
             <div>
                 <label for="direction" class="login-etiqueta">NACIONALIDAD</label>
@@ -28,11 +36,23 @@
             </div>
             <div>
                 <label for="email" class="login-etiqueta">E-MAIL</label>
-                <input type="email" id="mail" name="email" class="login-input">
+                <input type="email" id="mail" name="email" class="login-input <%= locals.errors && errors.email ? 'is-invalid' : null %>">
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
+                        <%= errors.email.msg %> 
+                    </div>
+                    <br>
+                <% } %>
             </div>
             <div>
                 <label for="password" class="login-etiqueta">PASSWORD</label>
-                <input type="password" id="password" name="password" class="login-input">
+                <input type="password" id="password" name="password" class="login-input <%= locals.errors && errors.password ? 'is-invalid' : null %>">
+                <% if (locals.errors && errors.password) { %>
+                    <div class="text-danger">
+                        <%= errors.password.msg %> 
+                    </div>
+                    <br>
+                <% } %>
             </div>
             <div>
                 <label for="passwordRepite" class="login-etiqueta">REPITA PASSWORD</label>

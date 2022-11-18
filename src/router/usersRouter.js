@@ -7,6 +7,8 @@ const {check} = require ('express-validator')
 
 const usersController = require('../controllers/usersController');
 const logValidations = require('../middleware/logMiddleware')
+const regValidations = require('../middleware/validateRegisterMiddleware');
+
 
 // config multer
 const storage = multer.diskStorage({
@@ -33,6 +35,7 @@ router.post('/login', logValidations, usersController.autenticate)
 router.get("/register", usersController.register);
 
 // ruta para crear el usuario
-router.post("/register",upload.single('image'),usersController.registered);
+router.post("/register",upload.single('image'), regValidations, usersController.registered);
+
 
 module.exports = router;
