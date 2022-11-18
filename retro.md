@@ -19,3 +19,14 @@ Actualmente seguimos trabajando en la rama main.
 5. Dejar de hacer: hacer correcciones a último momento, cerca del momento de la entrega del Sprint. 
 
 No se dejó de hacer esta practica. Otra vez tuvimos que agregar algo a último minuto. 
+
+
+Principales conclusiones de la retro del 5° sprint:
+
+El equipo sigue mostrando mejoría en la planificación del tiempo y en la metodología de trabajo. Desde un principio nos distribuimos las tareas segun las habilidades y fortalezas de cada uno y la trazabilidad de lo realizado en los Sprints anteriores. Todo lo anterior quedó plasmado en el Trello.
+
+Tuvimos varios encuentros en simultáneo para la resolución de dudas en general y codear en conjunto algunos aspectos que tendrían impacto en la totalidad del código.
+
+El equipo se vio retado puntualmente en la consigna del login de usuarios, dada la complejidad y robustez del tema.
+
+Se logró avanzar en cada una de las consignas propuestas en el Sprint y algunos aspectos faltantes están próximos a ser culminados, todo con la intención de finiquitarlo en su totalidad antes de iniciar el próximo.
