@@ -3,6 +3,9 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const auth = require('./middlewares/auth');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
 
 // Configurar el entorno de la aplicación para que sea capaz de capturar la información
 app.use(express.urlencoded({ extended: false }));
@@ -22,6 +25,8 @@ const methodOverride =  require('method-override');
 
 const session = require('express-session');
 
+app.use(logger('dev'));
+app.use(express.json());
 
 // Parar poder pisar el method="POST" en el formulario por PUT y DELETE
 
@@ -37,7 +42,16 @@ app.set('view engine', 'ejs')
 
 app.set('views', path.join(__dirname, 'views'))
 
-//app.use(session( {secret: "secreto"}));
+
+app.use(session({
+    secret: 'sticker wizzard',
+    resave: false,
+    saveUninitialized: true,
+  }));
+  
+  app.use(cookieParser());
+  
+  app.use(auth);
 
 // Levantar servidor
 

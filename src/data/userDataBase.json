@@ -176,17 +176,6 @@
   "image": "gamer.png"
  },
  {
-  "id": 17,
-  "name": "hh",
-  "lastname": "hhh",
-  "direction": "hh",
-  "date": "",
-  "email": "",
-  "password": "$2a$10$Recw0.19JVhCFIBQepWTlO7p5K.uZOtbGZugCc4n/31PdY6Mk8Ryy",
-  "gender": "Male",
-  "image": "gamer.png"
- },
- {
   "id": 18,
   "name": "Luis Miguel",
   "lastname": "ossa",
@@ -267,5 +256,49 @@
   "email": "",
   "password": "$2a$10$s7CjWZfs.ipZJy4tsRvAiuivZnlUM/yzUJ6ENx6vZkeg5GFwzyaAG",
   "image": "gamer.png"
+ },
+ {
+  "id": 26,
+  "name": "alberto",
+  "lastname": "fernandez",
+  "direction": "argentino",
+  "date": "1965-05-04",
+  "email": "alberto@fernandez.com",
+  "password": "$2a$10$VPvYxixrA8NA7Q2fpMdLVu/X4yg0amNTE7Php.KCYqCEHbi1zRaFG",
+  "gender": "Male",
+  "image": "image-1668838287449.jpg"
+ },
+ {
+  "id": 27,
+  "name": "sssss",
+  "lastname": "sssss",
+  "direction": "ssss",
+  "date": "2222-02-22",
+  "email": "aa@aa.aa",
+  "password": "$2a$10$RqBXzqpiLC9zSj74VX4VO.I76NzR7bw/lUqJTA.ykTU7SwkcbqICa",
+  "gender": "Male",
+  "image": "image-1668838899796.jpg"
+ },
+ {
+  "id": 28,
+  "name": "aa",
+  "lastname": "aaa",
+  "direction": "aa",
+  "date": "0011-11-11",
+  "email": "aaa@aaa.aa",
+  "password": "$2a$10$njaV3e4gunxuDHu/QBNeCezAVrO7Q2Tt4NSfIP139IguHZ0jkjpu.",
+  "gender": "Male",
+  "image": "image-1668840822955.jpg"
+ },
+ {
+  "id": 29,
+  "name": "Prueba",
+  "lastname": "Final",
+  "direction": "argentino",
+  "date": "1212-12-12",
+  "email": "xx@xx.xx",
+  "password": "$2a$10$DL8Ab3onjzyJ.9FGydtg7O2xU2lBwWBev8f3oNw4P.kwuQS.ufoce",
+  "gender": "Female",
+  "image": "image-1668844485890.jpg"
  }
 ]

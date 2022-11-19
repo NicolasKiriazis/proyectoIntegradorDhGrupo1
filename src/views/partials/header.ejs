@@ -1,5 +1,7 @@
 <header>
 
+
+
     <div class="top-header">
         <p class=""><a href="/users/register">CREA TU CUENTA AHORA Y OBTÉN 15% OFF EN LA PRIMERA COMPRA!</a></p>
     </div>
@@ -15,19 +17,50 @@
             </div>
             <nav>
                 <a href="/users">
-                <ul class="nav-item">
-                    <li>QUIENES SOMOS</li>
-                    <li>MEDIOS DE PAGO</li>
-                    <li>SOPORTE</li>
-                </ul>
-            </a>
+                    <ul class="nav-item">
+                        <li>QUIENES SOMOS</li>
+                        <li>MEDIOS DE PAGO</li>
+                        <li>SOPORTE</li>
+                    </ul>
+                </a>
             </nav>
             <div>
                 <ul class="nav-item">
                     <li class="login"><a href="/users/login"><i class="fas fa-user-astronaut"></i></a></li>
                     <li class="cart"><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+
+                    <% if (locals.user) { %>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="/image/users/<%= locals.user.image %>" class="img-prof""
+                                        style=" border-radius: 100%;">
+                                Hola <%= locals.user.name %> !
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="menu-logout" href="/users/profile/<%= locals.user.id %>">Mi perfil</a>
+
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li>
+                                    <form action="/users/logout" method="POST" class="form is-inline">
+                                        <a class="menu-logout"
+                                            onclick="this.closest('form').submit();return false;">Logout</a>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                        <% } else { %>
+                            <li class="nav-item"><a class="nav-link" href="/users/register">Register</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/users/login">Login</a></li>
+                            <% } %>
+
                 </ul>
+
             </div>
+
         </div>
         <div class="search-container">
             <input type="text" id="search-bar" placeholder="  Buscar juegos, consolas, acc..">
