@@ -29,7 +29,7 @@ let upload = multer({ storage: storage });
 
 router.get("/",userRoute, usersController.index);
 
-router.get("/profile/:id", userRoute, usersController.profile);
+router.get("/profile/:id", usersController.profile);
 
 router.get('/login', guestRoute, usersController.login);
 

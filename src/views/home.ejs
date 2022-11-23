@@ -13,90 +13,106 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <a href="/products/detail/10">
-                            <img src="image/banner1.png" alt="FIFA 2023" class="carousel">
-                        </a>
+                                <img src="image/banner1.png" alt="FIFA 2023" class="carousel">
+                            </a>
                         </div>
                         <div class="carousel-item">
                             <a href="/products/detail/9">
-                            <img src="image/banner2.jpg" alt="Apex Legends" class="carousel">
-                        </a>
+                                <img src="image/banner2.jpg" alt="Apex Legends" class="carousel">
+                            </a>
                         </div>
                         <div class="carousel-item">
                             <a href="/products/detail/4">
-                            <img src="image/banner3.png" alt="Need for Speed™ Unbound" class="carousel">
-                        </a>
+                                <img src="image/banner3.png" alt="Need for Speed™ Unbound" class="carousel">
+                            </a>
                         </div>
                     </div>
                 </div>
 
             </section>
+            <br>
 
             <a href="/products"> </a>
             <main>
-         
-                
-                <br>
-                <i class="fas fa-alien-monster">categorias</i>
+
+
+
                 <br>
                 <!-- SECCIÓN DE CATEGORÍAS -->
                 <section class="categorias">
-                    
-        
-                    <div id="products-container">
+
+
+                    <div class="categ-container">
 
                         <div class="container-duo">
-                            <img src="image/consolas.png" alt="item-consolas" class="product_img">
+                            <span class="material-symbols-outlined">
+                                rocket_launch
+                            </span>
+
+                            <p>Accion</p>
+
                         </div>
                         <div class="container-duo">
-                            <img src="image/juegos.png" alt="item-juegos" class="product_img">
+                            <span class="material-symbols-outlined">
+                                toys
+                            </span>
+                            <p>Aventura</p>
                         </div>
                         <div class="container-duo">
-                            <img src="image/controles.png" alt="item-controles" class="product_img">
+                            <span class="material-symbols-outlined">
+                                sports_soccer
+                            </span>
+                            <p>Deportes</p>
                         </div>
                         <div class="container-duo">
-                            <img src="image/accesorios.png" alt="item-accesorios" class="product_img">
+                            <span class="material-symbols-outlined">
+                                casino
+                            </span>
+                            <p>Estrategia</p>
                         </div>
+
 
                     </div>
 
                 </section>
                 <br>
                 <br>
-                 <!-- SECCIÓN DE NUEVOS PRODUCTOS / LANZAMIENTOS -->
-                 <section class="productos-nuevos">
-                    <i class="fas fa-dragon"></i>
-                    <br>
-                    <i class="fas fa-alien-monster">nuevos LANZAMIENTOS</i>
-                    <h3></h3>
+                <!-- SECCIÓN DE NUEVOS PRODUCTOS / LANZAMIENTOS -->
+                <section class="productos-nuevos">
+                    <div class="lanza">
+                        <p>LANZAMIENTOS</p>
+                    </div>
                     <br>
                     <div class="products-container">
 
                         <div class="container products-wrapper">
-                            <div class="row">
-                            
+
+                            <!-- Show the "in-sale" products -->
+                            <% nuevos.forEach(function(product){ let finalPrice=(product.price * ((100 -
+                                product.discount) / 100)).toFixed(0) %>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <section class="product-box">
+                                        <a href="/products/detail/<%= product.id %>">
+                                            <figure class="product-box_image">
+                                                <img src="image/product-detail-img/<%= product.image %>"
+                                                    alt="imagen de producto">
+                                            </figure>
+                                            <article class="product-box_data">
+                                                <h2>
+                                                    <%= product.name %>
+                                                </h2>
+                                                <span>DESCUENTO <%= product.discount %> %OFF</span>
+                                                <p>PRECIO: USD <%= toThousand(finalPrice) %>
+                                                </p>
+
+                                            </article>
+                                        </a>
+                                    </section>
                                 </div>
-                                <!-- Show the "in-sale" products -->
-                                <% nuevos.forEach(function(product){ 
-                                    let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0) %>
-                                    <div class="col-12 col-sm-6 col-lg-3">
-                                        <section class="product-box">
-                                            <a href="/products/detail/<%= product.id %>">
-                                                <figure class="product-box_image">
-                                                    <img src="image/product-detail-img/<%= product.image %>" alt="imagen de producto">
-                                                </figure>
-                                                <article class="product-box_data">
-                                                    <h2><%= product.name %></h2>
-                                                    <span>DESCUENTO <%= product.discount %> %OFF</span>
-                                                    <p>PRECIO: USD <%= toThousand(finalPrice) %></p>
-                                                    
-                                                </article>
-                                            </a>
-                                        </section>
-                                    </div>
                                 <% }) %>
-                                </div>
-                            </div>
-                    
+                        </div>
+                    </div>
+
                     </div>
 
                 </section>
@@ -109,19 +125,20 @@
 
 
                     <br>
-                    <i class="fas fa-alien-monster">ELIGE TU forma de jugar</i>
-                    <h3></h3>
+                    <div class="lanza">
+                        <p>ELIGE TU FORMA DE JUGAR</p>
+                    </div>
                     <br>
 
                     <a href="/products">
-                    <div class="products-container">
-                        <img src="image/playStation.png" alt="item-playstation" class="marcas-games">
+                        <div class="products-container">
+                            <img src="image/playStation.png" alt="item-playstation" class="marcas-games">
 
-                        <img src="image/nintendo.png" alt="item-nintendo" class="marcas-games">
+                            <img src="image/nintendo.png" alt="item-nintendo" class="marcas-games">
 
-                        <img src="image/xbox.png" alt="item-xbox" class="marcas-games">
+                            <img src="image/xbox.png" alt="item-xbox" class="marcas-games">
 
-                    </div>
+                        </div>
                     </a>
                     <br>
                     <br>

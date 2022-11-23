@@ -26,8 +26,8 @@
             </nav>
             <div>
                 <ul class="nav-item">
-                    <li class="login"><a href="/users/login"><i class="fas fa-user-astronaut"></i></a></li>
-                    <li class="cart"><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                   
+
 
 
                     <% if (locals.user) { %>
@@ -36,14 +36,15 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="/image/users/<%= locals.user.image %>" class="img-prof""
                                         style=" border-radius: 100%;">
-                                Hola <%= locals.user.name %> !
+                                 Hola <%= locals.user.name %> 
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class="menu-logout" href="/users/profile/<%= locals.user.id %>">Mi perfil</a>
+                                    <a class="menu-logout" href="/users/profile/<%= locals.user.id %>">Perfil</a>
 
                                 </li>
-                                <hr class="dropdown-divider">
+                                <li class="cart"><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                
                                 <li>
                                     <form action="/users/logout" method="POST" class="form is-inline">
                                         <a class="menu-logout"
@@ -54,6 +55,7 @@
                         </li>
                         <% } else { %>
                             <li class="nav-item"><a class="nav-link" href="/users/register">Registrar</a></li>
+                            <li class="login"><a href="/users/login"><i class="fas fa-user-astronaut"></i></a></li>
                             <li class="nav-item"><a class="nav-link" href="/users/login">Login</a></li>
                             <% } %>
 

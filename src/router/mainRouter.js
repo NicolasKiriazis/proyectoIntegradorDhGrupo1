@@ -2,10 +2,10 @@ const { Router } = require('express')
 const express = require('express')
 const router = express.Router()
 const mainController = require('../controllers/mainController')
-
+const userRoute = require('../middlewares/userRoute');
 
 //RUTA HOME//
-router.get('/', mainController.home)
+router.get('/',  mainController.home)
 
 //RUTA LOGIN//
 
@@ -13,7 +13,7 @@ router.get('/', mainController.home)
 
 //RUTA PRODUCT CART //
 
-router.get('/productCart', mainController.productCart)
+router.get('/productCart', userRoute, mainController.productCart)
 
 //RUTA REGISTER //
 
