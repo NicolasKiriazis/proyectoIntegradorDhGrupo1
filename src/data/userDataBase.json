@@ -267,5 +267,27 @@
   "email": "",
   "password": "$2a$10$s7CjWZfs.ipZJy4tsRvAiuivZnlUM/yzUJ6ENx6vZkeg5GFwzyaAG",
   "image": "gamer.png"
+ },
+ {
+  "id": 27,
+  "name": "adalucs",
+  "lastname": "cortes",
+  "direction": "mex",
+  "date": "1998-09-22",
+  "email": "adalucs@hotmail.com",
+  "password": "$2a$10$h7V4Y.FAwC9Vii.kz3b7N.lOj80RfXnYujVAD2ui3U.8TGX5Npk9C",
+  "gender": "Female",
+  "image": "image-1668733228856.png"
+ },
+ {
+  "id": 28,
+  "name": "prueba2",
+  "lastname": "prueba",
+  "direction": "mex",
+  "date": "",
+  "email": "prueba@hotmail.com",
+  "password": "$2a$10$0DLDOO2PzCsqjFISayr/meyhM5hkC9y28MXFKO80OYirVeRs.Ujga",
+  "gender": "Female",
+  "image": "image-1668734896902.png"
  }
 ]
