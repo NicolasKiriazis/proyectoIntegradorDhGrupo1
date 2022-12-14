@@ -19,14 +19,14 @@
     margin-bottom: 20px;
     
     
-    height: 40px;
-    color: #3c145e;
+    height:30px;
+    color: #681ea8;
     padding-left: 10px;
 }
 
 .login-input:hover{
-    background-color: #3c145e2c;
-    color: #fff;
+    background-color: #3c145e1f;
+    color: rgb(54, 10, 90);
 }
 
 .login-button{
@@ -41,4 +41,11 @@
 
 .card-img-top {
     height: 250px;
+    padding: 20px;
+}
+
+div label {
+    color: #3c145e;
+    font-family: Geneva, Verdana, sans-serif ;
+    font-size: small;
 }

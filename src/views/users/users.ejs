@@ -6,6 +6,9 @@
         <%- include('../partials/header.ejs') %>
 
             <main class="fondo-users">
+
+                <h5 class="login-titulo">LISTA DE USUARIOS</h5>
+
                 <div class="user-frame">
 
                     <% users.map(user=>{ %>
@@ -18,7 +21,10 @@
                                             <%= " " + user.lastname %>
                                     </h5>
                                     <p class="card-text">
-                                        <%= "Numero de usuario:" + " " + user.id %>
+                                        <%=" " + user.email %>
+                                    </p>
+                                    <p class="card-text">
+                                        <%= "Numero:" + " " + user.id %>
                                     </p>
                                     <form action="../users/profile/<%= user.id %>" method="GET" style="display: inline-flex">
                                         <button type="submit" class="action-button delete"> Perfil </button>

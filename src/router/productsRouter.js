@@ -5,6 +5,9 @@ const path = require('path');
 
 const productsController = require('../controllers/productsController');
 
+
+const userRoute = require('../middlewares/userRoute');
+
 // config multer
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -21,24 +24,24 @@ const storage = multer.diskStorage({
   
 // ruta para el home
 router.get("/", productsController.index)
-router.get("../", productsController.index)
+
 
 // ruta para el detalle de un producto //
 router.get('/detail/:id', productsController.detail)
 
 // ruta para mostrar el fomulario de creacion de productos
-router.get('/create', productsController.formulario);
+router.get('/create', userRoute, productsController.formulario);
 
 // ruta para crear el producto
-router.post('/create',upload.single('image'),productsController.creacion);
+router.post('/create', userRoute, upload.single('image'),productsController.creacion);
 
 // ruta para mostrar el formulario de edicion de productos
-router.get('/edit/:id', productsController.edit);
+router.get('/edit/:id', userRoute, productsController.edit);
 
 // ruta para editar el producto
-router.patch('/edit/:id', upload.any(),productsController.update); 
+router.patch('/edit/:id', userRoute, upload.any(),productsController.update); 
 
 // ruta para eliminar el producto
-router.delete('/delete/:id', productsController.destroy);
+router.delete('/delete/:id', userRoute, productsController.destroy);
 
 module.exports = router;

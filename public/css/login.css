@@ -109,6 +109,13 @@ main section#login1 p#login-register {
     color: gray;
 }
 
+.error-msg {
+    min-width: 220px;
+    color: #3c145e;
+    background-color: #390ca323;
+    border-radius: 6px;
+}
+
 /* * * * * M E D I A   T A B L E T* * * * */
 @media (min-width: 361px) {
     main section#login1 {

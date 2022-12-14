@@ -351,6 +351,17 @@ img.carousel {
     max-height: 315px;
 }
 
+li {
+    color: white;
+}
+
+.img-prof {
+    width: 40px;
+}
+
+.dropdown-menu{
+    background-color: #120727;
+}
 /* --- MediaQueris --- */
 
 @media (min-width: 560px) {
@@ -373,9 +384,7 @@ img.carousel {
         justify-content: center;
     }
 
-    ul.nav-item {
-        margin-left: 30px;
-    }
+ 
 
     nav {
         display: block;

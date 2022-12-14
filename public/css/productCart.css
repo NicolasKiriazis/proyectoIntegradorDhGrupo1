@@ -507,9 +507,7 @@ button:active:before {
         justify-content: center;
     }
 
-    ul.nav-item {
-        margin-left: 30px;
-    }
+    
 
     nav {
         display: block;
