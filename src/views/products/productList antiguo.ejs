@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+
+
+
+<body>
+
+    <%- include('../partials/header') %>
+
+    <main>
+
+     <div  class="cards-boxx">
+
+        <% products.map(product => { 
+            let finalPrice = product.price - (product.price * product.discount) / 100;
+            %>
+
+        <a href="products/detail/<%= product.id %>">
+        <div class="card-container">
+            <img src="image/product-detail-img/<%= product.image %>" alt="<%= product.name %>" class="image">
+
+            <div id="sale-data">
+                <p><%= product.discount + " " + "%" + " " + "OFF"%> </p>
+            </div>
+
+            <section id="card-data">
+                <p><%= product.name %> </p>
+                <p id="price"> <%= "USD$"+ " " + product.price%> </p>
+                <p id="final-price"><%= "USD$" + " " + finalPrice %> </p>
+
+            </section>
+        </div>
+        </a>
+
+        <% }) %>
+
+        <div id="container"> --->
+
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+
+</html>

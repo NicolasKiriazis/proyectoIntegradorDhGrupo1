@@ -1,5 +1,7 @@
 /* FUENTE IMPORTADA */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
 
 /* ---- CSS Header ---- */
 
@@ -36,6 +38,7 @@ header i {
 
 div.container#header {
     flex-wrap: nowrap;
+
 }
 
 div.top-header {
@@ -85,6 +88,19 @@ ul.nav-item li:hover {
 ul.nav-item li:hover i {
     color: #cade01;
 }
+
+ul.dropdown-menu li {
+    border-top: #cade01;
+
+}
+
+
+
+a:hover {
+    color: #cade01;
+    border-top: #cade01;
+}
+
 
 
 
@@ -152,35 +168,108 @@ main {
 
 }
 
-#products-container {
+div.products-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-
+    max-width: 1100px;
+    text-align: center;
+    align-items: center;
 }
+
 
 .productos-nuevos {
     display: none;
+    background-color: #33095838;
 }
 
 .container {
     display: flex;
-    
+
 
 }
 
 .container-duo {
+
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    color: #120727;
+    background-color: #4213992c;
+    padding-top: 18px;
+}
+
+.container-duo:hover {
+    color: #cade01;
+    background-color: #3c145e;
+}
+
+.container-duo p {
+    font-family: 'Bebas Neue';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    color: #120727;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.lanza p {
+    font-family: 'Bebas Neue';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    color: #3c145e;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+.container-duo span {
+    font-size: 35px;
+}
+
+
+div.categ-container {
+    display: flex;
+    justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+
 }
 
-figure img {
-    max-height: 254px ;
+div.categ-container i {
+    font-size: large;
+    width: 40px;
 }
 
-.product-box_data{
+section.categorias {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.product-box_data {
     max-height: 134px;
     background-color: #12072746;
     padding: 5px;
+}
+
+.product-box_data h2 {
+    font-size: 24px;
+    margin-top: 6px;
 }
 
 .product_img {
@@ -198,7 +287,7 @@ p {
 }
 
 .marcas-games {
-    width: 60%;
+    width: 30%;
     margin: 15px;
     box-shadow: 0px 0px 10px black;
     border-radius: 10px
@@ -261,7 +350,7 @@ main h3 {
         display: flex;
     }
 
-    #products-container {
+    div.products-container {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -274,7 +363,8 @@ main h3 {
         flex-wrap: nowrap;
         justify-content: center;
         background-color: #3c145e4a;
-        
+        padding-top: 30px;
+
     }
 
 
@@ -291,6 +381,7 @@ main h3 {
     div.logo {
         width: 30%;
     }
+
 }
 
 @media (min-width: 1000px) {
@@ -300,10 +391,45 @@ main h3 {
         flex-wrap: wrap;
         justify-content: space-around;
         background-color: #3c145e4a;
-        
+        margin-top: 10px;
     }
 
     .productos-nuevos {
-        display:contents;
+        display: contents;
+    }
+
+    .categ-container {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .container-duo {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 250px;
+        text-align: center;
+        align-items: center;
+        height: 200px;
+        color: #120727;
+        background-color: #4213992c;
+    }
+
+    .container-duo:hover {
+        color: #cade01;
+        background-color: #3c145e;
+    }
+
+    .container-duo p {
+        font-family: 'Bebas Neue';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        color: #120727;
+
     }
 }

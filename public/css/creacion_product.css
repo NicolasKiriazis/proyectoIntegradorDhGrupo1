@@ -50,7 +50,7 @@ main section#creacion form article {
     flex-direction: row;
     width: 100%;
     justify-content: center;
-} 
+}
 
 main section#creacion form input#nombre {
     width: 90%;
@@ -143,13 +143,18 @@ main section#creacion form button.creacion-button:hover {
     main section#creacion form input#nombre {
         width: 50%;
     }
-    
+
     main section#creacion form input#stock {
         width: 20%;
     }
-    
+
     main section#creacion form input#precio {
         width: 20%;
+    }
+
+    .main-creacion div.container {
+        flex-wrap: wrap;
+        background-color: #fff;
     }
 }
 
@@ -163,18 +168,22 @@ main section#creacion form button.creacion-button:hover {
     main section#creacion form input#nombre {
         width: 60%;
     }
-    
+
     main section#creacion form input#stock {
         width: 10%;
     }
-    
+
     main section#creacion form input#precio {
         width: 10%;
+    }
+
+    textarea {
+        min-width: 400px;
     }
 }
 
 .nombreProduct {
-    color : #3c145e75 ;
+    color: #3c145e75;
 }
 
 article label {
@@ -184,11 +193,11 @@ article label {
     padding-left: 7px;
 }
 
-.textDesc{
+.textDesc {
     padding: 5px;
 }
 
-.contBoton{
+.contBoton {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -196,3 +205,26 @@ article label {
     align-items: center;
 }
 
+#createProduc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-12 {
+    margin: 5px;
+    background-color: #3c145e35;
+    padding: 3px;
+
+    
+}
+
+.col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 50%;
+   
+}
+
+.salv {
+    background-color: #390ca32f;
+}

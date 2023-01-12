@@ -5,43 +5,57 @@
 
 
 
-<body>
+    <body>
 
-    <%- include('../partials/header') %>
+        <%- include('../partials/header') %>
 
-    <main>
+            <main>
 
-        <div  class="cards-boxx">
+                
+                <div class="products-container">
 
-        <% products.map(product => { 
-            let finalPrice = product.price - (product.price * product.discount) / 100;
-            %>
+                    <div class="container products-wrapper">
+                        <div class="row">
+                        <div class="col-12" id="allProdC">
+                            <h2 class="products-title">TODOS LOS PRODUCTOS</h2>
+                        </div>
 
-        <a href="products/detail/<%= product.id %>">
-        <div class="card-container">
-            <img src="image/product-detail-img/<%= product.image %>" alt="<%= product.name %>" class="image">
+                        <!-- Show All products -->
+                        <% products.forEach(function(product){ let finalPrice=(product.price * ((100 - product.discount)
+                            / 100)).toFixed(0) %>
+                            <div class="col-12 col-sm-6 col-lg-3" id="prodCol">
+                                <section class="product-box">
+                                    <a href="/products/detail/<%= product.id %>">
+                                        <figure class="product-box_image">
+                                            <img src="image/product-detail-img/<%= product.image %>"
+                                                alt="imagen de producto">
+                                        </figure>
+                                        <article class="product-box_data">
+                                            <h2>
+                                                <%= product.name %>
+                                            </h2>
+                                            <span>DESCUENTO <%= product.discount %> %OFF</span>
+                                            <h5>PRECIO: USD <%= toThousand(finalPrice) %>
+                                            </h5>
 
-            <div id="sale-data">
-                <p><%= product.discount + " " + "%" + " " + "OFF"%> </p>
-            </div>
+                                        </article>
+                                    </a>
+                                </section>
+                            </div>
+                            <% }) %>
+                             <div class="col-12">
+                        <a href="/products/create/" class="action-button edit">
+                                <button>Crear producto</button></a>
+                                </div>
+                            </div>
+                    </div>
 
-            <section id="card-data">
-                <p><%= product.name %> </p>
-                <p id="price"> <%= "USD$"+ " " + product.price%> </p>
-                <p id="final-price"><%= "USD$" + " " + finalPrice %> </p>
+                   
 
-            </section>
-        </div>
-        </a>
+            </main>
 
-        <% }) %>
+            <%- include('../partials/footer.ejs') %>
 
-        <div id="container">
-
-    </main>
-
-    <%- include('../partials/footer.ejs') %>
-
-</body>
+    </body>
 
 </html>

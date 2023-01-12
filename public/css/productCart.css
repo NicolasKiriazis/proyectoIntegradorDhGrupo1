@@ -88,12 +88,13 @@ section {
 
 .container {
     display: flex;
+
     justify-content: space-around;
     align-items: center;
     text-align: center;
     padding: 10px;
     padding-bottom: 0px;
-    background-color: #120727;
+   
    
 
 }
@@ -135,7 +136,7 @@ section {
 
 main {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
@@ -150,7 +151,7 @@ p {
 }
 
 main section.navbar {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -168,10 +169,22 @@ main section.navbar ul {
     align-items: center;
     list-style-type: none;
     font-size: 10px;
-    margin-left: 30px;
+    
 }
 
-li {
+.cart-botton {
+    text-align: center;
+    align-items: center;
+}
+
+.cart-botton p {
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 10px;
+   
+}
+
+ul li {
     width: 140px;
     padding: 10px;
     font-size: 16px;
@@ -180,6 +193,7 @@ li {
 
 li.carrito {
     border-bottom: 2px solid #3c145ef9;
+    color: #120727;
 }
 
 li.carrito:hover {
@@ -192,7 +206,7 @@ div.cart {
 
 main section.navbar div {
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     width: 30%;
     text-align: right;
     margin: 10px;
@@ -499,6 +513,7 @@ button:active:before {
 
 /*--- Media querys ---*/
 
+
 @media (min-width: 768px) {
 
     /*--- Header ---*/
@@ -531,6 +546,13 @@ button:active:before {
 
     ul.categorias li {
         font-size: 18px;
+        margin-left: 10px;
+    }
+
+    ul.categorias {
+        display: flex;
+        margin-left: 20px;
+        justify-content: flex-start;
     }
 
     div.desc-container i {

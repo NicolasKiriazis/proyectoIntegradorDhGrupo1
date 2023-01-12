@@ -137,7 +137,7 @@ a {
     all: unset;
 }
 
-section.cart{
+section.cart {
     margin-bottom: 20px;
 }
 
@@ -159,6 +159,7 @@ li.cart {
 
 li.login {
     margin-left: 6px;
+    display: none;
 }
 
 ul.nav-item li {
@@ -185,7 +186,7 @@ ul.nav-item li:hover i {
     align-items: center;
     padding: 10px;
     padding-bottom: 0px;
-    background-color: #120727;
+
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -230,7 +231,7 @@ footer {
 }
 
 footer h3 {
-    color:#cade01 ;
+    color: #cade01;
 }
 
 
@@ -269,13 +270,13 @@ footer h3 {
 }
 
 
-.fondo-users{
+.fondo-users {
     background-color: #3c145e21;
     max-width: 1010px;
     margin-bottom: 30px;
 }
 
-.fondo-user{
+.fondo-user {
     align-items: center;
     text-align: center;
     background-color: #3c145e21;
@@ -296,56 +297,58 @@ div.card {
     margin: 20px;
 }
 
-.col-md-4{
+.col-md-4 {
     padding: 10px;
 }
 
-.card-body{
+.card-body {
     width: 600px;
     text-align: left;
 }
 
 .user-box {
     margin: 9px;
-    
+
 }
 
-.botones-user{
+.botones-user {
     display: flex;
     margin: 10px;
 }
 
-.botones-user form{
+.botones-user form {
     margin-right: 10px;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #3c145e;
     border-color: #120727;
     bs-btn-active-bg: #3c145e;
 }
- 
-:hover .btn-primary{
+
+:hover .btn-primary {
     background-color: #3c145e;
     border-color: #120727;
 }
-:active .btn-primary{
+
+:active .btn-primary {
     background-color: #3c145eee;
     border-color: #120727;
 }
 
-:focus .btn-primary{
+:focus .btn-primary {
     background-color: #3c145ef8;
     border-color: #120727;
 }
 
-.fondo-users{
+.fondo-users {
     background-color: #f0e9e9fd;
 }
 
 .carousel {
     margin-top: 20px;
 }
+
 img.carousel {
     max-width: 970px;
     max-height: 315px;
@@ -359,9 +362,10 @@ li {
     width: 40px;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: #120727;
 }
+
 /* --- MediaQueris --- */
 
 @media (min-width: 560px) {
@@ -372,6 +376,11 @@ li {
 }
 
 @media (min-width: 768px) {
+    .footer-contendedor-dos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .footer-contenedor-tres {
         display: flex;
@@ -384,7 +393,7 @@ li {
         justify-content: center;
     }
 
- 
+
 
     nav {
         display: block;
@@ -408,7 +417,7 @@ li {
         font-size: 15px;
     }
 
-   .user-frame {
+    .user-frame {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

@@ -39,7 +39,7 @@ router.post('/create', userRoute, upload.single('image'),productsController.crea
 router.get('/edit/:id', userRoute, productsController.edit);
 
 // ruta para editar el producto
-router.patch('/edit/:id', userRoute, upload.any(),productsController.update); 
+router.patch('/edit/:id', userRoute, upload.single('image'),productsController.update); 
 
 // ruta para eliminar el producto
 router.delete('/delete/:id', userRoute, productsController.destroy);

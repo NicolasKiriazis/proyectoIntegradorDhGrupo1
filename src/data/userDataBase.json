@@ -44,17 +44,6 @@
   "image": "gamer.png"
  },
  {
-  "id": 5,
-  "name": "Hanna",
-  "lastname": "Januszkiewicz",
-  "direction": "0 Coolidge Drive",
-  "date": "1998-09-2022",
-  "email": "hjanuszkiewicz4@tinyurl.com",
-  "password": "FalD4N",
-  "gender": "Female",
-  "image": "gamer.png"
- },
- {
   "id": 6,
   "name": "Lindon",
   "lastname": "Macer",

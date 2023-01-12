@@ -7,94 +7,125 @@
 
         <%- include('../partials/header.ejs') %>
             <br>
-            <h2 class="products-title">EDICION DE PRODUCTO:  <i class="nombreProduct">
-                    <%= productToEdit.name %>
-                </i></h2>
 
             <main class="main-creacion">
-                <section id="creacion">
-
-                    <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
-
-                        <br>
-
-                        <div class="editForm">
-                            <article>
-                                <label for="">Nombre</label>
-                                <input class="login-creacion" id="name" type="text" name="name"
-                                    placeholder="Nombre del producto" required value="<%= productToEdit.name %>">
-
-                                <label for="">Stock</label>
-                                <input class="login-creacion numero" id="stock" type="number" name="stock"
-                                    placeholder="Stock" min="0" step="1" required value="<%= productToEdit.stock %>">
-
-                                <label for="">Descuento</label>
-                                <input class="login-creacion numero" id="discount" type="number" name="discount"
-                                    placeholder="Descuento" min="0" step="1" required
-                                    value="<%= productToEdit.discount %>">
-
-                                <label for="">Precio</label>
-                                <input class="login-creacion numero" id="precio" type="number" name="price"
-                                    placeholder="Precio" min="0" step=".01" required value="<%= productToEdit.price %>">
-                            </article>
+                <div class="container products-wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="products-title">Edicion producto: <i>
+                                    <%= productToEdit.name %>
+                                </i></h2>
                         </div>
-                        <div class="contBoton">
-
-                        <br>
-                        <label for="">Descripcion</label>
-                        <textarea class="textDesc" name="description" id="descripcion"
-                            required ><%= productToEdit.description %></textarea>
-
-                        <fieldset id="image">
-                            <legend class="etiqueta_titulo" for="image"> Selecciona la imagen del producto </legend>
-                            <input type="file" for="image" name="image" id="image" accept="image/*">
-                            <img src="/image/product-detail-img/<%= productToEdit.image %> " width="100">
-                        </fieldset>
-
-                    
-                        <fieldset>
-                            <legend class="etiqueta_titulo">Categoria del Juego</legend>
-                            <input list="category" id="categoria" name="category" value="<%= productToEdit.category%>">
-                            <datalist id="category" required>
-                                <option value="Accion">
-                                <option value="Aventura">
-                                <option value="Deportes">
-                                <option value="Estrategia">
-                                <option value="Simulacion"></option>
-                            </datalist>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend class="etiqueta_titulo">Consola</legend>
-                            <input list="consolas" placeholder="Consola" id="consola" name="platform"
-                                value="<%= productToEdit.platform%>">
-                            <datalist id="consolas" required>
-                                <option value="Xbox">
-                                <option value="Play Station">
-                                <option value="Nintendo">
-                                <option value="Computadora">
-                            </datalist>
-                        </fieldset>
-
-                        
-
-                        <fieldset>
-                            <legend class="etiqueta_titulo">Estado</legend>
-                            <input list="type" placeholder="Estado" id="estado" name="type"
-                                value="<%= productToEdit.type %>">
-                            <datalist id="type" required>
-                                <option value="nuevo">
-                                <option value="oferta">
-                            </datalist>
-                        </fieldset>
-
-                        <br>
-
-                        <button class="creacion-button" type="submit">EDITAR</button>
                     </div>
-                    </form>
+                    <div class="col-12" id="salv">
+                        <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST"
+                            enctype="multipart/form-data" id="createProduc">
+                            <div class="row product-detail" id="createProduc">
+                                <div class="col-12 col-md-6">
+                                    <label for="name" class="form-label">Nombre del producto:</label>
+                                    <input value="<%= productToEdit.name %>" type="text" id="name" name="name"
+                                        placeholder="FIFA 2023" class="form-input">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="price" class="form-label">Precio del producto:</label>
+                                    <input type="text" id="price" name="price" placeholder="50" class="form-input"
+                                        value="<%= productToEdit.price %>">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="discount" class="form-label">Descuento:</label>
+                                    <input type="number" id="discount" name="discount" placeholder="15"
+                                        class="form-input" value="<%= productToEdit.discount %>">
 
-                </section>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="stock" class="form-label">Stock:</label>
+                                    <input type="number" id="stock" name="stock" placeholder="25" class="form-input"
+                                        value="<%= productToEdit.stock %>">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="category" class="form-label">Categoría:</label>
+                                    <br>
+                                    <select name="category" id="category" class="form-input"
+                                        value=<%=productToEdit.category_id %>>
+
+                                        <option value="">Seleccionar</option>
+                                        <% categories.forEach(oneCategory=> { %>
+                                            <option <% if (productToEdit.category_id===oneCategory.id ) { %> value="<%=
+                                                    oneCategory.id %>" selected> <% } %>
+                                                        <%= oneCategory.name %>
+                                            </option>
+                                            <% }) %>
+
+                                    </select>
+
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="platform" class="form-label">Plataforma:</label>
+                                    <br>
+                                    <select name="platform" id="platform" class="form-input">
+
+                                        <option value="">Seleccionar</option>
+                                        <% platforms.forEach(onePlatform=> { %>
+                                            <option <% if (productToEdit.platform_id===onePlatform.id ) { %> value="<%=
+                                                onePlatform.id %>" selected> <% } %>
+                                                    <%= onePlatform.name %>
+                                        </option>
+                                        <% }) %>
+
+                                    </select>
+
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="type" class="form-label">Etiqueta:</label>
+                                    <br>
+                                    <select name="type" id="type" class="form-input">
+
+                                        <option value="">Seleccionar</option>
+                                        <% types.forEach(oneType=> { %>
+                                            <option <% if (productToEdit.type_id===oneType.id ) { %> value="<%=
+                                                oneType.id %>" selected> <% } %>
+                                                    <%= oneType.name %>
+                                        </option>
+                                        <% }) %>
+
+                                    </select>
+
+                                </div>
+                                <div class="col-12">
+                                    <label for="description" class="form-label">Descipción:</label>
+                                    <br>
+
+                                    <textarea name="description" id="description"
+                                        class="form-input"><%= productToEdit.description %></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <label for="image" class="form-label">Imagen:</label>
+                                    <input type="file" name="image" id="image" class="form-input">
+                                    <img src="/image/product-detail-img/<%= productToEdit.image %> " width="100">
+                                </div>
+                                <!-- <div class="col-12">
+                                    <label for="image2" class="form-label">Imagen 2:</label>
+                                    <input type="file" name="image2" id="image2" class="form-input">
+                                </div>
+                                <div class="col-12">
+                                    <label for="image3" class="form-label">Imagen 3:</label>
+                                    <input type="file" name="image3" id="image3" class="form-input">
+                                </div>
+                                <div class="col-12">
+                                    <label for="image4" class="form-label">Imagen 4:</label>
+                                    <input type="file" name="image4" id="image4" class="form-input">
+                                </div> -->
+                                <div class="col-12">
+                                    <button type="submit" class="buy-now-button">Guardar</button>
+                                    <form action="/products/delete/<%= productToEdit.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+                                        <button type="submit" class="action-button delete">Eliminar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
             </main>
 
             <%- include('../partials/footer.ejs') %>
