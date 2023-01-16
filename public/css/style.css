@@ -426,6 +426,10 @@ li {
 
 }
 
+#imgForm img {
+    max-width: 400px;
+}
+
 @media (min-width: 1280px) {
 
     .footer-contendedor-dos {

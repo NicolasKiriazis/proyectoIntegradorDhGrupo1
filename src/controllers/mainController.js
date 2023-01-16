@@ -1,34 +1,25 @@
 const fs = require('fs');
 const path = require('path');
+const router = require("../router/mainRouter");
+const db = require('../database/models');
 
-const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const Product = require("../database/models/Product");
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-const oferta = products.filter(function(product){
-	return product.type == 'oferta'
-})
-const nuevos = products.filter(function(product){
-	return product.type == 'nuevo'
-})
-
-
 const mainController = {
-    home: function(req,res){
-        res.render('home',{
-            oferta,
-            nuevos,
-            toThousand
-        });
+    home: async (req, res) => {
+        try {
+            let products = await db.Product.findAll();
+
+            res.render('home', { products, toThousand })
+
+        } catch (error) {
+            console.log(error)
+        }
     },
-    /*login: function(req,res){
-        res.render('users/login')
-    },*/
-/*    register: function(req,res){
-        res.render('users/register')
-    }, */
-    productCart: function(req,res){
+
+    productCart: function (req, res) {
         res.render('products/productCart')
     }
 }

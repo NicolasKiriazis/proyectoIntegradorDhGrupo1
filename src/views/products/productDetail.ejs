@@ -38,33 +38,33 @@
                     <div id="product-card">
                         <div id="off-container">
                             <p class="price">
-                                <%= "$USD" + " " + product.price %>
+                                <%= "$USD" + " " + product.price + "    " %>
                             </p>
                             <p>
-                                <%= product.discount + " " + "%" %> OFF
+                                <%= product.discount + "%" %> OFF
                             </p>
                         </div>
 
                         <p class="description">
                             <%= product.description %>
                         </p>
+                        <p class="card-text"><small class="text-muted">Numero de producto: <%= product.id %>
+                            </small></p>
 
                         <div id="button-container">
-                            <button>Comprar</button>
 
-                            <form action="/productcart" method="GET"
-                                style="display: inline-flex">
-                                <button type="submit" class="action-button delete">Agregar al Carrito</button>
+                            <form action="/productcart" method="GET" style="display: inline-flex">
+                                <button type="submit" class="action-button delete">Comprar</button>
                             </form>
 
                             <a href="/products/edit/<%= product.id %>" class="action-button edit">
                                 <button>Editar</button></a>
 
-                                <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-                                    <button type="submit" class="action-button delete">Eliminar</button>
-                                </form>
+                            <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST"
+                                style="display: inline-flex">
+                                <button type="submit" class="action-button delete">Eliminar</button>
                             </form>
-
+                            </form>
                         </div>
 
                     </div>

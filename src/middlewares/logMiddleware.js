@@ -7,7 +7,7 @@ const validations = [
 
     check ('password')
     .notEmpty().withMessage ('Debes completar la contraseña')
-    .isLength({min: 3}).withMessage('Debe ingresar una contraseña valida'),
+    .isLength({min: 2}).withMessage('Debe ingresar una contraseña valida'),
 ]
 
 module.exports = validations

@@ -142,79 +142,6 @@
   "image": "gamer.png"
  },
  {
-<<<<<<< HEAD
-  "id": 21,
-  "name": "assa",
-  "lastname": "sss",
-  "direction": "aaa",
-  "date": "",
-  "email": "ssss@sss.sss",
-  "password": "$2a$10$BjrI2L1t14j2mNxhsz4vOeLQA9x/aoDOIkk9IzQYjemMY.RB4t2vG",
-  "gender": "Male",
-  "image": "gamer.png"
- },
- {
-  "id": 22,
-  "name": "dddd",
-  "lastname": "dd",
-  "direction": "",
-  "date": "",
-  "email": "a@a.a",
-  "password": "$2a$10$xwCpBnh1x2RusacsV7XoVOPOVvUe9BUg3ucTFh5jSSBuXQABh17hG",
-  "gender": "Male",
-  "image": "image-1668728545804.jpg"
- },
- {
-  "id": 23,
-  "name": "a",
-  "lastname": "a",
-  "direction": "",
-  "date": "",
-  "email": "a@a.a",
-  "password": "$2a$10$AGSMtADpfXwI4JdzC73LHuCmTkgGetjV/yqORQ2SeGqi6O0l/UQnO",
-  "image": "image-1668729371214.jpg"
- },
- {
-  "id": 24,
-  "name": "",
-  "lastname": "",
-  "direction": "",
-  "date": "",
-  "email": "aaa@aaa.aaa",
-  "image": "gamer.png"
- },
- {
-  "id": 25,
-  "name": "",
-  "lastname": "",
-  "direction": "",
-  "date": "",
-  "email": "",
-  "password": "$2a$10$s7CjWZfs.ipZJy4tsRvAiuivZnlUM/yzUJ6ENx6vZkeg5GFwzyaAG",
-  "image": "gamer.png"
- },
- {
-  "id": 27,
-  "name": "adalucs",
-  "lastname": "cortes",
-  "direction": "mex",
-  "date": "1998-09-22",
-  "email": "adalucs@hotmail.com",
-  "password": "$2a$10$h7V4Y.FAwC9Vii.kz3b7N.lOj80RfXnYujVAD2ui3U.8TGX5Npk9C",
-  "gender": "Female",
-  "image": "image-1668733228856.png"
- },
- {
-  "id": 28,
-  "name": "prueba2",
-  "lastname": "prueba",
-  "direction": "mex",
-  "date": "",
-  "email": "prueba@hotmail.com",
-  "password": "$2a$10$0DLDOO2PzCsqjFISayr/meyhM5hkC9y28MXFKO80OYirVeRs.Ujga",
-  "gender": "Female",
-  "image": "image-1668734896902.png"
-=======
   "id": 29,
   "name": "Prueba",
   "lastname": "Final",
@@ -224,6 +151,5 @@
   "password": "$2a$10$DL8Ab3onjzyJ.9FGydtg7O2xU2lBwWBev8f3oNw4P.kwuQS.ufoce",
   "gender": "Female",
   "image": "image-1668844485890.jpg"
->>>>>>> 40f36c635f37e90da95ac7ce2e7bcfcfa8c86d67
  }
 ]

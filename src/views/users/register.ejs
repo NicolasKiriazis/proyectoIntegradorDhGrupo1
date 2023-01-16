@@ -25,9 +25,10 @@
             <div class="register-text">
                 <label for="lastname" class="login-etiqueta">APELLIDO</label>
                 <input type="text" id="apellido" name="lastname" class="login-input" value="<%= locals.oldData ? oldData.lastname : null  %>">
+                
             </div>
             <div>
-                <label for="direction" class="login-etiqueta">NACIONALIDAD</label>
+                <label for="direction" class="login-etiqueta">DIRECCION</label>
                 <input type="text" id="nacionalidad" name="direction" class="login-input" value="<%= locals.oldData ? oldData.direction : null  %>">
             </div>
             <div>
@@ -36,7 +37,7 @@
             </div>
             <div>
                 <label for="email" class="login-etiqueta">E-MAIL</label>
-                <input type="email" id="mail" name="email" class="login-input <%= locals.errors && errors.email ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.email : null  %>">
+                <input type="text" id="mail" name="email" class="login-input <%= locals.errors && errors.email ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.email : null  %>">
                 <% if (locals.errors && errors.email) { %>
                     <div class="text-danger">
                         <%= errors.email.msg %> 
@@ -59,7 +60,7 @@
                 <input type="password" id="passwordRepite" name="passwordRepite" class="login-input" value="<%= locals.oldData ? oldData.passwordRepite : null  %>">
             </div>
             <div>
-            <label for="image" >GENERO</label>
+            <label for="gender" >GENERO</label>
         </div>
             <div>
                 <input type="radio" name="gender" value="Male">
@@ -73,6 +74,12 @@
                 <label for="image">IMAGEN DE PERFIL</label>
                 <input type="file" name="image" class="login-input" accept="image/*" value="<%= locals.oldData ? oldData.image : null  %>">
             </div>
+            <% if (locals.errors && errors.image) { %>
+                <div class="text-danger">
+                    <%= errors.image.msg %> 
+                </div>
+                <br>
+            <% } %>
 
             <div>
                 <button type="submit"  class="action-button delete">REGISTRARSE</button>

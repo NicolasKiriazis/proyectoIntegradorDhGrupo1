@@ -10,7 +10,8 @@
                 <div class="card mb-3" style="max-width: 800px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="/image/users/<%= user.image%>" class="img-fluid rounded-start" alt="<%= user.name %>">
+                            <img src="/image/users/<%= user.image%>" class="img-fluid rounded-start"
+                                alt="<%= user.name %>">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -24,17 +25,12 @@
                                 </p>
                                 <p class="card-text">Genero: <%= user.gender %>
                                 </p>
-                                <p class="card-text"><small class="text-muted">Numero de usuario: <%= user.id %>
+                                <p class="card-text"><small class="text-muted">Numero de usuario: <%= user.id_users %>
                                     </small></p>
 
                                 <div class="botones-user">
-
-                                    <form action="/users/delete/<%= user.id %>?_method=DELETE" method="POST">
-                                        <button type="submit" class="action-button delete">Eliminar</button>
-                                    </form>
-                                    <form action="/users" method="GET" style="display: inline-flex">
-                                        <button type="submit" class="action-button delete"> Lista de Ususarios </button>
-                                    </form>
+                                    <a href="/users/edit/<%= user.id_users %>" class="action-button edit">
+                                        <button>Editar</button></a>
                                 </div>
 
                             </div>

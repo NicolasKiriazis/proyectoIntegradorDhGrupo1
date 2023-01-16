@@ -24,7 +24,7 @@ module.exports = (sequelize, dataTypes) => {
     const Type = sequelize.define(alias, cols, config);
 
     Type.associate = models => {
-       Type.hasMany(models.Product, {as: 'products', foreignKey: 'type_id'});
+        Type.hasMany(models.Product, { as: 'products', foreignKey: 'type_id' });
     }
 
     return Type;

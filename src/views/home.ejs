@@ -4,9 +4,7 @@
 <%- include('partials/head.ejs') %>
 
     <body>
-
         <%- include('partials/header.ejs') %>
-
             <!-- BANNER  -->
             <section id="banner-container" class="bannerC">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -28,29 +26,21 @@
                         </div>
                     </div>
                 </div>
-
             </section>
             <br>
-
             <a href="/products"> </a>
             <main>
-
-
 
                 <br>
                 <!-- SECCIÓN DE CATEGORÍAS -->
                 <section class="categorias">
 
-
                     <div class="categ-container">
-
                         <div class="container-duo">
                             <span class="material-symbols-outlined">
                                 rocket_launch
                             </span>
-
                             <p>Accion</p>
-
                         </div>
                         <div class="container-duo">
                             <span class="material-symbols-outlined">
@@ -70,10 +60,7 @@
                             </span>
                             <p>Estrategia</p>
                         </div>
-
-
                     </div>
-
                 </section>
                 <br>
                 <br>
@@ -84,11 +71,10 @@
                     </div>
                     <br>
                     <div class="products-container">
-
                         <div class="container products-wrapper">
 
                             <!-- Show the "in-sale" products -->
-                            <% nuevos.forEach(function(product){ let finalPrice=(product.price * ((100 -
+                            <% products.forEach(function(product){ let finalPrice=(product.price * ((100 -
                                 product.discount) / 100)).toFixed(0) %>
                                 <div class="col-12 col-sm-6 col-lg-3">
                                     <section class="product-box">
@@ -112,21 +98,16 @@
                                 <% }) %>
                         </div>
                     </div>
-
                     </div>
-
                 </section>
-
                 <br>
 
                 <!-- CATEGORÍAS POR MARCAS -->
                 <section class="marcas-videojuego">
-
                     <br>
                     <div class="lanza">
                         <p>ELIGE TU FORMA DE JUGAR</p>
                     </div>
-                
 
                     <a href="/products">
                         <div class="products-container">
@@ -141,12 +122,8 @@
                     <br>
                     <br>
                 </section>
-
                 <br>
-
             </main>
-
-
             <%- include('partials/footer.ejs') %>
 
                 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -155,7 +132,6 @@
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
                     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
                     crossorigin="anonymous"></script>
-
     </body>
 
 </html>

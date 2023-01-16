@@ -87,7 +87,7 @@ ul.nav-item li:hover i {
     align-items: center;
     padding: 10px;
     padding-bottom: 0px;
-   
+
     margin-left: 5%;
     margin-right: 5%;
 
@@ -253,7 +253,7 @@ button {
     border-radius: 6px;
     font-weight: 500;
     color: var(--color);
-    
+
 
 }
 
@@ -298,13 +298,25 @@ button:active:before {
 
 }
 
-#button-container{
+#button-container {
     width: 100%;
     background-color: #cade01;
     border: 1px solid #cade01;
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+#off-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#off-container p {
+    color: #3a0ca3;
+}
+
 
 /* MEDIA PARA TABLETS */
 
@@ -350,7 +362,7 @@ button:active:before {
 
     }
 
- 
+
 
     nav {
 
@@ -376,7 +388,7 @@ button:active:before {
 
     /* FLEXBOX PARA IMAGENES DEL DETAIL */
 
-    #product-container{
+    #product-container {
         max-width: 1000px;
         margin: 0 auto;
     }
@@ -392,7 +404,7 @@ button:active:before {
 
     .product-img {
 
-       
+
         width: 400px;
         margin: 10px;
 
@@ -405,7 +417,7 @@ button:active:before {
 
     }
 
-    p.description{
+    p.description {
         margin: 20px;
     }
 

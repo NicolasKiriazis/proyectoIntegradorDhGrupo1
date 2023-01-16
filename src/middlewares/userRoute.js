@@ -1,6 +1,6 @@
 module.exports = (req, res, next) => {
     // Si existe el usuario en session
-    if (req.session.user) {
+    if (req.session.userLogged) {
         // Lo dejamos pasar
         
         next();

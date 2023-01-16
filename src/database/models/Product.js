@@ -71,9 +71,9 @@ module.exports = (sequelize, dataTypes) => {
     const Product = sequelize.define(alias, cols, config);
 
     Product.associate = models => {
-        Product.belongsTo(models.Category, {as: 'product_category', foreignKey: 'category_id'});
-        Product.belongsTo(models.Platform, {as: 'product_platform', foreignKey: 'platform_id'});
-        Product.belongsTo(models.Platform, {as: 'product_type', foreignKey: 'type_id'});
+        Product.belongsTo(models.Category, { as: 'product_category', foreignKey: 'category_id' });
+        Product.belongsTo(models.Platform, { as: 'product_platform', foreignKey: 'platform_id' });
+        Product.belongsTo(models.Platform, { as: 'product_type', foreignKey: 'type_id' });
     }
 
     return Product;

@@ -45,19 +45,22 @@
                                 <div class="col-12 col-md-6">
                                     <label for="category" class="form-label">Categoría:</label>
                                     <br>
-                                    <select name="category" id="category" class="form-input"
-                                        value=<%=productToEdit.category_id %>>
+                                    <select name="category" id="category" class="form-input">
 
                                         <option value="">Seleccionar</option>
                                         <% categories.forEach(oneCategory=> { %>
-                                            <option <% if (productToEdit.category_id===oneCategory.id ) { %> value="<%=
-                                                    oneCategory.id %>" selected> <% } %>
-                                                        <%= oneCategory.name %>
+                                            <option value="<%= oneCategory.id %>"
+                                                <%=(oneCategory.id==productToEdit.category_id) ? 'selected' : null %>>
+                                                <%= oneCategory.name %>
                                             </option>
                                             <% }) %>
-
                                     </select>
-
+                                    <% if (typeof errors !='undefined' && typeof errors.category !='undefined' ) { %>
+                                        <br>
+                                        <span style="color: red">
+                                            <%= errors.category.msg %>
+                                        </span>
+                                        <% } %>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <label for="platform" class="form-label">Plataforma:</label>
@@ -66,13 +69,18 @@
 
                                         <option value="">Seleccionar</option>
                                         <% platforms.forEach(onePlatform=> { %>
-                                            <option <% if (productToEdit.platform_id===onePlatform.id ) { %> value="<%=
-                                                onePlatform.id %>" selected> <% } %>
-                                                    <%= onePlatform.name %>
-                                        </option>
-                                        <% }) %>
-
+                                            <option value="<%= onePlatform.id %>"
+                                                <%=(onePlatform.id==productToEdit.platform_id) ? 'selected' : null %>>
+                                                <%= onePlatform.name %>
+                                            </option>
+                                            <% }) %>
                                     </select>
+                                    <% if (typeof errors !='undefined' && typeof errors.category !='undefined' ) { %>
+                                        <br>
+                                        <span style="color: red">
+                                            <%= errors.platform.msg %>
+                                        </span>
+                                        <% } %>
 
                                 </div>
                                 <div class="col-12 col-md-6">
@@ -82,14 +90,17 @@
 
                                         <option value="">Seleccionar</option>
                                         <% types.forEach(oneType=> { %>
-                                            <option <% if (productToEdit.type_id===oneType.id ) { %> value="<%=
-                                                oneType.id %>" selected> <% } %>
-                                                    <%= oneType.name %>
-                                        </option>
-                                        <% }) %>
-
+                                            <option value="<%= oneType.id %>" <%=(oneType.id==productToEdit.type_id)
+                                                ? 'selected' : null %>> <%= oneType.name %>
+                                            </option>
+                                            <% }) %>
                                     </select>
-
+                                    <% if (typeof errors !='undefined' && typeof errors.category !='undefined' ) { %>
+                                        <br>
+                                        <span style="color: red">
+                                            <%= errors.type.msg %>
+                                        </span>
+                                        <% } %>
                                 </div>
                                 <div class="col-12">
                                     <label for="description" class="form-label">Descipción:</label>
@@ -98,7 +109,7 @@
                                     <textarea name="description" id="description"
                                         class="form-input"><%= productToEdit.description %></textarea>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12" id="imgForm">
                                     <label for="image" class="form-label">Imagen:</label>
                                     <input type="file" name="image" id="image" class="form-input">
                                     <img src="/image/product-detail-img/<%= productToEdit.image %> " width="100">
@@ -117,7 +128,8 @@
                                 </div> -->
                                 <div class="col-12">
                                     <button type="submit" class="buy-now-button">Guardar</button>
-                                    <form action="/products/delete/<%= productToEdit.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+                                    <form action="/products/delete/<%= productToEdit.id %>?_method=DELETE" method="POST"
+                                        style="display: inline-flex">
                                         <button type="submit" class="action-button delete">Eliminar</button>
                                     </form>
                                 </div>
