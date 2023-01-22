@@ -6,16 +6,20 @@ const sequelize = db.sequelize;
 const { Op } = db.Sequelize;
 const { validationResult } = require('express-validator');
 
-const { Product, Category, Type, Platform } = require('../database/models')
+const { Product, Category, Type, Platform } = require('../database/models');
+const { response } = require('express');
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-// let ofertas = products.filter(product => product.type == "oferta")
+//let ofertas = products.filter(product => product.type == "oferta")
 let nuevos = products.filter(product => product.type == "nuevo");
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+//const fetch = require('node-fetch');
+const axios  = require('axios');
+const API = 'http://localhost:3000/api/products';
 
 let controller = {
 
@@ -177,6 +181,34 @@ let controller = {
             return res.send(error)
 
         }
+    },
+// Mostrar productos por API
+    apiList: async (req, res) => {
+
+    axios.get(API)
+        .then(products => {
+            res.render('products/apiProducts', { products: products.data, toThousand, nuevos });
+        })
+    
+        /*.then((response) => {
+            console.log(response.data);
+        });*/
+    },
+
+    apiDetail: async (req, res) => {
+
+        try {
+            let id = req.params.id;
+            //console.log(API+'/'+id)
+            const {data} = await axios.get(API +'/'+ id)
+            //console.log(data);
+    
+            res.render('products/apiProductDetail', { product: data.data, toThousand });
+
+        } catch(error) {
+            console.log(error);
+        }
+
     }
 }
 

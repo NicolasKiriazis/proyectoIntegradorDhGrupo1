@@ -19,6 +19,8 @@ const mainRouter = require('./router/mainRouter')
 const productsRouter = require('./router/productsRouter')
 const usersRouter = require('./router/usersRouter')
 
+const apiRouter = require('./router/api/apiRouter')
+
 // Requiere method override para PUT y DELET
 
 const methodOverride = require('method-override');
@@ -57,15 +59,15 @@ app.use(cookies());
 
 app.use(userLoggedMIddleware);
 
-// Levantar servidor
-
-app.listen(3000, (req, res) => { console.log("El servidor se levantó con éxito en el puerto 3000") })
-
-
 // MAIN ROUTER //
 
 app.use('/', mainRouter)
 app.use('/products', productsRouter);
 app.use('/users', usersRouter)
 
+// API //
+app.use('/api', apiRouter);
 
+// Levantar servidor
+
+app.listen(3000, (req, res) => { console.log("El servidor se levantó con éxito en el puerto 3000") })
