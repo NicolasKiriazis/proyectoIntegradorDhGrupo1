@@ -4,8 +4,7 @@ const { response } = require('express');
 const apiUserController = {
 
     list: (req,res) => {
-        db.User
-        .findAll()
+        db.User.findAll()
         .then(users => {
             let respuesta = {
                 meta: {
@@ -19,8 +18,7 @@ const apiUserController = {
         })
     },
     show: (req, res) => {
-        db.User
-        .findByPk(req.params.id)
+        db.User.findByPk(req.params.id)
         .then(user => {
             let respuesta = {
                 meta: {

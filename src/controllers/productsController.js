@@ -17,7 +17,6 @@ let nuevos = products.filter(product => product.type == "nuevo");
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-//const fetch = require('node-fetch');
 const axios  = require('axios');
 const API = 'http://localhost:3000/api/products';
 
@@ -187,7 +186,7 @@ let controller = {
 
     axios.get(API)
         .then(products => {
-            res.render('products/apiProducts', { products: products.data, toThousand, nuevos });
+            res.render('products/apiProducts', { products: products.data, toThousand, nuevos , total: products.data.meta});
         })
     
         /*.then((response) => {
