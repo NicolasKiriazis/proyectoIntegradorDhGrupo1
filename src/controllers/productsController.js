@@ -18,7 +18,7 @@ let nuevos = products.filter(product => product.type == "nuevo");
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const axios  = require('axios');
-const API = 'http://localhost:3000/api/products';
+const API = 'http://localhost:2000/api/products';
 
 let controller = {
 

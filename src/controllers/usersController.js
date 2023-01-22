@@ -10,7 +10,7 @@ const User = require("../database/models/User");
 
 // API
 const axios = require('axios');
-const API = 'http://localhost:3000/api/users'
+const API = 'http://localhost:2000/api/users'
 
 let controller = {
 

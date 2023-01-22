@@ -70,4 +70,4 @@ app.use('/api', apiRouter);
 
 // Levantar servidor
 
-app.listen(3000, (req, res) => { console.log("El servidor se levantó con éxito en el puerto 3000") })
+app.listen(2000, (req, res) => { console.log("El servidor se levantó con éxito en el puerto 2000") })
