@@ -4,20 +4,36 @@ const { response } = require('express');
 
 const apiProductsController = {
 
-    list: (req,res) => {
-        db.Product.findAll()
-        .then(products => {
-            let respuesta = {
-                meta: {
-                    status: 200,
-                    total: products.length,
-                    url: '/api/products'
-                },
-                data: products
+    list: async (req,res) => {
+        let category = await db.Category.findAll(); // recuperar categorias
+        let products = await db.Product.findAll(); // recuperar productos
+
+        let result = [];
+        
+        for (let i = 0; i < category.length; i++) {
+            let count = await db.Product.count({
+                where: {category_id: category[i].id },
+            });
+            cat = {
+                id: category[i].id,
+                name: category[i].name,
+                total: count 
             }
-            res.json(respuesta);
-        })
+            result.push(cat)
+        }
+
+        let respuesta = {
+            meta: {
+                status: 200,
+                total: products.length,
+                countByCategory: result,
+                url: '/api/products'
+            },
+            data: products
+        }
+        res.json(respuesta);
     },
+
     show: (req, res) => {
         db.Product.findByPk(req.params.id)
         .then(product => {
