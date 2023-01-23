@@ -8,12 +8,6 @@ const { validationResult } = require('express-validator');
 
 const { Product, Category, Type, Platform } = require('../database/models')
 
-const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
-// let ofertas = products.filter(product => product.type == "oferta")
-let nuevos = products.filter(product => product.type == "nuevo");
-
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 
@@ -28,7 +22,7 @@ let controller = {
             })
             //return res.send(products)
 
-            return res.render('products/productList', { products, toThousand, nuevos })
+            return res.render('products/productList', { products, toThousand})
         } catch (error) {
             return res.send(error)
 
