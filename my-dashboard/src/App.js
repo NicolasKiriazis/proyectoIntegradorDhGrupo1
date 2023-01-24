@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import ContentWrapper from './components/ContentWrapper';
+import ProductsDashBoard from './components/productsDashboard/ProductsDashboard'
+
 
 function App() {
   return (
     <>
-    <ContentWrapper/>
+    <ProductsDashBoard/>
     </>
   );
 }
