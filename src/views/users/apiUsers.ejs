@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs') %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+            <main class="fondo-users">
+
+                <h5 class="login-titulo">LISTA DE USUARIOS</h5>
+
+                <h5 class="login-titulo">Total de usuarios resgistrados: <%= total.total %></h5>
+
+                <div class="user-frame">
+
+                    <% users.data.forEach( user => { %>
+                        <a href="/users/apiDetail/<%= user.id_users %>">
+                            <article class="user-box">
+                                <div class="card" style="width: 16rem;">
+                                    <img src="/image/users/<%= user.image %>" class="card-img-top" alt="<%= user.name %>" width="200" height="200">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><%= user.name + " " + user.lastname %></h5>
+                                        <p class="card-text"><%=" " + user.email %></p>
+                                        <p class="card-text"><%= "Numero:" + " " + user.id_users %></p>
+                                    </div>
+                                    <div class="botones-user">
+                                        <a href="/users/edit/<%= user.id_users %>" class="action-button edit">
+                                            <button>Editar</button></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        
+                    <% }) %>
+                </div>
+
+            </main>
+
+            <%- include('../partials/footer.ejs') %>
+
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+                    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+                    crossorigin="anonymous"></script>
+    </body>
+
+</html>

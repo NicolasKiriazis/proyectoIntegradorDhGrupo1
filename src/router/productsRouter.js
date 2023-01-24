@@ -42,4 +42,8 @@ router.patch('/edit/:id', upload.single('image'), productVal, productsController
 // ruta para eliminar el producto
 router.delete('/delete/:id', userRoute, productsController.destroy);
 
+//API
+router.get('/apiList', productsController.apiList);
+router.get('/apiDetail/:id', productsController.apiDetail);
+
 module.exports = router;

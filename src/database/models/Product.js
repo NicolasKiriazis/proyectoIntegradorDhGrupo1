@@ -55,7 +55,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER,
             notNull: false,
         },
-        categoryId: {
+        category_id: {
             type: dataTypes.INTEGER,
             notNull: false,
         }

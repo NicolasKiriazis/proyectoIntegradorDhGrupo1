@@ -9,15 +9,13 @@
 
             <main>
                 <div id="category-container">
-                    <!-- <a href="/">Juegos,</a>
-            <a href="/">Playstation</a> -->
+
                 </div>
 
                 <div id="product-container">
 
-                    <p id="title">
-                        <%= product.name %>
-                    </p>
+                    <p id="title"> <%= product.name %> </p>
+                    
                     <div id="img-container">
 
                         <img src="/image/product-detail-img/<%= product.image %> " alt="<%= " imagen de:" + " " +
@@ -48,7 +46,6 @@
                         <p class="description">
                             <%= product.description %>
                         </p>
-                       
                         <p class="card-text"><small class="text-muted">Numero de producto: <%= product.id %>
                             </small></p>
 
@@ -58,13 +55,18 @@
                                 <button type="submit" class="action-button delete">Comprar</button>
                             </form>
 
-                           
+                            <a href="/products/edit/<%= product.id %>" class="action-button edit">
+                                <button>Editar</button></a>
+
+                            <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST"
+                                style="display: inline-flex">
+                                <button type="submit" class="action-button delete">Eliminar</button>
                             </form>
                             </form>
                         </div>
 
                     </div>
-
+                    
                 </div>
 
             </main>

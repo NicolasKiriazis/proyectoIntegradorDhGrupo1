@@ -8,8 +8,16 @@ const { validationResult } = require('express-validator');
 
 const { Product, Category, Type, Platform } = require('../database/models')
 
+const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+// let ofertas = products.filter(product => product.type == "oferta")
+let nuevos = products.filter(product => product.type == "nuevo");
+
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+const axios  = require('axios');
+const API = 'http://localhost:2000/api/products';
 
 let controller = {
 
@@ -96,7 +104,7 @@ let controller = {
 
             //return res.send(product)
             await Product.create(product)
-            return res.redirect('/products')
+            return res.redirect('/products/apilist')
         } catch (error) {
             console.log(error)
         }
@@ -150,7 +158,7 @@ let controller = {
                 where: { id }
             })
 
-            res.redirect('/products');
+            res.redirect('/products/apilist');
         } catch (error) {
             return res.send(error)
 
@@ -165,12 +173,40 @@ let controller = {
             await Product.destroy({
                 where: { id }
             })
-            return res.redirect('/products')
+            return res.redirect('/products/apilist')
 
         } catch (error) {
             return res.send(error)
 
         }
+    },
+// Mostrar productos por API
+    apiList: async (req, res) => {
+
+    axios.get(API)
+        .then(products => {
+            res.render('products/apiProducts', { products: products.data, toThousand, nuevos , total: products.data.meta});
+        })
+    
+        /*.then((response) => {
+            console.log(response.data);
+        });*/
+    },
+
+    apiDetail: async (req, res) => {
+
+        try {
+            let id = req.params.id;
+            //console.log(API+'/'+id)
+            const {data} = await axios.get(API +'/'+ id)
+            //console.log(data);
+    
+            res.render('products/apiProductDetail', { product: data.data, toThousand });
+
+        } catch(error) {
+            console.log(error);
+        }
+
     }
 }
 

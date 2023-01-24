@@ -344,6 +344,14 @@ main h3 {
     flex-direction: row;
 }
 
+.adminPanel{
+    text-align: left;
+    background-color: #3c145e3e;
+    margin: 20px;
+    padding: 50px;
+    min-width: 400px;
+}
+
 @media (min-width: 768px) {
 
     .bannerC {

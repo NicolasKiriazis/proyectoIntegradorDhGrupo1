@@ -3,23 +3,21 @@ const express = require('express')
 const router = express.Router()
 const mainController = require('../controllers/mainController')
 const userRoute = require('../middlewares/userRoute');
+const adminMiddleware = require('../middlewares/adminMiddleware');
+//RUTA HOME
+router.get('/', adminMiddleware, mainController.home)
 
-//RUTA HOME//
-router.get('/',  mainController.home)
+//RUTA ADMIN
 
-//RUTA LOGIN//
+router.get('/admin', mainController.admin)
 
-/*router.get('/login', mainController.login)*/
-
-//RUTA PRODUCT CART //
+//RUTA PRODUCT CART 
 
 router.get('/productCart', userRoute, mainController.productCart)
 
-//RUTA REGISTER //
+//RUTA REGISTER 
 
 /*router.get('/register', mainController.register)*/
-
-// RUTA LISTADO DE PRODUCTOS
 
 
 

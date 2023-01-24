@@ -54,4 +54,8 @@ router.post('/edit/:id', upload.single('image'), usersController.update)
 //logout
 router.post('/logout', userRoute, usersController.logout)
 
+// API
+router.get('/apiList', usersController.apiList);
+router.get('/apiDetail/:id', usersController.apiDetail);
+
 module.exports = router;

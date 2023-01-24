@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/NicolasKiriazis/proyectoIntegradorDhGrupo1#readme",
   "dependencies": {
+    "axios": "^1.2.3",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
     "ejs": "^3.1.8",
@@ -30,6 +31,7 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "mysql2": "^2.3.3",
+    "node-fetch": "^3.3.0",
     "save": "^2.5.0",
     "sequelize": "^6.28.0"
   },

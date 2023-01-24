@@ -40,7 +40,7 @@
 }
 
 .card-img-top {
-    height: 250px;
+    max-width: 14rem;
     padding: 20px;
 }
 

@@ -1,6 +1,6 @@
 function adminMiddleware(req, res, next) {
-    if (req.session.userLogged && req.session.userLogged.categoriaId==2) {
-        return res.redirect("/product/list/admin") 
+    if (req.session.userLogged && req.session.userLogged.category_id==2) {
+        return res.redirect("/admin") 
     } 
 
     next()

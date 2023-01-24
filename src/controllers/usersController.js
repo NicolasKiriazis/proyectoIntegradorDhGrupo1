@@ -8,6 +8,9 @@ const { validationResult } = require('express-validator');
 const db = require('../database/models');
 const User = require("../database/models/User");
 
+// API
+const axios = require('axios');
+const API = 'http://localhost:2000/api/users'
 
 let controller = {
 
@@ -221,6 +224,30 @@ let controller = {
 		console.log(req.session);
 		// Redirigimos a la home
 		return res.redirect('/');
+	},
+//Mostrar usuarios por API
+	apiList: async (req, res) => {
+		axios.get(API)
+		/*.then((response) => {
+            console.log(response.data.meta.total);
+        });*/
+		.then(users => {
+			res.render('users/apiUsers',{ users: users.data, total: users.data.meta })
+		})
+	},
+
+	apiDetail: async (req,res) => {
+		try {
+			let id = req.params.id;
+			//console.log(id)
+			const {data} = await axios.get(API + '/'+ id);
+			//console.log(data)
+			res.render('users/apiUsersDetail', { user: data.data });
+		
+		}catch(error) {
+			console.log(error);
+		}
 	}
 }
+
 module.exports = controller;

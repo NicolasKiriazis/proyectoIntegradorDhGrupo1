@@ -19,6 +19,10 @@ const mainController = {
         }
     },
 
+    admin: function (req, res) {
+        res.render('admin')
+    },   
+
     productCart: function (req, res) {
         res.render('products/productCart')
     }
