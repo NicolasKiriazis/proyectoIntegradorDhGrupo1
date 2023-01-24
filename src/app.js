@@ -5,6 +5,7 @@ const path = require('path')
 const logger = require('morgan');
 const cookies = require('cookie-parser');
 const userLoggedMIddleware = require("./middlewares/userLoggedMiddleware")
+const cors = require('cors')
 
 // Implementando Session
 const session = require('express-session');
@@ -64,6 +65,7 @@ app.use(userLoggedMIddleware);
 app.use('/', mainRouter)
 app.use('/products', productsRouter);
 app.use('/users', usersRouter)
+app.use(cors())
 
 // API //
 app.use('/api', apiRouter);
