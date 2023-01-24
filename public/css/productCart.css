@@ -71,6 +71,7 @@ ul.nav-item li {
     justify-content: center;
     transition: all 650ms;
     font-size: 14px;
+    color: #e0dede;
 }
 
 ul.nav-item li:hover {
@@ -184,7 +185,7 @@ main section.navbar ul {
    
 }
 
-ul li {
+ul.categorias li {
     width: 140px;
     padding: 10px;
     font-size: 16px;

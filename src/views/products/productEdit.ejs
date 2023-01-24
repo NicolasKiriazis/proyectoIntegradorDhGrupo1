@@ -18,6 +18,7 @@
                         </div>
                     </div>
                     <div class="col-12" id="salv">
+                        <ul class="errores"></ul>   
                         <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST"
                             enctype="multipart/form-data" id="createProduc">
                             <div class="row product-detail" id="createProduc">
@@ -139,6 +140,7 @@
                     </div>
 
                 </div>
+                <script src="../../../js/updateProdValidation.js"></script>
             </main>
 
             <%- include('../partials/footer.ejs') %>

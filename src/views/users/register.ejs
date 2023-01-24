@@ -9,8 +9,9 @@
 
     <main>
         <h4 class="login-titulo">REGISTRAR NUEVO USUARIO</h4>
+        <br>
+        <ul class="errores"></ul>    
 
-        
         <form action="/users/register" method="POST" class="login-register" enctype="multipart/form-data">
             <div>
                 <label for="name" class="login-etiqueta">NOMBRE </label>
@@ -72,7 +73,7 @@
                 
             <div>
                 <label for="image">IMAGEN DE PERFIL</label>
-                <input type="file" name="image" class="login-input" accept="image/*" value="<%= locals.oldData ? oldData.image : null  %>">
+                <input type="file" name="image" id="image" class="login-input" accept="image/*" value="<%= locals.oldData ? oldData.image : null  %>">
             </div>
             <% if (locals.errors && errors.image) { %>
                 <div class="text-danger">
@@ -84,11 +85,12 @@
             <div>
                 <button type="submit"  class="action-button delete">REGISTRARSE</button>
             </div>
+           
         </form>
     </main>
-  
+   <script src="../../../js/registerValidation.js"></script>
     <%- include('../partials/footer.ejs') %>
-
+    
 </body>
 
 </html>

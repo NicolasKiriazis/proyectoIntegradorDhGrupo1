@@ -5,6 +5,7 @@ const path = require('path')
 const logger = require('morgan');
 const cookies = require('cookie-parser');
 const userLoggedMIddleware = require("./middlewares/userLoggedMiddleware")
+const cors = require('cors')
 
 // Implementando Session
 const session = require('express-session');
@@ -28,6 +29,9 @@ const methodOverride = require('method-override');
 // Logger
 app.use(logger('dev'));
 app.use(express.json());
+
+// Cors
+app.use(cors())
 
 // Parar poder pisar el method="POST" en el formulario por PUT y DELETE
 

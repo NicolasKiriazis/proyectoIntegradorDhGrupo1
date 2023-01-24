@@ -39,6 +39,9 @@ router.get('/edit/:id', userRoute, productsController.edit);
 // ruta para editar el producto
 router.patch('/edit/:id', upload.single('image'), productVal, productsController.update);
 
+// ruta para mostrar resultados buscados
+router.get('/results', productsController.productSearch);
+
 // ruta para eliminar el producto
 router.delete('/delete/:id', userRoute, productsController.destroy);
 

@@ -323,7 +323,7 @@ div.card {
 .btn-primary {
     background-color: #3c145e;
     border-color: #120727;
-    bs-btn-active-bg: #3c145e;
+    
 }
 
 :hover .btn-primary {
@@ -354,7 +354,7 @@ img.carousel {
     max-height: 315px;
 }
 
-li {
+li.nav-item {
     color: white;
 }
 

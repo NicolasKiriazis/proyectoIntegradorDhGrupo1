@@ -62,8 +62,11 @@
 
         </div>
         <div class="search-container">
-            <input type="text" id="search-bar" placeholder="  Buscar juegos, consolas, acc..">
-            <i class="fas fa-search" id="lupa"></i>
+            <form action='/products/results' method="get" class="search-bar" id="search-bar">
+            <input type="text" id="search-bar" name="keyW" placeholder="  Buscar juegos, consolas, acc..">
+            <button type="submit" class="b"
+            id="b"><i class="fas fa-search" id="lupa"></i></button>
+        </form>
         </div>
 
 

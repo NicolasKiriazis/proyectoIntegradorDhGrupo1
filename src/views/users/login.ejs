@@ -3,38 +3,41 @@
 
 <%- include('../partials/head.ejs') %>
 
-<body>
+    <body>
 
-    <%- include('../partials/header.ejs') %>
+        <%- include('../partials/header.ejs') %>
 
-    <main class="main1-login">
-        <section id="login1">
-            <div>
-                <img src="/image/gamer.png" alt="logo" id="logo-login">
-            </div>
-            <div >
-                <% if (typeof errors != 'undefined') { %>
-            
-                      <span class="error-msg">Email o contraseña inválida</span>
-                    <% } %>
-                 
-            </div>
-            <form action="/users/login" method="POST">
-                <input class="login1-input" type="email" name="email" placeholder="Email">
+            <main class="main1-login">
+                <section id="login1">
+                    <div>
+                        <img src="/image/gamer.png" alt="logo" id="logo-login">
+                    </div>
+                    <div>
+                        <% if (typeof errors !='undefined' ) { %>
+                            <span class="error-msg">Email o contraseña inválida</span>
+                            <% } %>
+                    </div>
+                    <ul class="errores"></ul>
+                    <form action="/users/login" method="POST" class="loginForm">
 
-                <input class="login1-input" type="password" name="password" placeholder="Contraseña">
-                
-                <label> <input  class="form-input"type="checkbox" name="remember" id="remember"> Recordarme</label><br>
-                <button class="login1-button" type="submit">INGRESAR</button>
-            </form>
+                        <input class="login1-input" type="email" name="email" placeholder="Email" id="mail">
 
-            <p id="login-register">No tienes una cuenta? registrate <a href="/users/register">Aqui</a></p>
+                        <input class="login1-input" type="password" name="password" placeholder="Contraseña"
+                        id="password">
 
-        </section>
-    </main>
+                        <label> <input class="form-input" type="checkbox" name="remember" id="remember">
+                            Recordarme</label><br>
+                        <button class="login1-button" type="submit">INGRESAR</button>
+                    </form>
 
-    <%- include('../partials/footer.ejs') %>
+                    <p id="login-register">No tienes una cuenta? registrate <a href="/users/register">Aqui</a></p>
 
-</body>
+                </section>
+                <script src="../../../js/loginValidation.js"></script>
+            </main>
+
+            <%- include('../partials/footer.ejs') %>
+
+    </body>
 
 </html>

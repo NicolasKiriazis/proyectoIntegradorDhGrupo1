@@ -136,7 +136,7 @@ let controller = {
 	},
 
 	edit: (req, res) => {
-		return res.render('users/edit', {
+		return res.render('users/edit/', {
 			userToEdit: req.session.userLogged
 		})
 	},

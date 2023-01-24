@@ -16,7 +16,7 @@ let nuevos = products.filter(product => product.type == "nuevo");
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-const axios  = require('axios');
+const axios = require('axios');
 const API = 'http://localhost:2000/api/products';
 
 let controller = {
@@ -30,7 +30,7 @@ let controller = {
             })
             //return res.send(products)
 
-            return res.render('products/productList', { products, toThousand})
+            return res.render('products/productList', { products, toThousand })
         } catch (error) {
             return res.send(error)
 
@@ -165,6 +165,30 @@ let controller = {
         }
     },
 
+    productSearch: async (req, res) => {
+        const keyW = req.query.keyW
+        
+        try {
+
+            const searchResults = await db.Product.findAll( 
+                {
+                    where: {
+                        [Op.or]: [
+                            { name: { [Op.like]: `%${keyW}%` } }
+                        ]
+                    },
+                    include: { all: true, nested: true }
+
+                });
+
+                console.log(searchResults)
+
+            return res.render('products/productSearch', { searchResults, keyW, toThousand })
+        } catch (error) {
+            console.log(error)
+        }
+    },
+
     destroy: async (req, res) => {
 
         try {
@@ -180,14 +204,16 @@ let controller = {
 
         }
     },
-// Mostrar productos por API
+
+
+    // Mostrar productos por API
     apiList: async (req, res) => {
 
-    axios.get(API)
-        .then(products => {
-            res.render('products/apiProducts', { products: products.data, toThousand, nuevos , total: products.data.meta});
-        })
-    
+        axios.get(API)
+            .then(products => {
+                res.render('products/apiProducts', { products: products.data, toThousand, nuevos, total: products.data.meta });
+            })
+
         /*.then((response) => {
             console.log(response.data);
         });*/
@@ -198,12 +224,12 @@ let controller = {
         try {
             let id = req.params.id;
             //console.log(API+'/'+id)
-            const {data} = await axios.get(API +'/'+ id)
+            const { data } = await axios.get(API + '/' + id)
             //console.log(data);
-    
+
             res.render('products/apiProductDetail', { product: data.data, toThousand });
 
-        } catch(error) {
+        } catch (error) {
             console.log(error);
         }
 
