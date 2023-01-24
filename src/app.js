@@ -68,6 +68,7 @@ app.use(userLoggedMIddleware);
 app.use('/', mainRouter)
 app.use('/products', productsRouter);
 app.use('/users', usersRouter)
+app.use(cors())
 
 // API //
 app.use('/api', apiRouter);
