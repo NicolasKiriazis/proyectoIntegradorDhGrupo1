@@ -10,8 +10,8 @@ const contentWrapper = () => {
   return (
     <>
     <NavBar/>
-    <UsersDashboard/>
     <ProductsDashboard/>
+    <UsersDashboard/>
     <CategorysInDb/>
     
     <Footer/>

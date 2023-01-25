@@ -25,7 +25,7 @@ const ProductsDashboard = () => {
     return (
 
         <>
-            {productos.map(product => <ProductList key={product.id} props={product} />)}
+
 
             <div className="d-sm-flex align-items-center justify-content-between mb-4">
                 <h1 className="h3 mb-0 text-gray-800">Gamer House App</h1>
@@ -58,7 +58,7 @@ const ProductsDashboard = () => {
                             <div className="row no-gutters align-items-center">
                                 <div className="col mr-2">
                                     <div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Total Usuarios: </div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">79</div>
+                                    <div className="h5 mb-0 font-weight-bold text-gray-800">3</div>
                                 </div>
                                 <div className="col-auto">
                                     <i className="fas fa-award fa-2x text-gray-300"></i>
@@ -74,9 +74,9 @@ const ProductsDashboard = () => {
                         <div className="card-body">
                             <div className="row no-gutters align-items-center">
                                 <div className="col mr-2">
-                                    <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Actors quantity
+                                    <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Categorias de Productos
                                     </div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">49</div>
+                                    <div className="h5 mb-0 font-weight-bold text-gray-800">5</div>
                                 </div>
                                 <div className="col-auto">
                                     <i className="fas fa-user fa-2x text-gray-300"></i>
@@ -86,6 +86,7 @@ const ProductsDashboard = () => {
                     </div>
                 </div>
             </div>
+            {productos.map(product => <ProductList key={product.id} props={product} />)}
 
         </>
     )
