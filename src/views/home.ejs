@@ -75,6 +75,7 @@
                             <!-- Show the "in-sale" products -->
                             <% products.forEach(function(product){ let finalPrice=(product.price * ((100 -
                                 product.discount) / 100)).toFixed(0) %>
+                                <% if (product.type_id == 1) { %>
                                 <div class="col-12 col-sm-6 col-lg-3">
                                     <section class="product-box">
                                         <a href="/products/detail/<%= product.id %>">
@@ -94,6 +95,7 @@
                                         </a>
                                     </section>
                                 </div>
+                                <% } %>
                                 <% }) %>
                         </div>
                     </div>

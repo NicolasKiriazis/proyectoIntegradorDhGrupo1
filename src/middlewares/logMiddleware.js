@@ -2,8 +2,8 @@ const { check } = require("express-validator");
 
 const validations = [
     check ('email')
-    .notEmpty().withMessage ('Debes completar el email')
-    .isEmail ().withMessage('Debe ingresar un mail valido'),
+    .notEmpty().withMessage ('Debes completar el email').bail()
+    .isEmail ().withMessage('Debe ingresar un mail valido').bail(),
 
     check ('password')
     .notEmpty().withMessage ('Debes completar la contraseña')

@@ -136,16 +136,23 @@ let controller = {
 	},
 
 	edit: (req, res) => {
-		return res.render('users/edit/', {
-			userToEdit: req.session.userLogged
+
+		db.User.findByPk(req.params.id)
+		.then(function (userToEdit) {
+			res.render('users/edit', {
+				userToEdit: userToEdit
+			});
 		})
+		.catch((error) => {
+			res.send(error);
+		});
 	},
 	update: async (req, res) => {
 
 		try {
 			const resultValidation = validationResult(req);
 			if (resultValidation.errors.length > 0) {
-				return res.render("/users/edit", {
+				return res.render("users/edit/", {
 					errors: resultValidation.mapped(),
 					userToEdit: req.session.userLogged,
 					oldData: req.body

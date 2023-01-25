@@ -105,12 +105,13 @@ section {
 .search-container {
     width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 8px;
+    padding: 1px;
     padding-left: 35px;
     padding-right: 35px;
     background-color: #3c145e;
-    align-items: right;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
@@ -122,17 +123,28 @@ section {
     color: #cade01;
 }
 
-#search-bar {
-    width: 70%;
+#search-bar1 {
+    width: 100%;
     max-width: 1000px;
+    flex-grow: 0;
+    height: 30px;
+    padding: 1px;
+    font-weight: 100;
+    align-items: center;
+    justify-content: center;
+}
+#search-bar2 {
+    width: 80%;
+    max-width: 900px;
     flex-grow: 0;
     border: 2px solid #120727;
     border-radius: 5px;
-    height: 26px;
-    padding: 4px;
+    height: 25px;
+    
     font-weight: 100;
+    align-items: center;
+    justify-content: center;
 }
-
 /* ------- Estilos podructCart.html -------- */
 
 main {

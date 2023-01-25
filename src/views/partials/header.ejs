@@ -29,7 +29,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="/image/users/<%= locals.userLogged.image %>" class="img-prof"
-                                        style=" border-radius: 100%;">
+                                    style=" border-radius: 100%;">
                                 Hola <%= locals.userLogged.name %>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -62,11 +62,10 @@
 
         </div>
         <div class="search-container">
-            <form action='/products/results' method="get" class="search-bar" id="search-bar">
-            <input type="text" id="search-bar" name="keyW" placeholder="  Buscar juegos, consolas, acc..">
-            <button type="submit" class="b"
-            id="b"><i class="fas fa-search" id="lupa"></i></button>
-        </form>
+            <form action='/products/results' method="get" class="search-bar" id="search-bar1">
+                <input type="text" id="search-bar2" name="keyW" placeholder="  Buscar juegos, consolas, acc..">
+                <button type="submit" class="fabutton" ><i class="fas fa-search" id="lupa"></i></button>
+            </form>
         </div>
 
 

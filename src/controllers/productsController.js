@@ -116,9 +116,7 @@ let controller = {
         try {
 
             const { id } = req.params;
-            // const categories = await Category.findAll()
-            // const productToEdit = await Product.findByPk(id,{include: [{association:'category'}]})
-
+      
             const [categories, platforms, types, productToEdit] = await Promise.all([
                 Category.findAll(),
                 Platform.findAll(),

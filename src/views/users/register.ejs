@@ -3,94 +3,109 @@
 
 <%- include('../partials/head.ejs') %>
 
-<body>
+    <body>
 
-    <%- include('../partials/header.ejs') %>
+        <%- include('../partials/header.ejs') %>
 
-    <main>
-        <h4 class="login-titulo">REGISTRAR NUEVO USUARIO</h4>
-        <br>
-        <ul class="errores"></ul>    
-
-        <form action="/users/register" method="POST" class="login-register" enctype="multipart/form-data">
-            <div>
-                <label for="name" class="login-etiqueta">NOMBRE </label>
-                <input type="text" id="nombre" name="name" class="login-input <%= locals.errors && errors.name ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.name : null  %>" >
-                <% if (locals.errors && errors.name) { %>
-                    <div class="text-danger">
-                        <%= errors.name.msg %> 
-                    </div>
-                    <br>
-                <% } %>
-            </div>
-            <div class="register-text">
-                <label for="lastname" class="login-etiqueta">APELLIDO</label>
-                <input type="text" id="apellido" name="lastname" class="login-input" value="<%= locals.oldData ? oldData.lastname : null  %>">
-                
-            </div>
-            <div>
-                <label for="direction" class="login-etiqueta">DIRECCION</label>
-                <input type="text" id="nacionalidad" name="direction" class="login-input" value="<%= locals.oldData ? oldData.direction : null  %>">
-            </div>
-            <div>
-                <label for="date" class="login-etiqueta">FECHA DE NACIMIENTO</label>
-                <input type="date" name="date" id="fechaNacimiento" class="login-input" value="<%= locals.oldData ? oldData.date : null  %>">
-            </div>
-            <div>
-                <label for="email" class="login-etiqueta">E-MAIL</label>
-                <input type="text" id="mail" name="email" class="login-input <%= locals.errors && errors.email ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.email : null  %>">
-                <% if (locals.errors && errors.email) { %>
-                    <div class="text-danger">
-                        <%= errors.email.msg %> 
-                    </div>
-                    
-                <% } %>
-            </div>
-            <div>
-                <label for="password" class="login-etiqueta">PASSWORD</label>
-                <input type="password" id="password" name="password" class="login-input <%= locals.errors && errors.password ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.password : null  %>">
-                <% if (locals.errors && errors.password) { %>
-                    <div class="text-danger">
-                        <%= errors.password.msg %> 
-                    </div>
-                    <br>
-                <% } %>
-            </div>
-            <div>
-                <label for="passwordRepite" class="login-etiqueta">REPITA PASSWORD</label>
-                <input type="password" id="passwordRepite" name="passwordRepite" class="login-input" value="<%= locals.oldData ? oldData.passwordRepite : null  %>">
-            </div>
-            <div>
-            <label for="gender" >GENERO</label>
-        </div>
-            <div>
-                <input type="radio" name="gender" value="Male">
-                <label for="gender">Male</label>
-                <input type="radio" name="gender" value="Female">
-                <label for="gender">Female</label>
-            </div>
-            <br>
-                
-            <div>
-                <label for="image">IMAGEN DE PERFIL</label>
-                <input type="file" name="image" id="image" class="login-input" accept="image/*" value="<%= locals.oldData ? oldData.image : null  %>">
-            </div>
-            <% if (locals.errors && errors.image) { %>
-                <div class="text-danger">
-                    <%= errors.image.msg %> 
-                </div>
+            <main>
+                <h4 class="login-titulo">REGISTRAR NUEVO USUARIO</h4>
                 <br>
-            <% } %>
+                <ul class="errores"></ul>
 
-            <div>
-                <button type="submit"  class="action-button delete">REGISTRARSE</button>
-            </div>
-           
-        </form>
-    </main>
-   <script src="../../../js/registerValidation.js"></script>
-    <%- include('../partials/footer.ejs') %>
-    
-</body>
+                <form action="/users/register" method="POST" class="login-register" enctype="multipart/form-data">
+                    <div>
+                        <label for="name" class="login-etiqueta">NOMBRE </label>
+                        <input type="text" id="nombre" name="name"
+                            class="login-input <%= locals.errors && errors.name ? 'is-invalid' : null %>"
+                            value="<%= locals.oldData ? oldData.name : null  %>">
+                        <% if (locals.errors && errors.name) { %>
+                            <div class="text-danger">
+                                <%= errors.name.msg %>
+                            </div>
+                            <br>
+                            <% } %>
+                    </div>
+                    <div class="register-text">
+                        <label for="lastname" class="login-etiqueta">APELLIDO</label>
+                        <input type="text" id="apellido" name="lastname" class="login-input"
+                            value="<%= locals.oldData ? oldData.lastname : null  %>">
+                        <% if (locals.errors && errors.lastname) { %>
+                            <div class="text-danger">
+                                <%= errors.lastname.msg %>
+                            </div>
+                            <br>
+                            <% } %>
+                    </div>
+                    <div>
+                        <label for="direction" class="login-etiqueta">DIRECCION</label>
+                        <input type="text" id="nacionalidad" name="direction" class="login-input"
+                            value="<%= locals.oldData ? oldData.direction : null  %>">
+                    </div>
+                    <div>
+                        <label for="date" class="login-etiqueta">FECHA DE NACIMIENTO</label>
+                        <input type="date" name="date" id="fechaNacimiento" class="login-input"
+                            value="<%= locals.oldData ? oldData.date : null  %>">
+                    </div>
+                    <div>
+                        <label for="email" class="login-etiqueta">E-MAIL</label>
+                        <input type="text" id="mail" name="email"
+                            class="login-input <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+                            value="<%= locals.oldData ? oldData.email : null  %>">
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="text-danger">
+                                <%= errors.email.msg %>
+                            </div>
+
+                            <% } %>
+                    </div>
+                    <div>
+                        <label for="password" class="login-etiqueta">PASSWORD</label>
+                        <input type="password" id="password" name="password"
+                            class="login-input <%= locals.errors && errors.password ? 'is-invalid' : null %>"
+                            value="<%= locals.oldData ? oldData.password : null  %>">
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="text-danger">
+                                <%= errors.password.msg %>
+                            </div>
+                            <br>
+                            <% } %>
+                    </div>
+                    <div>
+                        <label for="passwordRepite" class="login-etiqueta">REPITA PASSWORD</label>
+                        <input type="password" id="passwordRepite" name="passwordRepite" class="login-input"
+                            value="<%= locals.oldData ? oldData.passwordRepite : null  %>">
+                    </div>
+                    <div>
+                        <label for="gender">GENERO</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="Male">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" value="Female">
+                        <label for="gender">Female</label>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="image">IMAGEN DE PERFIL</label>
+                        <input type="file" name="image" class="login-input" accept="image/*"
+                            value="<%= locals.oldData ? oldData.image : null  %>">
+                    </div>
+                    <% if (locals.errors && errors.image) { %>
+                        <div class="text-danger">
+                            <%= errors.image.msg %>
+                        </div>
+                        <br>
+                        <% } %>
+
+                            <div>
+                                <button type="submit" class="action-button delete">REGISTRARSE</button>
+                            </div>
+                </form>
+            </main>
+            <script src="../../../js/registerValidation.js"></script>
+            <%- include('../partials/footer.ejs') %>
+
+    </body>
 
 </html>
