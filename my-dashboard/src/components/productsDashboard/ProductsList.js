@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProductsList.css'
+import '../../assets/css/ProductsList.css'
 
 const ProductsList = ({ props }) => {
 
@@ -11,8 +11,8 @@ const ProductsList = ({ props }) => {
                     <img src={props.imageUrl} alt={props.name} className="imagen" />
 
                     <div>
-                        <p>{props.name} </p>
-                        <p>{"$" + props.price} </p>
+                        <p id='name'>{props.name} </p>
+                        <p id='price'>{"USD$" + props.price} </p>
                     </div>
                 </div>
             </div>
