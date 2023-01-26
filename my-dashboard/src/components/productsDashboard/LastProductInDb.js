@@ -28,10 +28,10 @@ const LastProductInDb = () => {
                     </div>
                     <div className="card-body bg-gray-200">
                         <div className="text-center">
-                            <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: 50 + 'vw' }} src={lastProduct.imageUrl} alt=" producto " />
-                        </div>
+                            <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: 38 + 'vw' }} src={lastProduct.imageUrl} alt=" producto " />
                         <h4>{lastProduct.name}</h4>
                         <p>{lastProduct.description}</p>
+                        </div>
                     </div>
                 </div>
             </div>

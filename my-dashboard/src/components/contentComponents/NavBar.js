@@ -10,7 +10,7 @@ const NavBar = () => {
             {/*<!-- Topbar -->*/}
             <nav className="navbar navbar-expand topbar mb-4 static-top shadow" id='navbar'>
 
-            <img src={logo} alt='gamer house logo'/>
+            <img src={logo} alt='gamer house logo' className='imgLogo'/>
 
             </nav>
             

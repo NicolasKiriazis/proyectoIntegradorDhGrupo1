@@ -25,6 +25,7 @@ const CategorysInDb = () => {
             {/*<!-- Categories in DB -->*/}
 
             <div id='container'>
+                
             <div className="col-lg-6 mb-4 d-flex mx-auto align-items-center">
                 <div className="card shadow mb-4">
                     <div className="card-header py-3">
