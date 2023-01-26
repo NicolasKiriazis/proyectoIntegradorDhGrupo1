@@ -1,32 +1,11 @@
-Principales conclusiones de la retro del segundo sprint.
+Conclusiones ProyectoiIntegradorDhGrupo1
 
-1. Comenzar a hacer:  Comenzar a trabajar asignando diferentes tareas a cada integrante. 
+Luego de sortear distintos obstáculos durante la gestión del proyecto, el grupo logró la madurez de afianzarse como un verdadero equipo de trabajo.
 
-No se logró cumplir con este ítem, debemos trabajar mucho más en nuestra organización. 
+Antes de iniciar los últimos Sprints se dejó claro la importancia de culminar el proyecto de la mejor manera, fue por ello que se dejó claro el compromiso y esfuerzo de cada uno de los integrantes del grupo. Esto fue fundamental, ya que - si bien costó dadas las obligaciones personales de cada uno - se cumplió a cabalidad con lo pactado y creemos que pudimos darle un buen cierre al esfuerzo de todos estos meses de trabajo.
 
-2. Hacer más:  Unificar conceptos generales de diseño para mantener los mismos patrones estéticos en todas las vistas.
+Se continuó con la distribución de tareas según las habilidades y fortalezas de cada uno y se definieron diferentes encuentros sincrónicos a través de Meet para trabajar en conjunto y evitar que alguno de los integrantes del equipo no comprendiera qué, cómo y por qué se estaba "codeando" de determinada manera.
 
-Se logró unificar un poco los conceptos generales de diseño, es un punto que al momento, debemos mejorar. 
+La evaluación final creemos que es bastante positiva, pues a parte de haber comprendido conceptos básicos y fundamentales para nuestro futuro como desarrolladores, también entendimos cómo trabajar en equipo y la importancia de ello.
 
-3. Continuar haciendo: Ayudarnos entre nosotros cuando alguno lo necesita.
-
-El equipo a pesar de arrancar tarde a trabajar se muestra solidario y firme para poder darnos una mano entre todos. 
-
-4. Hacer menos: trabajar menos sobre la rama main y tratar de trabajar más sobre ramas secundarias y una vez que estamos seguros de los cambios hacer un merge con la rama main.
-
-Actualmente seguimos trabajando en la rama main.
-
-5. Dejar de hacer: hacer correcciones a último momento, cerca del momento de la entrega del Sprint. 
-
-No se dejó de hacer esta practica. Otra vez tuvimos que agregar algo a último minuto. 
-
-
-Principales conclusiones de la retro del 5° sprint:
-
-El equipo sigue mostrando mejoría en la planificación del tiempo y en la metodología de trabajo. Desde un principio nos distribuimos las tareas segun las habilidades y fortalezas de cada uno y la trazabilidad de lo realizado en los Sprints anteriores. Todo lo anterior quedó plasmado en el Trello.
-
-Tuvimos varios encuentros en simultáneo para la resolución de dudas en general y codear en conjunto algunos aspectos que tendrían impacto en la totalidad del código.
-
-El equipo se vio retado puntualmente en la consigna del login de usuarios, dada la complejidad y robustez del tema.
-
-Se logró avanzar en cada una de las consignas propuestas en el Sprint y algunos aspectos faltantes están próximos a ser culminados, todo con la intención de finiquitarlo en su totalidad antes de iniciar el próximo.
+Gracias!
